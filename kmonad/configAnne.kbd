@@ -1,0 +1,77 @@
+(defcfg
+  input (device-file "/dev/input/by-path/pci-0000:00:14.0-usb-0:3:1.0-event-kbd")
+  #|input (device-file "/dev/input/by-path/platform-i8042-serio-0-event-kbd")|#
+  output (uinput-sink "Onboard")
+  )
+
+(defalias
+  sm  (layer-toggle symbolLayer)
+  nm  (layer-toggle numLayer)
+  fn  (layer-toggle functionLayer)
+  ent (layer-toggle enterLayer)
+  lf  KeyLeft
+  echo KeyEsc
+  rg  KeyRight
+  dw  KeyDown
+  up  KeyUp
+  )
+
+  #|-------------------------------------------------------------------------- |#
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lalt lmet           spc            ralt rctl
+)
+
+  #|-------------------------------------------------------------------------- |#
+
+(deflayer base
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  bspc q    w    e    r    t    y    u    i    o    p    @nm  ]    \
+  esc  a    s    d    f    g    h    j    k    l    ;    '    @sm
+  lsft z    x    c    v    b    n    m    ,    .    /    @ent
+  lmet lalt lctl           spc            tab  @fn  
+)
+
+  #|-------------------------------------------------------------------------- |#
+
+(deflayer numLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    $    7    8    9    p    [    ]    \
+  caps a    s    d    f    g    =    4    5    6    ;    '    ret
+  lsft z    x    c    v    b    0    1    2    3    /    rsft
+  lmet lalt lctl           spc            ralt rmet   
+)
+
+  #|-------------------------------------------------------------------------- |#
+
+(deflayer symbolLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  bspc q    w    \(   \)   t    y    +    -   \_    p    [    ]    \
+  esc  a    s    [    ]    ~    @lf  @dw  @up  @rg  `    '    @ent
+  lsft z    x    <    >    b    n   F1    ,    .    |    rsft
+  lmet lalt lctl           ret            ralt rmet   
+)
+
+  #|-------------------------------------------------------------------------- |#
+
+(deflayer functionLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  bspc q    w    e    r    t    F11  F7   F8   F9   p    [    ]    \
+  esc  a    s    d    f    g    F10  F4   F5   F6   ;    '    @ent
+  lsft z    x    c    v    b    F12  F1   F2   F3   \    @sm
+  lmet lalt lctl           ret            ralt @fn   
+)
+
+  #|-------------------------------------------------------------------------- |#
+
+(deflayer enterLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g         @lf  @dw  @up  @rg  `    '    ret
+  lsft z    x    c    v    b    n   F1    ,    .    /    rsft
+  lmet lctl lalt           ret            ralt rmet   
+)

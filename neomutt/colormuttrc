@@ -1,0 +1,229 @@
+set imap_user="cMonty614@gmail.com"
+set imap_pass=`n0kod0ko45!`
+set smtp_url="smtps://cMonty614@gmail.com@smtp.gmail.com:465/"
+set smtp_pass=`n0kod0ko45!`
+set smtp_authenticators="gssapi:login"
+
+set folder=imaps://imap.gmail.com/
+set spoolfile=+INBOX
+set record="+[Gmail]/Sent Mail"
+set postponed="+[Gmail]/Drafts"
+
+# https://www.neomutt.org/guide/reference search sleep_time for additional info
+set sleep_time=0 # be faster
+set beep=no # no beep sound
+set editor="/Applications/MacVim.app/Contents/MacOS/Vim -c 'set tw=74' -c 'set wrap'"
+set sort=reverse-date   # default sorting by date
+# When sorting by threads, this variable controls how threads are sorted
+# in relation to other threads, and how the branches of the thread trees are sorted.
+set sort_aux=last-date-received
+# Index page format. Default "%4C %Z %{%b %d} %-15.15L (%?l?%4l&%4c?) %s"
+set index_format="%2C %zs %?X?A& ? %D %-15.15F %s (%-4.4c)"
+
+# You can use any gmail imap mailboxes
+mailboxes =INBOX =[Gmail]/Sent\ Mail =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
+
+# Vim like binds
+bind attach <return> view-mailcap
+bind attach l view-mailcap
+bind editor <space> noop
+bind index G last-entry
+bind index gg first-entry
+bind pager,attach h exit
+bind pager j next-line
+bind pager k previous-line
+bind pager l view-attachments
+bind index D delete-message
+bind index U undelete-message
+bind index L limit
+bind index h noop
+bind index l display-message
+bind index <space> tag-entry
+#
+#BIND BROWSER H GOTO-PARENT
+macro browser h '<change-dir><kill-line>..<enter>' "Go to parent folder"
+bind index,pager H view-raw-message
+bind browser l select-entry
+bind pager,browser gg top-page
+bind pager,browser G bottom-page
+bind index,pager,browser d half-down
+bind index,pager,browser u half-up
+bind index,pager S sync-mailbox
+bind index,pager R group-reply
+bind index \031 previous-undeleted	# Mouse wheel
+bind index \005 next-undeleted		# Mouse wheel
+bind pager \031 previous-line		# Mouse wheel
+bind pager \005 next-line		# Mouse wheel
+bind editor <Tab> complete-query
+set realname="Chris"
+set from="cMonty614@gmail.com"
+
+
+macro index,pager a "<enter-command>set my_pipe_decode=\$pipe_decode pipe_decode<return><pipe-message>abook --add-email<return><enter-command>set pipe_decode=\$my_pipe_decode; unset my_pipe_decode<return>" "add the sender address to abook"
+macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
+macro index O "<shell-escape>mbsync -a<enter>" "run mbsync to sync all mail"
+macro index \Cf "<enter-command>unset wait_key<enter><shell-escape>read -p 'Enter a search term to find with notmuch: ' x; echo \$x >~/.cache/mutt_terms<enter><limit>~i \"\`notmuch search --output=messages \$(cat ~/.cache/mutt_terms) | head -n 600 | perl -le '@a=<>;s/\^id:// for@a;$,=\"|\";print@a' | perl -le '@a=<>; chomp@a; s/\\+/\\\\+/ for@a;print@a' \`\"<enter>" "show only messages matching a notmuch pattern"
+macro index A "<limit>all\n" "show all messages (undo limit)"
+
+#                                  _   _            
+# _ __   ___  ___  _ __ ___  _   _| |_| |_ _ __ ___ 
+#| '_ \ / _ \/ _ \| '_ ` _ \| | | | __| __| '__/ __|
+#| | | |  __/ (_) | | | | | | |_| | |_| |_| | | (__ 
+#|_| |_|\___|\___/|_| |_| |_|\__,_|\__|\__|_|  \___|
+                                                   
+
+set ssl_starttls=yes
+set ssl_force_tls=yes
+
+#MAILBOXES
+mailboxes =inbox =sent =drafts =junk
+
+#SIDEBAR SETTINGS
+set sidebar_visible = yes
+set sidebar_width = 20
+set sidebar_short_path = yes
+set sidebar_next_new_wrap = yes
+set mail_check_stats
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/? %?S?%S?'
+bind index,pager \Ck sidebar-prev
+bind index,pager \Cj sidebar-next
+bind index,pager \Co sidebar-open
+bind index,pager \Cp sidebar-prev-new
+bind index,pager \Cn sidebar-next-new
+bind index,pager B sidebar-toggle-visible
+
+color sidebar_new color221 color233
+color indicator cyan black
+color sidebar_highlight black color8
+color sidebar_flagged red black
+color sidebar_new green black
+color sidebar_ordinary color245 default
+
+#Aliases
+alias petra1 Petra Montgomery<montgomerypetra@gmail.com>
+alias petra2 Petra Montgomery<petra_montgomery@havard.edu>
+alias dad Chris Montgomery Sr<montys1@mac.com>
+alias n0ko Noko Doko<chrismontgomeryjr@gmail.com>
+alias cMonty Chris Montgomery Jr<chrismontgomeryjr@gmail.com>
+alias becky Rebecca Montgomery<dukerae8@gmail.com>
+alias mom Doris Montgomery<Doris.Montgomery@va.gov>
+alias max Max Cabrera<e.maxcabrera@gmail.com>
+alias veronica Veronica Herbes<vherbes@gmail.com>
+alias julie Julie Killgoar<jkillgoar@dedham.k12.ma.us>
+alias karla Karla Unger<bellydancebykarla@gmail.com>
+alias bk Bill Kennedy<bill@gobridge.org>
+alias zuzi Zuzana Birkova<zuzanabirkova@gmail.com>
+
+#NEW DOCUMENT
+set editor='nvim'
+set move = no
+set sort = reverse-threads
+set sort_aux = last-date-received
+
+set sidebar_visible = yes 
+set sidebar_format = "%B%* %N"
+set sidebar_width = 24
+set sidebar_folder_indent
+set sidebar_indent_string
+set sidebar_divider_char = ' | '
+set mail_check_stats
+set sidebar_short_path = no
+set sidebar_component_depth = 0
+color sidebar_new color221 color233
+color indicator cyan black
+color sidebar_highlight black color8
+color sidebar_divider cyan black
+color sidebar_flagged red black
+color sidebar_new green black
+color sidebar_ordinary color245 default
+unhdr_order *                          # some distros order things by defaults
+hdr_order from: to: cc: date: subject: # and in this order
+
+#
+# Default account
+#source ~/.neomutt/account.com.gmail.cmonty614
+
+## Macros for switching accounts
+#macro index <F1> '<sync-mailbox><enter-command>source~/.neomutt/account.com.gmail.cmonty614<enter><change-folder>!<enter>'
+#
+#macro index <F2> '<sync-mailbox><enter-command>source~/.neomutt/account.com.gmail.chrismontgomeryjr@gmail.com<enter><change-folder>!<enter>'
+#
+#macro index <F3> '<sync-mailbox><enter-command>source~/.neomutt/account.com.hubrecruiting.cmontgomery<enter><change-folder>!<enter>'
+
+# FETCH MAIL SHORTCUT
+bind index g noop
+bind index gg noop
+bind index > imap-fetch-mail
+bind index G last-entry
+bind index gg first-entry
+bind index ( half-down
+bind index ) half-up
+bind index F search
+bind index  delete-pattern
+bind index d delete-message
+#BIND INDEX   COMPOSE-TO-SENDER
+bind index,pager <down> sidebar-next
+bind index,pager <up> sidebar-prev
+bind index,pager <right> sidebar-open
+bind index,pager <left> sidebar-toggle-visible
+set charset = "utf-8"
+
+
+# SET PAGER VIEW
+set pager_index_lines = 15
+set pager_context = 3
+set pager_stop
+set menu_scroll
+set tilde
+unset markers
+
+color hdrdefault cyan default
+color attachment color226 default
+color header color165 default "From: "
+color header color165 default "Subject: "
+color header color165 default "Date: "
+
+color quoted green default
+color quoted1 cyan default
+color quoted2 green default
+color quoted3 cyan default
+
+color error     red             default         # error messages
+color message   blue            default         # message  informational messages
+color indicator color201         black           # indicator for the "current message"
+color status    white           blue            # status lines in the folder index sed for the mini-help line
+color tree      cyan           default         # the "tree" display of threads within the folder index
+color search    white           blue            # search matches found with search within the internal pager
+color markers   red             default         # The markers indicate a wrapped line hen showing messages with looong lines
+
+color index     brightgreen default  '~O'
+color index     yellow default  '~N'
+color index     brightred       default '~F'    # Flagged Messages are important!
+color index     blue default    '~D'            # Deleted Mails - use dark color as these are already "dealt with"
+# }}}
+## -*-muttrc-*-
+##
+##color body brightwhite black '\*+[^*]+\*+'
+##color body brightwhite black '_+[^_]+_+'
+
+color index         brightcolor02       default   '~N'     # new
+color index         white            default   '~R'     # read
+color index         color223            default   '~Q'     # replied
+color index         color03             default   '~F'     # flags
+color index_author  color199             default   '~F'     # flags
+color index         color05             default   '~T'     # tagged
+color index         default             color236  '~l'     # mailing list
+color index         color162            color243  "~D"     # deleted messages
+color index_flags  	color06             default	  '%A'
+
+color index_flags   color129               white               ~D
+color index_flags   green               default             ~g
+color index_flags   brightgreen         default             ~G
+color index_author  brightdefault       color035            ~P
+color index_author  blue                brightred           ~F
+color index_author  yellow              default             ~l
+color index_flags   yellow              default             ~N
+color index_flags   yellow              default             ~l
+color index_date    color051                default
+color index_size    color051                default
+color index_number  green               default
