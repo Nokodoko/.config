@@ -29,11 +29,11 @@
   m1 M-F7
 
  #| LAYOUTS |#
- tl  A-t
- ct  A-c
- ctm A-S-c
- fl  A-f
- cl  A-S-e
+ tl  A-t    #|       tiled     |#
+ ct  A-c    #|     centered    |#
+ ctm A-S-c  #|  center master  |#
+ fl  A-f    #|    fullscreen   |#
+ cl  A-S-e  #|    close xorg   |#
  
   
 #| PROGRAMS |#
@@ -46,7 +46,8 @@
 
 #| ACTIONS |#
   qt C-q
-  mo M-o #| kill Trakpad |#
+  mo M-o   #|  kill Trakpad |#
+  sd M-C-s #|    Shutdown   |#
   )
 
   #|-------------------------------------------------------------------------- |#
@@ -74,7 +75,7 @@
   #|-------------------------------------------------------------------------- |#
 
 (deflayer numLayer
-  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
+  @sd  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    $    7    8    9    p    [    ]    \
   @tl a    s    d    f    g    =    4    5    6    ;    '    ret
