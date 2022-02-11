@@ -33,6 +33,7 @@
  ct  A-c
  ctm A-S-c
  fl  A-f
+ cl  A-S-e
  
   
 #| PROGRAMS |#
@@ -63,7 +64,7 @@
 
 (deflayer base
   @qt @qu  @LF  @ch  @sl  @mg  F6  @m1   F8   F9   F10  F11   F12
-  grv @s1  @s2  @s3  @s4  @s5   6   @ctm @fl  @tl  @al  @ct   = @rf
+  grv @s1  @s2  @s3  @s4  @s5   6   @ctm @fl  @tl  @al  @ct  =  @cl
   bspc q    w    e    r    t    y    u    i    o    p    @nm  ]    @mo
   esc  a    s    d    f    g    h    j    k    l    ;    '    @sm
   lsft z    x    c    v    b    n    m    ,    .    /    @ent
@@ -76,7 +77,7 @@
   esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    $    7    8    9    p    [    ]    \
-  caps a    s    d    f    g    =    4    5    6    ;    '    ret
+  @tl a    s    d    f    g    =    4    5    6    ;    '    ret
   lsft z    x    c    v    b    0    1    2    3    /    rsft
   lmet lalt lctl           spc            ralt rmet pgup  
 )
@@ -109,7 +110,7 @@
   esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  caps a    s    d    f    g         @lf  @dw  @up  @rg  `    '    ret
+  caps a    s    d    f    g         @lf  @dw  @up  @rg  :    `    ret
   lsft z    x    c    v    b    n   F1    ,    .    /    rsft
   lmet lctl lalt           ret            ralt rmet pgup  
 )
