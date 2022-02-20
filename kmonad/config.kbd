@@ -6,7 +6,7 @@
 
 (defalias
 #| Layers |#
-  sm  (layer-toggle symbolLayer)
+  sp  (layer-toggle spaceLayer)
   nm  (layer-toggle numLayer)
   fn  (layer-toggle functionLayer)
   ent (layer-toggle enterLayer)
@@ -16,6 +16,7 @@
   rg  KeyRight
   dw  KeyDown
   up  KeyUp
+  hyp  A-C
 
 #| WORKSPACES |#
   s1  A-1
@@ -27,12 +28,13 @@
 
 #| Monitors |#
   m1 M-F7
+  m2 M-F8
 
  #| LAYOUTS |#
  tl  A-t    #|       tiled     |#
  ct  A-c    #|     centered    |#
  ctm A-S-c  #|  center master  |#
- fl  A-f    #|    fullscreen   |#
+ fl  A-S-t    #|    fullscreen   |#
  cl  A-S-e  #|    close xorg   |#
  
   
@@ -43,6 +45,7 @@
   sl M-F4       #|    Slack    |#
   mg M-a        #| andmessages |#
   rf M-KeyRight #| launcher    |#
+  tm M-ret      #|  terminal   |#
 
 #| ACTIONS |#
   qt C-q
@@ -50,7 +53,7 @@
   sd M-C-s #|    Shutdown   |#
   )
 
-  #|-------------------------------------------------------------------------- |#
+  #|-------------------------sourceLayer---------------------------------------- |#
 
 (defsrc
   esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
@@ -61,57 +64,57 @@
   lctl lmet lalt           spc            ralt rctl  pgup
 )
 
-  #|-------------------------------------------------------------------------- |#
+  #|----------------------------base------------------------------------------- |#
 
 (deflayer base
-  @qt @qu  @LF  @ch  @sl  @mg  F6  @m1   F8   F9   F10  F11   F12
-  grv @s1  @s2  @s3  @s4  @s5   6   @ctm @fl  @tl  @al  @ct  =  @cl
-  bspc q    w    e    r    t    y    u    i    o    p    @nm  ]    @mo
-  esc  a    s    d    f    g    h    j    k    l    ;    '    @sm
-  lsft z    x    c    v    b    n    m    ,    .    /    @ent
+  @qt @qu  @LF  @ch  @sl  @mg  F6  @m1  @m2   F9   F10  F11   F12
+  @tm @s1  @s2  @s3  @s4  @s5   6   @ctm @fl  @tl  @al   -   =  @cl
+  bspc q    w    e    r    t    y    u    i    o    p    @nm @sp   @mo
+  esc  a    s    d    f    g    h    j    k    l    ;    '    @ent
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
   lmet lalt lctl           spc            tab  @fn  pgup
 )
 
-  #|-------------------------------------------------------------------------- |#
+  #|----------------------------numLayer----------------------------------------- |#
 
 (deflayer numLayer
   @sd  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    $    7    8    9    p    [    ]    \
-  @tl a    s    d    f    g    =    4    5    6    ;    '    ret
+  @tl  a    s    d    f    g    =    4    5    6    ;    '    ret
   lsft z    x    c    v    b    0    1    2    3    /    rsft
-  lmet lalt lctl           spc            ralt rmet pgup  
+  lmet lalt lctl           spc            @hyp rmet pgup  
 )
 
-  #|-------------------------------------------------------------------------- |#
+  #|----------------------------enterLayer------------------------------------ |#
 
-(deflayer symbolLayer
-  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
+(deflayer enterLayer
+  esc  F1  F2   F3   F4   F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  bspc q    w    \(   \)   t    y    +    -   \_    p    [    ]    \
-  esc  a    s    [    ]    ~    @lf  @dw  @up  @rg  `    '    @ent
+  @fl  q    w    \(   \)   t    y    +    -   \_    p    [    ]    \
+  @tl  a    s    [    ]    ~    @lf  @dw  @up  @rg  `    '    @ent
   lsft z    x    <    >    b    n   F1    ,    .    |    rsft
   lmet lalt lctl           ret            ralt rmet pgup  
 )
 
-  #|-------------------------------------------------------------------------- |#
+  #|----------------------------functionLayer----------------------------------- |#
 
 (deflayer functionLayer
   esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   bspc q    w    e    r    t    F11  F7   F8   F9   p    [    ]    \
   esc  a    s    d    f    g    F10  F4   F5   F6   ;    '    @ent
-  lsft z    x    c    v    b    F12  F1   F2   F3   \    @sm
+  lsft z    x    c    v    b    F12  F1   F2   F3   \    @sp
   lmet lalt lctl           ret            ralt @fn pgup  
 )
 
-  #|-------------------------------------------------------------------------- |#
+  #|----------------------------spaceLayer-------------------------------------- |#
 
-(deflayer enterLayer
+(deflayer spaceLayer
   esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  caps a    s    d    f    g         @lf  @dw  @up  @rg  :    `    ret
-  lsft z    x    c    v    b    n   F1    ,    .    /    rsft
-  lmet lctl lalt           ret            ralt rmet pgup  
+  caps a    s    d    f    g    h  @s4  @s5  @al    :    `    ret
+  lsft z    x    c    v    b    n  @s1  @s2  @s3    /    rsft
+  lmet lalt lctl           ret            ralt rmet pgup  
 )

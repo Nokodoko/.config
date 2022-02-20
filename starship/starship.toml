@@ -1,0 +1,127 @@
+# vim:fileencoding=utf-8:ft=conf:foldmethod=marker
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+#vicmd_symbol = "[\\(normal\\)](italic #949494) "
+vicmd_symbol = "[\\[ NORMAL\\]](bold #949494) "
+
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[line_break]
+disable = true
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+# Inserts a blank line between shell prompts
+add_newline = false
+#
+#format = """
+#$username\
+#$hostname\
+#$localip\
+#$shlvl\
+#$singularity\
+#$kubernetes\
+#$directory\
+#$vcsh\
+#$git_branch\
+#$git_commit\
+#$git_state\
+#$git_metrics\
+#$git_status\
+#$hg_branch\
+#$docker_context\
+#$package\
+#$cmake\
+#$cobol\
+#$container\
+#$dart\
+#$deno\
+#$dotnet\
+#$elixir\
+#$elm\
+#$erlang\
+#$golang\
+#$helm\
+#$java\
+#$julia\
+#$kotlin\
+#$lua\
+#$nim\
+#$nodejs\
+#$ocaml\
+#$perl\
+#$php\
+#$pulumi\
+#$purescript\
+#$python\
+#$rlang\
+#$red\
+#$ruby\
+#$rust\
+#$scala\
+#$swift\
+#$terraform\
+#$vlang\
+#$vagrant\
+#$zig\
+#$nix_shell\
+#$conda\
+#$memory_usage\
+#$aws\
+#$gcloud\
+#$openstack\
+#$azure\
+#$env_var\
+#$crystal\
+#$custom\
+#$sudo\
+#$cmd_duration\
+#$line_break\
+#$jobs\
+#$battery\
+#$time\
+#$status\
+#$shell\
+#$character"""
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "italic #87af00"
+symbol = ""
+[aws.region_aliases]
+ap-southeast-2 = "au"
+us-east-1 = "va"
+us-east-2 = "oh"
+
+[kubernetes]
+format = '[⛵ $context \($namespace\)](bold italic #0087ff) '
+disabled = false
+
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
+".*/openshift-cluster/.*" = "openshift"
+"gke_.*_(?P<cluster>[\\w-]+)" = "gke-$cluster"
+
+[helm]
+format = "via [⎈ $version](bold white) "
+
+[git_branch]
+symbol = " "
+truncation_length = 4
+truncation_symbol = ""
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+
+[golang]
+format = "via [ﳑ $version](bold cyan) "
+
+[nodejs]
+format = "via [ $version](bold green) "
