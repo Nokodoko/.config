@@ -5,9 +5,9 @@ source ~/.config/neomutt/mappings
 
 # Accounts
 
-source ~/.config/neomutt/accounts/gmail
-folder-hook $folder 'source ~/.config/neomutt/accounts/gmail'
+source ~/.config/neomutt/accounts/home
+folder-hook $folder 'source ~/.config/neomutt/accounts/home'
 
 source ~/.config/neomutt/accounts/work
-folder-hook $folder 'source ~/.config/neomutt/accounts/school'
+folder-hook $folder 'source ~/.config/neomutt/accounts/work'
 
