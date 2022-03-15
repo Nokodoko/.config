@@ -1,0 +1,18 @@
+#account information
+set from="chris.montgomery.mail@gmail.com"
+set realname="chris"
+
+#smtp settings
+set smtp_url="smtps://mail.chris.montgomery.mail@gmail.com@gmail.com.com:465/"
+set smtp_pass="tristan2017@"
+
+#imap settings
+set imap_user="chris.montgomery.mail@gmail.com"
+set imap_pass="tristan2017@"
+set folder=imaps://imap.gmail.com/
+set spoolfile = "+inbox"      
+set imap_check_subscribed=yes
+set sidebar_visible=yes
+
+#editor 
+set editor="nvim"

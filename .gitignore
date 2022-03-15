@@ -69,3 +69,6 @@ buttrc
 cMontyrc
 colormuttrc
 home
+neomutt/accounts/
+neomutt/utils/aliases
+

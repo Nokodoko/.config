@@ -1,13 +1,17 @@
+#-----Source files-----#
+source ~/.config/neomutt/utils/settings
+source ~/.config/neomutt/utils/colors
+source ~/.config/neomutt/utils/mappings
 
-source ~/.config/neomutt/settings
-source ~/.config/neomutt/colors
-source ~/.config/neomutt/mappings
+#-----Accounts-----#
+#cMonty614
+source ~/.config/neomutt/accounts/cMonty614
+folder-hook $folder 'source ~/.config/neomutt/accounts/cMonty614'
 
-# Accounts
+#-----chrismontgomeryjr-----#
+source ~/.config/neomutt/accounts/chrismontgomeryjr
+folder-hook $folder 'source ~/.config/neomutt/accounts/chrismontgomeryjr'
 
-source ~/.config/neomutt/accounts/home
-folder-hook $folder 'source ~/.config/neomutt/accounts/home'
-
+#-----chris.montgomery.mail@gmail.com-----#
 source ~/.config/neomutt/accounts/work
 folder-hook $folder 'source ~/.config/neomutt/accounts/work'
-
