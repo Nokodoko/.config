@@ -1,0 +1,172 @@
+#!/bin/bash 
+
+#Terminal
+super + Return
+   kitty
+
+
+#Program Launcher
+super + <Right>
+   rofi -show 'run'
+
+super+s
+   exec kitty -e ssh admin@192.168.1.1
+
+#Programs
+super+r 
+   exec kitty -e refresh.sh
+
+super+z 
+   exec --no-startup-id zoom
+
+super+a 
+   exec now.zsh
+
+super+ctrl+b 
+   exec terminal -e 'bmenu'
+
+super+shift+p
+   exec ~/scripts/piUpdate.zsh
+
+super+F5 
+   exec kitty -e lf
+
+super+shift+F2 
+   exec kitty -e ranger
+
+super+F3 
+   exec chromium
+
+super+F4 
+   exec qutebrowser
+
+super+F2 
+   exec /usr/sbin/slack
+
+super+F7 
+   exec kitty -e ~/.screenlayout/1plus1.sh
+
+super+shift+F8
+   exec kitty -e ~/.screenlayout/basic.sh & refresh.sh
+
+super+F8
+   exec kitty -e ~/.screenlayout/battlestation.sh && refresh.sh
+
+super+w 
+    exec wireshark
+
+super+shift+w 
+    exec kitty -e tshark
+
+super+x 
+   exec kitty -e lynx -cfg=~/.config/lynx/lynx.cfg
+
+super+shift+x 
+   exec kitty -e amfora
+
+super+g 
+   exec kitty -e sudo goscan
+
+super+shift+F9 
+   exec urxvt -e zsh
+
+super+k 
+   exec kitty -e vpn
+
+super+shift+k 
+   exec kitty -e ~/Programs/openvpn3_manager/disconnect_cli.sh
+
+super+Down 
+   exec rofi -show 'window'
+
+super+Up 
+   exec rofi -show 'ssh'
+
+super+Right 
+   exec rofi -show 'run'
+
+
+super+t 
+   exec pkill picom
+
+super+shift+t 
+   exec picom -b
+
+super+shift+d 
+   kitty -e ~/dtest.sh
+
+super+shift+semicolon 
+   exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+
+super+ctrl+x 
+   exec --no-startup-id xkill
+
+super+m 
+   exec kitty -e cmus
+
+super+shift+m 
+   exec kitty -e pavucontrol
+
+super+shift+v 
+   exec vlc
+
+super+ctrl+r 
+   exec kitty -e reboot
+
+super+ctrl+s 
+   exec kitty -e shutdown -h now
+
+super+ctrl+n 
+   exec kitty -e ~/here.sh
+
+super+b 
+   exec kitty -e calcurse
+
+super+v 
+   exec kitty -e screenkey
+
+super+shift+v 
+   exec kitty -e pfkill -f screenkey
+
+super+p
+   exec /usr/bin/scrot -u & exec notify-send "ScreenShot Taken"
+
+super+i
+   exec kitty -e nvim ~/.config/sxhkd/sxhkdrc
+
+super+shift+c
+   exec kitty -e nvim ~/Programs/dwm-6.2/config.h
+
+super+n 
+   exec kitty -e tty-clock -cs -C 4
+
+super+shift+B 
+   exec kitty -e nvim ~/.zshrc
+
+super+shift+g 
+   exec kitty -e /usr/local/bin/buds.sh
+
+super+m 
+   exec kitty -e neomutt
+
+super+y 
+   exec kitty -e dmenyt
+
+super+shift+y 
+   exec kitty -e glances
+
+super+q 
+   exec kitty -e nvim ~/.config/qutebrowser/config.py
+
+super+shift+i 
+   exec kitty -e nvim ~/.config/nvim/init.vim
+
+super+shift+z 
+   exec kitty -e glava
+
+super+o
+    exec kitty -e xinput set-prop 13 "Device Enabled" 0
+
+super+shift+o
+    exec kitty -e xinput set-prop 13 "Device Enabled" 1
+
