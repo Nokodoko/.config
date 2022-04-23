@@ -1,0 +1,111 @@
+.canvas-container canvas, .widget-scene-canvas {
+    --ml-ignore:true;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .app-imagery-mode canvas.widget-scene-canvas,
+html[ml-stage]:not([ml-mode="filter"]) .app-imagery-mode .canvas-container canvas
+{
+    filter: var(--ml-image-filter);
+}
+
+html[ml-stage]:not([ml-mode="filter"]) #app-container:not(.app-imagery-mode) canvas.widget-scene-canvas,
+html[ml-stage]:not([ml-mode="filter"]) #app-container:not(.app-imagery-mode) .canvas-container canvas {
+    filter: var(--ml-dynamic-content-contrast-text-filter);
+}
+
+html[ml-mode="filter"][ml-invert] .app-imagery-mode
+{
+    filter: var(--ml-image-revert-filter);
+}
+html[ml-mode="filter"][ml-invert] .app-imagery-mode *
+{
+    filter: none!important;
+}
+html[ml-mode="filter"][ml-invert] .app-imagery-mode .widget-minimap-anchor:not(imp),
+html[ml-mode="filter"][ml-invert] .app-imagery-mode .widget-pane:not(imp),
+html[ml-mode="filter"][ml-invert] .app-imagery-mode #omnibox-container:not(imp) {
+  filter: var(--ml-dynamic-content-contrast-text-filter)!important;
+}
+
+.section-reviewchart-bucket-fill, .widget-layer-slider-tick,
+.widget-layer-slider-enabled, .widget-layer-slider-thumb, .widget-layer-toggle-bar
+{
+    --ml-background-background-color:Border;
+}
+
+.widget-layer-toggle-dot
+{
+    --ml-background-background-color:HighlightedText;
+}
+
+.renderable-component-color-text-background
+{
+    --ml-background-background-color:Border;
+    --ml-text-color:BackgroundNoContrast;
+    --ml-highlightedtext-color:BackgroundNoContrast;
+}
+html[ml-mode]:not([ml-mode="filter"]) .renderable-component-color-text-background:before,
+html[ml-mode]:not([ml-mode="filter"]) .renderable-component-color-text-background:after
+{
+    --ml-ignore:true;
+    background-color: inherit!important;
+    border-color: inherit!important;
+}
+
+.widget-reveal-card-image:not(impt)
+{
+    --ml-backgroundimage:Image;
+    /* background-size: cover;
+    background-position-x: -70px; */
+}
+
+.widget-directions-icon, .directions-travel-mode-icon, .widget-directions .searchbox-hamburger:before,
+.maps-sprite-common-arrow-back-white, .section-star-array li:not(.section-star-empty),
+.widget-expand-button-pegman-icon, .close-button-white, .maps-sprite-fab-camera,
+.maps-sprite-homescreen-home, .maps-sprite-homescreen-work, .maps-sprite-homescreen-more
+{
+    --ml-no-invert:true;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .dir-tt img, 
+html[ml-mode]:not([ml-mode="filter"]) .section-line-group-summary-header-icons img, 
+html[ml-mode]:not([ml-mode="filter"]) .section-reviewchart-histogram, 
+html[ml-mode]:not([ml-mode="filter"]) .section-reviewchart-label, 
+html[ml-mode]:not([ml-mode="filter"]) .section-reviewchart-bucket
+{
+    filter: invert(var(--ml-invert));
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .widget-settings-header::before
+{
+    content: 'Maps';
+    position: absolute;
+    font-size: 15pt;
+    top: 10px;
+    left: 101px;
+    z-index: 9999;
+}
+
+.widget-mylocation-tooltip-pointer, .widget-zoom-tooltip-pointer, .widget-runway-tooltip-pointer, .fineprint-tld-tooltip-pointer,
+.widget-pane-toggle-button-tooltip:before, .omnibox-tooltip:before
+{
+    --ml-border-border-color:Background;
+    --ml-border-border-bottom-color:Background;
+    --ml-border-border-left-color:Background;
+    --ml-border-border-right-color:Background;
+    --ml-border-border-top-color:Background;
+}
+
+.scrollable-y
+{
+    --ml-main-scrollbar-size:6px;
+    /* width: 6px!important; */
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]) #inline-tile-div:not(.imp) > img[role="presentation"]:not(.imp) {
+    filter: var(--ml-dynamic-content-contrast-text-filter)!important;
+}
+
+html[ml-mode="filter"] #inline-tile-div:not(.imp) > img[role="presentation"]:not(.imp) {
+    filter: none!important;
+}

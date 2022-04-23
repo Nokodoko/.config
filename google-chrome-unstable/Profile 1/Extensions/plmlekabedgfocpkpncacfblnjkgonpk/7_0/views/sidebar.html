@@ -1,0 +1,65 @@
+<div id="greenhouse_plugin_header">
+  <div id="greenhouse_plugin_logo"/>
+
+  <div id="plugin_header">Greenhouse Prospecting</div>
+
+  <div id="close_plugin_button"/>
+</div>
+
+<div id="gh_content">
+  <div id="gh_iframe_screen" class="gh-plugin-screen active">
+    <iframe frameBorder="0" class="greenhouse-iframe"></iframe>
+    <div id="gh_loading_spinner"/>
+  </div>
+
+  <div id="gh_confirmation_screen" class="gh-plugin-screen">
+    <div class="gh-confirmation-column">
+      <div id="gh_full_name"></div>
+      <div id="gh_confirmation_text">has been saved as a prospect on Greenhouse</div>
+
+      <div id="gh_keep_prospecting" class="gh-back-to-form">Ok, Keep Prospecting</div>
+
+      <a id="gh_view_in_greenhouse" href="" target="_blank">View in Greenhouse</a>
+    </div>
+  </div>
+
+  <div id="gh_merge_screen" class="gh-plugin-screen">
+    <div class="gh-merge-column">
+      <div id="gh_merge_header">
+        This candidate might already exist in Greenhouse!
+      </div>
+
+      <div id="gh_merge_reason_wrapper">
+        (Another candidate has the same <span id="gh_merge_reason"/>.)
+      </div>
+
+      <div id="gh_new_person_card" class="gh-merge-card">
+        <div class="gh-merge-card-header">Trying to Add</div>
+        <div class="gh-merge-card-body">
+          Test
+        </div>
+      </div>
+
+      <div id="gh_existing_person_card" class="gh-merge-card">
+        <div class="gh-merge-card-header">Existing Candidate</div>
+        <div class="gh-merge-card-body">
+          Test
+        </div>
+      </div>
+
+      <div id="gh_action_header">What do you want to do?</div>
+
+      <div id="gh_add_new_candidate" class="gh-plugin-button gh-action">
+        <div id="gh_add_new_candidate_icon"/>
+        Add as a new candidate
+      </div>
+
+      <div id="gh_merge_existing_candidate" class="gh-plugin-button gh-action">
+        <div id="gh_merge_existing_candidate_icon"/>
+        Merge with existing candidate
+      </div>
+
+      <div class="gh-back-to-form gh-action">Cancel</div>
+    </div>
+  </div>
+</div>

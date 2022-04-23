@@ -1,0 +1,50 @@
+.tcu-imageWrapper
+{
+    --ml-backgroundimage:Image;
+}
+
+.dm-nav>a[role="button"]
+{
+    --ml-buttonbackground:Background;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .dm-nav:not(#imp):not(.imp):not(imp)>a[role="button"]:not(#imp):not(.imp):not(imp)
+{
+    background-color: var(--ml-main-background-color)!important;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]) div[style*="background-image"][style*="profile_images"] {
+  --ml-ignore:true;
+  filter: var(--ml-image-filter);
+}
+
+html[ml-mode="filter"] .RichEditor--emojiPicker:not(imp) {
+  filter: none!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) button.EmojiPicker-item:not(imp):not(.imp),
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) button.EmojiCategoryIcon:not(imp):not(.imp),
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .EmojiPicker-diversityRow:not(imp):not(.imp),
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) [role="radiogroup"]>[role="radio"]>[style*="background-color"] {
+  filter: var(--ml-image-revert-filter) !important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .rn-13w96dm,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .PermalinkOverlay-with-background,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .gallery-overlay {
+  background-color: rgba(255,255,255,0.6)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) [aria-labelledby="modal-header"] {
+  filter: drop-shadow(0px 0px 7px rgb(200,200,200));
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) [aria-labelledby="modal-header"] [style*="background-color"] {
+  background-color: hsla(6, 42%, 90%, 1)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) [aria-labelledby="modal-header"] [style*="background-color"] ,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) [aria-labelledby="modal-header"] [style*="background-color"] * {
+  transition-property: none!important;
+  color: black!important;
+}

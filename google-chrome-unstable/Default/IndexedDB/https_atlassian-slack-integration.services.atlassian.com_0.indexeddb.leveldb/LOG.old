@@ -1,0 +1,6 @@
+2022/04/18-12:56:20.640 1626b Creating DB /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_atlassian-slack-integration.services.atlassian.com_0.indexeddb.leveldb since it was missing.
+2022/04/18-12:56:20.648 1626b Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_atlassian-slack-integration.services.atlassian.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/18-12:56:50.579 1626b Level-0 table #5: started
+2022/04/18-12:56:50.582 1626b Level-0 table #5: 5311 bytes OK
+2022/04/18-12:56:50.586 1626b Delete type=0 #3
+2022/04/18-12:56:50.587 1626b Manual compaction at level-0 from (begin) .. (end); will stop at (end)

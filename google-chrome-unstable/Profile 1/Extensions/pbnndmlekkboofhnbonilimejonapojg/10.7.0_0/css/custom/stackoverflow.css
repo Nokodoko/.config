@@ -1,0 +1,58 @@
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="loading"]) .-img._glyph {
+    --ml-ignore:true;
+    filter: var(--ml-text-filter);
+}
+
+html[ml-stage][ml-mode="simple"] header:not(imp):not(#imp):not(.imp) a:not(imp):not(#imp):not(.imp) .-img._glyph:not(imp):not(#imp):not(.imp) {
+    background-color: transparent!important;
+}
+
+.left-sidebar-toggle * {
+    --ml-background-background-color:Text;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .left-sidebar-toggle *:before,
+html[ml-stage]:not([ml-mode="filter"]) .left-sidebar-toggle *:after {
+    --ml-ignore:true;
+    background-color: var(--ml-main-text-color);
+}
+
+.profile-cards--graph {
+    --ml-backgroundimage:Background;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .profile-avatar:not(imp) {
+    box-shadow: none!important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .searchbar .f-input,
+html[ml-mode]:not([ml-mode="filter"]) .post-tag {
+    transition-duration: 0s!important;
+    transition-property: none!important;
+}
+
+
+/*--- BEGIN FILTER MODE ---*/
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .site-footer {
+  background-color: hsla(204, 36%, 95%, 1);
+  color: hsla(210, 28%, 10%, 1);
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .site-footer .-title a {
+  color: hsla(207, 7%, 25%, 1);
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .site-footer .-title a:hover {
+  color: hsla(180, 4%, 5%, 1);
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .site-footer .-link {
+  color: hsla(208, 17%, 35%, 1);
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .site-footer .-link:hover {
+  color: hsla(207, 7%, 25%, 1);
+}
+
+/*--- END FILTER MODE ---*/

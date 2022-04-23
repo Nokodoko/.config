@@ -1,0 +1,457 @@
+{
+   "activationTab_text_label": {
+      "description": "text on the label",
+      "message": "Aktywacja"
+   },
+   "appDesc": {
+      "description": "extension description displayed in the Web Store",
+      "message": "Dostosuje kontrast, jasność i kolory na wszystkich witrynach internetowych. Przenosi strony na tryb nocny."
+   },
+   "applyBtn_text_label": {
+      "description": "text on the label",
+      "message": "Zastosuj"
+   },
+   "backgroundContrast_text_label": {
+      "description": "text on the label",
+      "message": "Kontrast"
+   },
+   "backgroundExample_text_label": {
+      "description": "text on the label",
+      "message": "Przykład tła"
+   },
+   "backgroundGrayHue_text_label": {
+      "description": "text on the label",
+      "message": "Podstawowy odcień"
+   },
+   "backgroundGraySaturation_text_label": {
+      "description": "text on the label",
+      "message": "Nasycenie szarego tła"
+   },
+   "backgroundHueGravity_text_label": {
+      "description": "text on the label",
+      "message": "Grawitacja podstawowego odcieniu"
+   },
+   "backgroundImageExampleText_text_label": {
+      "description": "text on the label",
+      "message": "Przykład"
+   },
+   "backgroundImageExample_text_label": {
+      "description": "text on the label",
+      "message": "Przykład obrazu tła"
+   },
+   "backgroundImageLightnessLimit_text_label": {
+      "description": "text on the label",
+      "message": "Jasność"
+   },
+   "backgroundImageSaturationLimit_text_label": {
+      "description": "text on the label",
+      "message": "Nasycenie koloru"
+   },
+   "backgroundImagesTab_text_label": {
+      "description": "text on the label",
+      "message": "Obrazy tła"
+   },
+   "backgroundLightnessLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica jasności"
+   },
+   "backgroundReplaceAllHues_text_label": {
+      "description": "text on the label",
+      "message": "Zmieniać każdy"
+   },
+   "backgroundSaturationLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica nasycenia koloru"
+   },
+   "backgroundTab_text_label": {
+      "description": "text on the label",
+      "message": "Tło"
+   },
+   "blueFilter_text_label": {
+      "description": "text on the label",
+      "message": "Intensywność niebieskiego filtra"
+   },
+   "borderContrast_text_label": {
+      "description": "text on the label",
+      "message": "Kontrast"
+   },
+   "borderExample_text_label": {
+      "description": "text on the label",
+      "message": "Przykład obramowań"
+   },
+   "borderGrayHue_text_label": {
+      "description": "text on the label",
+      "message": "Podstawowy odcień"
+   },
+   "borderGraySaturation_text_label": {
+      "description": "text on the label",
+      "message": "Nasycenie szarego obramowania"
+   },
+   "borderHueGravity_text_label": {
+      "description": "text on the label",
+      "message": "Grawitacja podstawowego odcieniu"
+   },
+   "borderLightnessLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica jasności"
+   },
+   "borderReplaceAllHues_text_label": {
+      "description": "text on the label",
+      "message": "Zmieniać każdy"
+   },
+   "borderSaturationLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica nasycenia koloru"
+   },
+   "borderTab_text_label": {
+      "description": "text on the label",
+      "message": "Obramowania"
+   },
+   "buttonContrast_text_label": {
+      "description": "text on the label",
+      "message": "Kontrast"
+   },
+   "buttonExample_text_label": {
+      "description": "text on the label",
+      "message": "Przykład przycisków"
+   },
+   "buttonGrayHue_text_label": {
+      "description": "text on the label",
+      "message": "Podstawowy odcień"
+   },
+   "buttonGraySaturation_text_label": {
+      "description": "text on the label",
+      "message": "Nasycenie szarych przycisków"
+   },
+   "buttonHueGravity_text_label": {
+      "description": "text on the label",
+      "message": "Grawitacja podstawowego odcieniu"
+   },
+   "buttonLightnessLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica jasności"
+   },
+   "buttonReplaceAllHues_text_label": {
+      "description": "text on the label",
+      "message": "Zmieniać każdy"
+   },
+   "buttonSaturationLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica nasycenia koloru"
+   },
+   "buttonsTab_text_label": {
+      "description": "text on the label",
+      "message": "Przyciski"
+   },
+   "changeBrowserTheme_text_label": {
+      "description": "text on the label",
+      "message": "Zmieniać motyw przeglądarki"
+   },
+   "closeBtn_text_label": {
+      "description": "text on the label",
+      "message": "Zamknij"
+   },
+   "colorSchemeForEdit_text_label": {
+      "description": "text on the label",
+      "message": "Schemat kolorów do edycji"
+   },
+   "colorSchemeName_Custom": {
+      "description": "color scheme name",
+      "message": "Własny"
+   },
+   "colorSchemeName_New": {
+      "description": "color scheme name",
+      "message": "Nowy schemat kolorów"
+   },
+   "colorSchemeName_appleMint": {
+      "description": "color scheme name",
+      "message": "Mięta wonna"
+   },
+   "colorSchemeName_blueLightFilter": {
+      "description": "color scheme name",
+      "message": "Filtr niebieskiego"
+   },
+   "colorSchemeName_default": {
+      "description": "color scheme name",
+      "message": "Domyślny"
+   },
+   "colorSchemeName_grayscale": {
+      "description": "color scheme name",
+      "message": "Odcienie szarości"
+   },
+   "colorSchemeName_greenOnBlack": {
+      "description": "color scheme name",
+      "message": "Zielony na czarnym"
+   },
+   "colorSchemeName_halloween": {
+      "description": "color scheme name",
+      "message": "Halloween"
+   },
+   "colorSchemeName_original": {
+      "description": "color scheme name",
+      "message": "Oryginalny"
+   },
+   "colorSchemeName_text_label": {
+      "description": "text on the label",
+      "message": "Nazwa schematu kolorów"
+   },
+   "colorSchemeName_yellowOnBlack": {
+      "description": "color scheme name",
+      "message": "Żółty na czarnym"
+   },
+   "commonTab_text_label": {
+      "description": "text on the label",
+      "message": "Ogólne"
+   },
+   "currentColorScheme_text_label": {
+      "description": "text on the label",
+      "message": "Obecny schemat kolorów"
+   },
+   "currentToggleKey": {
+      "description": "keyboard shortcut description in the browser settings",
+      "message": "Przełącznik obecnej strony"
+   },
+   "default_runOnThisSite_text_label": {
+      "description": "text on the label",
+      "message": "Wykonać na każdej stronie domyślnie"
+   },
+   "default_scheduleFinishHour_text_label": {
+      "description": "text on the label",
+      "message": "Domyślny czas dezaktywacji"
+   },
+   "default_scheduleStartHour_text_label": {
+      "description": "text on the label",
+      "message": "Domyślny czas aktywacji"
+   },
+   "deleteColorSchemeBtn_text_label": {
+      "description": "text on the label",
+      "message": "Usuń"
+   },
+   "doNotInvertContent_text_label": {
+      "description": "text on the label",
+      "message": "Nie inwertować dynamiczne"
+   },
+   "donateLink_@marker": {
+      "description": "text on the marker",
+      "message": "Wspomóż"
+   },
+   "editSchemesTab_text_label": {
+      "description": "text on the label",
+      "message": "Schematy kolorów"
+   },
+   "exportColorSchemeBtn_text_label": {
+      "description": "text on the label",
+      "message": "Eksportuj"
+   },
+   "globalToggleKey": {
+      "description": "keyboard shortcut description in the browser settings",
+      "message": "Globalny przełącznik rozszerzenia"
+   },
+   "globalstab_text_label": {
+      "description": "text on the label",
+      "message": "Ustawienia ogólne"
+   },
+   "imageExample_text_label": {
+      "description": "text on the label",
+      "message": "Przykład obrazu"
+   },
+   "imageLightnessLimit_text_label": {
+      "description": "text on the label",
+      "message": "Jasność"
+   },
+   "imageSaturationLimit_text_label": {
+      "description": "text on the label",
+      "message": "Nasycenie koloru"
+   },
+   "imagesTab_text_label": {
+      "description": "text on the label",
+      "message": "Obrazy"
+   },
+   "importColorSchemeBtn_text_label": {
+      "description": "text on the label",
+      "message": "Importuj"
+   },
+   "isEnabledOff_text_label": {
+      "description": "text on the label",
+      "message": "Wył"
+   },
+   "isEnabledOn_text_label": {
+      "description": "text on the label",
+      "message": "Wł"
+   },
+   "linkContrast_text_label": {
+      "description": "text on the label",
+      "message": "Kontrast"
+   },
+   "linkDefaultHue_text_label": {
+      "description": "text on the label",
+      "message": "Podstawowy odcień"
+   },
+   "linkDefaultSaturation_text_label": {
+      "description": "text on the label",
+      "message": "Nasycenie podstawowych odnośników"
+   },
+   "linkHueGravity_text_label": {
+      "description": "text on the label",
+      "message": "Grawitacja podstawowego odcieniu"
+   },
+   "linkLightnessLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica jasności"
+   },
+   "linkReplaceAllHues_text_label": {
+      "description": "text on the label",
+      "message": "Zmieniać każdy"
+   },
+   "linkSaturationLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica nasycenia koloru"
+   },
+   "linkTab_text_label": {
+      "description": "text on the label",
+      "message": "Odnośniki"
+   },
+   "linkVisitedHue_@title": {
+      "description": "text on the tooltip/hint",
+      "message": "Odcień odnośników odwiedzonych"
+   },
+   "linkVisitedHue_text_label": {
+      "description": "text on the label",
+      "message": "Odcień odnośników odwiedzonych"
+   },
+   "localFiles_text_label": {
+      "description": "text on the label.\nShould be conjugated to be a correct part of the phrase: settings for 'local files'",
+      "message": "plików lokalnych"
+   },
+   "matchPatternsSyntaxLink_text_label": {
+      "description": "text on the link",
+      "message": "Składnia"
+   },
+   "modeAutoSwitchLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica auto-przełączenia tryba"
+   },
+   "mode_automatic_text_label": {
+      "description": "text on the label",
+      "message": "❔ Automatyczny"
+   },
+   "mode_complex_text_label": {
+      "description": "text on the label",
+      "message": "❔ Wartościowy"
+   },
+   "mode_filter_text_label": {
+      "description": "text on the label",
+      "message": "❔ Filtr"
+   },
+   "mode_simplified_text_label": {
+      "description": "text on the label",
+      "message": "❔ Uproszczony"
+   },
+   "mode_text_label": {
+      "description": "text on the label",
+      "message": "Tryb przetwarzania"
+   },
+   "restoreColorsOnCopy_text_label": {
+      "description": "text on the label",
+      "message": "Wrócać oryginalne kolory przy kopiowanie"
+   },
+   "restoreColorsOnPrint_text_label": {
+      "description": "text on the label",
+      "message": "Wrócać oryginalne kolory przy drukowanie"
+   },
+   "runOnThisSite_text_label": {
+      "description": "text on the label",
+      "message": "Wykonać na tej stronie"
+   },
+   "saveColorSchemeBtn_text_label": {
+      "description": "text on the label",
+      "message": "Zapisz"
+   },
+   "scheduleFinishHour_text_label": {
+      "description": "text on the label",
+      "message": "Czas deaktywacji"
+   },
+   "scheduleStartHour_text_label": {
+      "description": "text on the label",
+      "message": "Czas aktywacji"
+   },
+   "scrollbarContrast_text_label": {
+      "description": "text on the label",
+      "message": "Kontrast"
+   },
+   "scrollbarExample_text_label": {
+      "description": "text on the label",
+      "message": "Przykład pasków przewijania"
+   },
+   "scrollbarLightnessLimit_text_label": {
+      "description": "text on the label",
+      "message": "Jasność"
+   },
+   "scrollbarSaturationLimit_text_label": {
+      "description": "text on the label",
+      "message": "Nasycenie koloru"
+   },
+   "scrollbarsTab_text_label": {
+      "description": "text on the label",
+      "message": "Paski przewijania"
+   },
+   "setAsDefaultBtn_text_label": {
+      "description": "text on the label",
+      "message": "Ustaw domyślne"
+   },
+   "settingsHeader_text_label": {
+      "description": "text on the label",
+      "message": " – ustawienia dla"
+   },
+   "short_locale": {
+      "description": "two letters of the current locale",
+      "message": "pl"
+   },
+   "shortcut_text_lable": {
+      "message": "Skrót"
+   },
+   "smallBackgroundImageExample_text_label": {
+      "description": "text on the label",
+      "message": "Przykład małych obrazów tła"
+   },
+   "syncSettings_text_label": {
+      "description": "text on the label",
+      "message": "Synchronizować ustawienia"
+   },
+   "textContrast_text_label": {
+      "description": "text on the label",
+      "message": "Kontrast"
+   },
+   "textGrayHue_text_label": {
+      "description": "text on the label",
+      "message": "Podstawowy odcień"
+   },
+   "textGraySaturation_text_label": {
+      "description": "text on the label",
+      "message": "Nasycenie szarego tekstu"
+   },
+   "textHueGravity_text_label": {
+      "description": "text on the label",
+      "message": "Grawitacja podstawowego odcieniu"
+   },
+   "textLightnessLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica jasności"
+   },
+   "textReplaceAllHues_text_label": {
+      "description": "text on the label",
+      "message": "Zmieniać każdy"
+   },
+   "textSaturationLimit_text_label": {
+      "description": "text on the label",
+      "message": "Granica nasycenia koloru"
+   },
+   "textTab_text_label": {
+      "description": "text on the label",
+      "message": "Tekst"
+   },
+   "useDefaultSchedule_text_label": {
+      "description": "text on the label",
+      "message": "Używać domyślny rozkład"
+   }
+}

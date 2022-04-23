@@ -1,0 +1,26 @@
+.queue-no-stitches {
+  font-size: 16px;
+  line-height: 20px;
+  color: #4B5056;
+}
+
+img.icon {
+  width: 16px;
+  margin: 0px 15px 0px 5px;
+}
+
+.queue-success,
+.queue-error {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.queue-success {
+  background: #D7FFCF;
+  color: #005A04;
+}
+
+.queue-error {
+  background: #FFD1D1;
+  color: #680303;
+}

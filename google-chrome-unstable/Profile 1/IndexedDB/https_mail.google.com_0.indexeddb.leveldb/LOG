@@ -1,0 +1,6 @@
+2022/04/19-20:25:06.353 b517 Creating DB /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_mail.google.com_0.indexeddb.leveldb since it was missing.
+2022/04/19-20:25:06.362 b517 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/19-23:27:50.753 2223e Level-0 table #5: started
+2022/04/19-23:27:50.756 2223e Level-0 table #5: 2221 bytes OK
+2022/04/19-23:27:50.760 2223e Delete type=0 #3
+2022/04/19-23:27:50.760 2223e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

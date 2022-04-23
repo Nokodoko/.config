@@ -1,0 +1,22 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "num_tab.js" ],
+      "matches": [ "*://*/*", "file://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Number tabs when the ctrl/alt/cmd button is held.",
+   "icons": {
+      "128": "icon-128.gif",
+      "48": "icon-48.gif"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Lgm0BR9NRItf+UvE8npzSh6/YGxug0ARzSoidytoqCHPib3ShvkkdLlzLISJhMMqwiYb+7EIexzlFr0PHh2XPj7TyyJrTbflr6vXWWInfhw6QuoAAXdC5eC3ELxj6wWwJKH4mCJteo3KvmPluGaXa5yb6sQu8KWqO73BEhSA1ImvR7QJ6SbTRcTmFb2jOniwk1lkeXkdyOcCfS7kRy9bhzkca3nA/iysZRtOght8abRfyH4+Fwt1EFLIcXY2wzMB+0IEI7w8dwhflDpkLt20qQi7vBGZ3SrcodSAVupU894kUMWe11/ofIsIeAA7DQexuKE/tG1NZfVtW5IEGGmnwIDAQAB",
+   "manifest_version": 2,
+   "name": "Tab Number",
+   "permissions": [ "tabs", "*://*/*", "chrome://favicon/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.0.1",
+   "web_accessible_resources": [ "favicon/favicon-1.gif", "favicon/favicon-2.gif", "favicon/favicon-3.gif", "favicon/favicon-4.gif", "favicon/favicon-5.gif", "favicon/favicon-6.gif", "favicon/favicon-7.gif", "favicon/favicon-8.gif", "favicon/favicon-9.gif" ]
+}

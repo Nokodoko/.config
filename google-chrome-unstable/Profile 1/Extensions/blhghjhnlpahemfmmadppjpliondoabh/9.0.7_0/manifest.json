@@ -1,0 +1,40 @@
+{
+   "description": "A dark theme with a RoyalBlue color and a cyberpunk background. #Modern #Material #Art",
+   "icons": {
+      "128": "images/icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtlhzuxUlFE03inbCJMjnzl9+9u/pzvRIOGAuUr02JtvNna4YZvlrSVyCub+l+NhX+z3k78u4b0j8s6am13lDzP2VgH7jydu7tYDrb05nU3k/+hgIwAHsWtt63MrS/BmMvfvCb0zZM4p8HaWQ06KQLnTx6/djsqJmDoLzxuXzhRv95ImaVM9IZJjMQFuyo2oyUd2gd4OZccKYhPz6gczMgj3tRehdUZC6g2VmNFW8xzLpPK3rTqEVO6mVHP5alMXJ4WFM2cT42fFdenMg+AXzeps1hl9QfPO8odQMDb6zh5IVY1cpDwRZ9r3oyYHSxdeM7rTsY8dts0zlm34oqG113wIDAQAB",
+   "manifest_version": 2,
+   "name": "Cyberpunk - looking down the city",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 184, 184, 184 ],
+         "frame": [ 21, 21, 21 ],
+         "frame_inactive": [ 21, 21, 21 ],
+         "frame_incognito": [ 21, 21, 21 ],
+         "frame_incognito_inactive": [ 0, 0, 0 ],
+         "ntp_background": [ 39, 39, 39 ],
+         "ntp_text": [ 220, 220, 220 ],
+         "tab_background_text": [ 178, 178, 178 ],
+         "tab_background_text_inactive": [ 170, 170, 170 ],
+         "tab_text": [ 220, 220, 220 ],
+         "toolbar": [ 45, 45, 45 ]
+      },
+      "images": {
+         "theme_ntp_background": "images/dark_refresh_grey.jpg",
+         "theme_toolbar": "images/theme_toolbar.png",
+         "theme_window_control_background": "images/theme_window_control_background.png"
+      },
+      "properties": {
+         "ntp_background_repeat": "repeat",
+         "ntp_logo_alternate": 1
+      },
+      "tints": {
+         "buttons": [ 1.0, 0.0, 0.916 ],
+         "frame_inactive": [ 0.5833, 0.18, 0.5 ],
+         "frame_incognito_inactive": [ 0.5833, 0.18, 0.5 ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "9.0.7"
+}

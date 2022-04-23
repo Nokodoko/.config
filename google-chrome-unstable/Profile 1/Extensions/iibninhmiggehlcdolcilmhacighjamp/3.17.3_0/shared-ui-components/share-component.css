@@ -1,0 +1,148 @@
+.share-by-email-failure {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 5px;
+  color: var(--magical-red-60);
+}
+
+.share-by-email-success {
+  color: var(--magical-green-60);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  margin: 10px 0;
+}
+
+#share-by-email-input {
+  border: 1px solid var(--magical-gray-50);
+  border-radius: 10px;
+  padding: 8px 12px 6px 8px;
+  height: 84px;
+  max-width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#share-by-email-input .email-tag {
+  display: inline-block;
+  color: var(--magical-gray-60);
+  border: 1px solid #BBC2CB;
+  border-radius: 4px;
+  padding-left: 5px;
+  margin: 0px 6px 4px 0px;
+}
+
+/* individual tag items */
+#share-by-email-input .react-tags__selected {
+  background: none;
+  border: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+#share-by-email-input .react-tags__selected-tag {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* new email tag input box */
+#share-by-email-input .react-tags__search {
+  display: inline-block;
+}
+
+#share-by-email-input .react-tags__search-input {
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  min-width: 170px;
+  margin: 0 2px 0 2px;
+  padding: 0;
+  outline: none;
+}
+
+.share-link-copied {
+  text-align: center;
+  font-size: 12px;
+  color: var(--magical-green-60);
+  padding-left: 10px;
+}
+
+
+.share-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  color: var(--magical-gray-30);
+  margin: 12px 0;
+}
+
+.share-divider::before,
+.share-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--magical-gray-30);
+}
+
+.share-divider:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.share-divider:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.share-content {
+  display: flex;
+}
+
+.share-left {
+  background-color: white;
+  padding: 0 24px 24px 24px;
+  min-width: 440px;
+  max-width: 440px;
+  margin: -15px;
+}
+
+.share-right {
+  min-width: 330px;
+  max-width: 500px;
+  margin-right: 20px;
+  padding: 20px 0 0 50px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.share-content h2 {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.share-right svg {
+  margin-top: 13px;
+}
+
+.share-right p {
+  font-size: 14px;
+  color: var(--magical-gray-60);
+}
+
+.share-shortcuts {
+  display: block;
+  width: 300px;
+}
+
+.share-shortcuts h2 {
+  padding-top: 0;
+  margin-top: 0;
+}

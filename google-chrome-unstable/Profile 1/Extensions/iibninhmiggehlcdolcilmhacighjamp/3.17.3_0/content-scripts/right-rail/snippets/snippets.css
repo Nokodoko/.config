@@ -1,0 +1,149 @@
+/* For span[data-magical-source-id] styling */
+@import url(../../../shared-ui-components/variable-highlight.css);
+/* For the dropdown when filling Snippets */
+@import url(../../autofill/autofill.css);
+
+.snippet {
+  margin-top: 8px;
+}
+
+.snippet hr {
+  margin-bottom: 0px;
+}
+
+.snippet-body {
+  margin-top: 5px;
+  border: 1px solid #6F747C;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 240px;
+  line-height: 30px;
+}
+
+
+/* CREATE SNIPPETS */
+.snippet-name {
+  border: 1px solid var(--magical-gray-20);
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 12px;
+}
+
+.snippet-name span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.snippet-name-prompt {
+  margin: 0; 
+  color: gray80; 
+  font-size: .875em; 
+  line-height: 1.25em;
+  float: left;
+}
+
+.snippet-name-prompt span {
+  color: var(--magical-gray-60); 
+  font-size: .75em; 
+  line-height: 1em;
+}
+
+.snippet-name input {
+  background: none;
+  border: none;
+  color: var(--magical-gray-80);
+  font-size: .875em; 
+  line-height: 1.25em;
+  margin-left: -4px;
+  outline: none;
+  padding: 2px 4px;
+  width: 90%;
+}
+
+.snippet-name ::placeholder {
+  color: var(--magical-gray-50);
+}
+
+.snippet-name-error {
+  border: 1px solid #CE0000;
+}
+
+.snippet-name-error-message {
+  font-size: 12px;
+  font-weight: 100;
+  color: #CE0000;
+}
+
+.body-field {
+  border: 1px solid var(--magical-gray-20);
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 8px;
+}
+
+/* LIST SNIPPETS */
+
+.shortcut-view .list li:hover .snippet-title,
+.shortcut-view .list li:hover .snippet-body-preview{
+  color: var(--magical-primary-50);
+}
+
+.shortcut-view .list li:hover .snippet-body-sample {
+  color: #0000FF;
+}
+
+.shortcut-view .snippet-icon {
+  width: 16px;
+  padding: 0 15px 0 5px;
+}
+
+.shortcut-view .list li .delete-container {
+  opacity: 0;
+  margin-left: auto;
+  margin-right: 7px;
+  height: 24px;
+  width: 24px;
+}
+
+.shortcut-view .list li:is(:hover, :focus-within) .delete-container {
+  /* Show the icon upon hovering the row or tabbing inside */
+  opacity: 1;
+}
+
+.shortcut-view .list li .delete-icon {
+  margin-left: 3px;
+}
+
+.shortcut-view .pending-deletion {
+  /* retain vertical height in the confirmation message without taking up
+  horizontal space */
+  visibility: hidden;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0;
+}
+
+
+/* NO SNIPPETS BOTTOM TEXT */
+.no-snippets .snippet-features {
+  column-count: 2;
+  padding-inline-start: 0;
+  column-gap: 0;
+}
+
+.no-snippets .snippet-features > li {
+  list-style: none;
+  color: var(--magical-gray-60);
+}
+
+.no-snippets .snippet-features > li:last-child {
+  margin-top: 16px;
+  column-span: all;
+}
+
+.no-snippets .snippet-features > li > svg {
+  margin-right: 8px;
+}

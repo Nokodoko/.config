@@ -1,0 +1,93 @@
+html[ml-stage] .sl-sugg-button-container {
+  --ml-main-scrollbar-size: 0px;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) header > div:nth-of-type(2),
+html[ml-stage]:not([ml-mode="filter"]) .jfk-button {
+    transition-property: none !important;
+    transition-duration: 0s !important;
+}
+
+html[ml-stage-mode="complete-complex"] .gt-lc.gt-lc-mobile .gt-cd,
+html[ml-stage-mode="complete-complex"] .go-button,
+html[ml-stage-mode="complete-complex"] .language-picker-wrapper,
+html[ml-stage]:not([ml-mode="filter"]) .jfk-button-img,
+html[ml-stage]:not([ml-mode="filter"]) .trans-verified-button,
+html[ml-stage]:not([ml-mode="filter"]) .gt-is-ca,
+html[ml-stage]:not([ml-mode="filter"]) .search-image-black,
+html[ml-stage]:not([ml-mode="filter"]) .goog-toolbar-menu-button-dropdown,
+html[ml-stage]:not([ml-mode="filter"]) .export-button,
+html[ml-stage]:not([ml-mode="filter"]) .more-button,
+html[ml-stage]:not([ml-mode="filter"]) .close-button,
+html[ml-stage-mode="complete-complex"] ul[role="listbox"] {
+    --ml-ignore:true;
+    filter: var(--ml-text-filter);
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .gt-lc.gt-lc-mobile .gt-cc-r-i:not(imp) {
+    background-color: transparent!important;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .gbip,
+html[ml-stage]:not([ml-mode="filter"]) .gbii
+{
+    filter: brightness(var(--ml-image-lightness-limit)) saturate(var(--ml-image-saturation-limit)) var(--ml-blue-filter) !important;
+    --ml-ignore:true;
+}
+.gbip:before, .gbii:before
+{
+    --ml-ignore:true;
+}
+
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbip,
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbii {
+  filter: var(--ml-image-revert-filter);
+}
+
+html[ml-stage-mode="complete-complex"] #gt-src-is {
+    --ml-ignore:true;
+    background-color: var(--ml-main-background-color);
+    border-color: var(--ml-main-border-color);
+}
+
+html[ml-stage-mode="complete-complex"] #gt-src-is .gt-is-itm-hover {
+    background-color: var(--ml-main-alt-background-color);
+    border-color: var(--ml-main-button-border-color);
+}
+
+html[ml-stage-mode="complete-complex"] #gt-src-is .gt-is-ld {
+    border-color: var(--ml-main-border-color);
+}
+
+html[ml-stage-mode="complete-complex"] #gt-src-is * {
+    color: var(--ml-main-text-color);
+}
+
+html[ml-stage-mode="complete-complex"] #gt-src-is .gt-is-tr {
+    color: var(--ml-main-trans-text-color);
+}
+
+html[ml-stage-mode="complete-complex"] .epu-dt .gt-cc-t {
+    --ml-ignore:true;
+    background-color: var(--ml-main-background-color);
+}
+
+html[ml-stage-mode="complete-complex"] .epu-dt .gt-cc-t * {
+    color: var(--ml-main-text-color);
+}
+
+html[ml-stage-mode="complete-complex"] .epu-dt .gt-cc-t .gt-ct-translit {
+    color: var(--ml-main-trans-text-color);
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .gt-related-suggest-message {
+  background-color: transparent!important;
+}
+
+html[ml-stage-mode="complete-complex"] span[role="img"]>div {
+  --ml-background-background-color:Border;
+}
+
+.jTj8gd.XzOhkf .a2Icud:not(imp) {
+  background: transparent;
+}

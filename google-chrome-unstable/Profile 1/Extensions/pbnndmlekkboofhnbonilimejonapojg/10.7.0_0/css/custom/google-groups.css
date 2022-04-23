@@ -1,0 +1,32 @@
+html[ml-stage]:not([ml-mode="filter"]) .jfk-button-standard:not(imp):not(.imp):not(#imp) > img.gwt-Image:not(imp):not(.imp):not(#imp),
+html[ml-stage]:not([ml-mode="filter"]) .gux-combo-item:not(imp):not(.imp):not(#imp) > img.gwt-Image:not(imp):not(.imp):not(#imp)
+{
+    --ml-ignore:true;
+    filter: var(--ml-text-filter)!important;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .gbqfi.gb_fc:not(imp):not(.imp):not(#imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .gbqfi.gb_qc:not(imp):not(.imp):not(#imp) {
+    filter: brightness(var(--ml-text-lightness-limit))!important;
+}
+
+.gbqfi.gb_fc, .gbqfi.gb_qc, .gbqfi.gb_xc {
+    --ml-no-invert:true;
+}
+
+.goog-button-base-top-shadow {
+    --ml-border-border-color:Background;
+    --ml-border-border-bottom-color:Background;
+    --ml-border-border-left-color:Background;
+    --ml-border-border-right-color:Background;
+    --ml-border-border-top-color:Background;
+}
+
+.goog-palette-colorswatch {
+    --ml-ignore:true;
+}
+
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbip,
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbii {
+  filter: var(--ml-image-revert-filter);
+}

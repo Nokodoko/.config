@@ -1,0 +1,22 @@
+{
+   "BROWSER_ACTION_TITLE": {
+      "description": "Browser action default title.",
+      "message": "Clique para ver as opções de Magical"
+   },
+   "EXTENSION_DESCRIPTION": {
+      "description": "Extension description for the chrome webstore.",
+      "message": "Expansor de texto do Chrome com melhor classificação. Expande o que você digita, economizando 7 horas / semana. Mais de 250.000 usuários"
+   },
+   "EXTENSION_NAME": {
+      "description": "Extension name for the Chrome webstore.",
+      "message": "Magical - Text Expander"
+   },
+   "EXTENSION_TITLE": {
+      "description": "Extension short title.",
+      "message": "Magical - Text Expander"
+   },
+   "SN": {
+      "description": "Extension short name for the Chrome webstore (\u003C 12 chars).",
+      "message": "Magical"
+   }
+}

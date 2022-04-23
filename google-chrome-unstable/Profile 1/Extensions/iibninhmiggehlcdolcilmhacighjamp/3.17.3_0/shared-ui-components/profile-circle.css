@@ -1,0 +1,85 @@
+.profile-circle {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--magical-gray-20);
+  color: var(--magical-gray-60);
+  cursor: pointer;
+}
+
+.profile-circle,
+#profile-icon {
+  height: 28px;
+  width: 28px;
+}
+
+#profile-dropdown {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.15), -2px 2px 0px rgba(0, 0, 0, 0.1);
+  color: var(--magical-gray-80);
+  /* Ensures the dropdown shows on top of other elements (e.g. "Create shortcut" button in workspace) */
+  font-family: 'Magical DM Sans', sans-serif;
+  z-index: 3;
+}
+
+#profile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dropdown-separator {
+  height: 1px;
+  background-color: var(--magical-gray-20);
+  border: none;
+  margin: 4px;
+}
+
+#dropdown-title {
+  font-weight: bold;
+}
+
+#dropdown-title,
+.dropdown-option {
+  text-align: left;
+  padding: 3px 6px;
+  border-radius: 8px;
+  white-space: nowrap;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-option {
+  font-size: 1rem;
+}
+
+.profile-active {
+  background-color: var(--magical-primary-20);
+  color: var(--magical-primary-60);
+}
+
+.dropdown-option:hover {
+  background-color: var(--magical-primary-10);
+  color: var(--magical-primary-60);
+}
+
+.profile-circle-button {
+  border-radius: 999px;
+  padding: 2px 16px;
+  margin-left: 1rem;
+  border: 1px solid var(--magical-primary-60);
+  color: var(--magical-primary-60);
+  cursor: pointer;
+  font-weight: bold;
+}

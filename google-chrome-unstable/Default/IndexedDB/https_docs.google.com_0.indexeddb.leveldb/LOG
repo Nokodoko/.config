@@ -1,0 +1,15 @@
+2022/04/22-16:04:08.211 3e54f Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/22-16:04:08.211 3e54f Recovering log #7
+2022/04/22-16:04:08.211 3e54f Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000007.log 
+2022/04/22-17:47:09.341 4b3dc Level-0 table #12: started
+2022/04/22-17:47:09.343 4b3dc Level-0 table #12: 209 bytes OK
+2022/04/22-17:47:09.347 4b3dc Delete type=0 #7
+2022/04/22-17:47:09.347 4b3dc Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/04/22-17:47:09.347 4b3dc Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 680 : 1
+2022/04/22-17:47:09.347 4b3dc Compacting 1@1 + 1@2 files
+2022/04/22-17:47:09.350 4b3dc Generated table #13@1: 206 keys, 3049 bytes
+2022/04/22-17:47:09.350 4b3dc Compacted 1@1 + 1@2 files => 3049 bytes
+2022/04/22-17:47:09.354 4b3dc compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/04/22-17:47:09.354 4b3dc Delete type=2 #12
+2022/04/22-17:47:09.354 4b3dc Delete type=2 #9
+2022/04/22-17:47:09.354 4b3dc Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 680 : 1 .. (end); will stop at (end)

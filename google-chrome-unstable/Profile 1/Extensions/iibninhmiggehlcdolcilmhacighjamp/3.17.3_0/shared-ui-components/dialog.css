@@ -1,0 +1,57 @@
+dialog {
+  border-radius: 8px;
+  border: none;
+  max-width: 60%;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+dialog h2 {
+  color: var(--magical-gray-80);
+  margin-top: 0;
+}
+
+dialog p {
+  color: var(--magical-gray-60);
+}
+
+.close-dialog-button {
+  float: right; /* TODO: move to flex positioning */
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+
+.grow-wrap::after,
+input,
+textarea {
+  border-radius: 8px;
+  color: var(--magical-gray-80);
+  font: inherit;
+  font-size: 0.9em;
+  padding: 8px 12px;
+}
+
+button {
+  font-family: 'Magical DM Sans', sans-serif;
+}
+
+button.secondary {
+  margin-left: 8px;
+}
+
+menu {
+  padding: 0;
+  margin-block: 0;
+}

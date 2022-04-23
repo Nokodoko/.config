@@ -1,0 +1,142 @@
+.ab_button
+{
+    --ml-buttonbackground-background-color:Background;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) button.ab_button > span > img
+{
+    filter: invert(var(--ml-invert,0));
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .gb_Z:hover .gb_3:not(imp), 
+html[ml-mode]:not([ml-mode="filter"]) .gsfi:not(imp)
+{
+    background-color: transparent;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .gbip,
+html[ml-stage]:not([ml-mode="filter"]) .gbii
+{
+    --ml-backgroundimage:Image;
+    filter: brightness(var(--ml-image-lightness-limit)) saturate(var(--ml-image-saturation-limit)) var(--ml-blue-filter) !important;
+    --ml-ignore:true;
+}
+.gbip:before, .gbii:before
+{
+    --ml-ignore:true;
+}
+
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbip,
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbii {
+  filter: var(--ml-image-revert-filter);
+}
+
+color-palette,
+.goog-slider-thumb,
+div[class*="slider-background"],
+div[style="display:table-row"]>div.rnt3Ze[data-ved] {
+    --ml-ignore:true;
+}
+
+[role="button"]>.gb_Rc.gb_Sc.gb_hc {
+    --ml-no-invert:true;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) div.sfbgx:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) div#qbc:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #searchform>.sfbg:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #hdtb[role="navigation"]>#hdtbSum:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #hdtb[role="navigation"]>.yg51vc:not(#imp):not(imp):not(.imp) {
+    background-color: var(--ml-main-alt-background-color)!important;
+}
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #searchform form#tsf div[role="button"]:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #searchform>.sfbg:not(#imp):not(imp):not(.imp) *,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #hdtb[role="navigation"]>.yg51vc:not(#imp):not(imp):not(.imp) *,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #logocont:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .tsf-p:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .sfibbbc:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) form.tsf:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) form.tsf:not(#imp):not(imp):not(.imp)>*,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) button.sbico-c:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .lst-c:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #searchform,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #gb *,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #logocont *,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .A8SBwf:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .SDkEP:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .RNNXgb:not(#imp):not(imp):not(.imp) *,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) button.Tg7LZd:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) button.Tg7LZd:not(#imp):not(imp):not(.imp) *,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .logo:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .logo *:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .action-menu:not(#imp):not(imp):not(.imp)>.ab_button:not(#imp):not(imp):not(.imp) {
+    background-color:transparent!important;
+}
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #gbw div.gb_xb.gb_fa.gb_g:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #gbw a.gb_b[role="button"]:not(#imp):not(imp):not(.imp)>div.gb_Rc.gb_Sc.gb_hc[style*="filter"]:not(#imp):not(imp):not(.imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #gbwa [role="region"]:not(#imp):not(imp):not(.imp) {
+    background-color: var(--ml-main-background-color)!important;
+}
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .hdtb-tl {
+    background-image: none!important;
+}
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .action-menu .mn-dwn-arw:not(#imp):not(imp):not(.imp) {
+    border-left-color: transparent!important;
+    border-right-color: transparent!important;
+    border-top-color: var(--ml-main-border-color) !important;
+    border-bottom-color: var(--ml-main-border-color) !important;
+}
+
+html[ml-platform="mobile"] .sbico {
+    --ml-ignore:true;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) #searchform>.sfbg:not(imp),
+html[ml-stage]:not([ml-mode="filter"]) .sfbgx {
+    --ml-ignore:true;
+    background-color: var(--ml-main-alt-background-color);
+}
+
+html[ml-stage]:not([ml-mode="filter"]) #hdtb>.yg51vc {
+    background-color: rgb(250,250,250);
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .RNNXgb:hover,
+html[ml-stage]:not([ml-mode="filter"]) .sbfc,
+html[ml-stage]:not([ml-mode="filter"]) .emcav .RNNXgb,
+html[ml-stage]:not([ml-mode="filter"]) #searchform.minidiv>.sfbg {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.5);
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .aajZCb {
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.5);
+}
+
+html[ml-stage-mode="complete-complex"] form#tsf .aajZCb
+{
+    --ml-ignore:true;
+    background-color: var(--ml-main-background-color);
+}
+
+html[ml-stage-mode="complete-complex"] form#tsf .aajZCb *
+{
+    color: var(--ml-main-text-color)!important;
+}
+
+html[ml-stage-mode="complete-complex"] form#tsf .aajZCb .sbhl {
+    background-color: var(--ml-main-alt-background-color);
+}
+
+html[ml-stage-mode="complete-complex"] form#tsf .aajZCb .suggestions-inner-container {
+    border-top-color: var(--ml-main-border-color);
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .action-menu>a[role="button"]:not(#imp):not(imp):not(.imp),
+html[ml-stage]:not([ml-mode="filter"]) :not(#imp):not(imp):not(.imp)>div.voice_search_button:not(#imp):not(imp):not(.imp) {
+    background-color: transparent!important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .gm-style img {
+    --ml-ignore:true;
+    filter: var(--ml-contrast-text-filter);
+}

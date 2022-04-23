@@ -1,0 +1,15 @@
+2022/04/22-16:08:44.753 3f884 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/22-16:08:44.753 3f884 Recovering log #126
+2022/04/22-16:08:44.753 3f884 Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/000126.log 
+2022/04/22-17:47:16.264 4b3d7 Level-0 table #131: started
+2022/04/22-17:47:16.279 4b3d7 Level-0 table #131: 1712886 bytes OK
+2022/04/22-17:47:16.286 4b3d7 Delete type=0 #126
+2022/04/22-17:47:16.728 4b3d9 Compacting 1@1 + 1@2 files
+2022/04/22-17:47:16.759 4b3d9 Generated table #132@1: 29409 keys, 2186908 bytes
+2022/04/22-17:47:16.759 4b3d9 Compacted 1@1 + 1@2 files => 2186908 bytes
+2022/04/22-17:47:16.766 4b3d9 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/04/22-17:54:44.120 4c437 Level-0 table #134: started
+2022/04/22-17:54:44.132 4c437 Level-0 table #134: 1726045 bytes OK
+2022/04/22-17:54:44.137 4c437 Delete type=2 #131
+2022/04/22-17:54:44.137 4c437 Delete type=0 #130
+2022/04/22-17:54:44.137 4c437 Delete type=2 #128

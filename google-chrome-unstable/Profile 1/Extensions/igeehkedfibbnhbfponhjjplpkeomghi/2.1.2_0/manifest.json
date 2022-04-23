@@ -1,0 +1,39 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/common.bundle.js", "js/bgHelper.bundle.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/glyphicons_154_more_windows.png",
+      "default_popup": "popup.html",
+      "default_title": "Tabli"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Ctrl+Period",
+            "mac": "MacCtrl+Period"
+         }
+      },
+      "show_popout": {
+         "description": "Show the Tabli popout window",
+         "global": true,
+         "suggested_key": {
+            "default": "Ctrl+Comma",
+            "mac": "MacCtrl+Comma"
+         }
+      }
+   },
+   "description": "A simple, powerful tab manager",
+   "icons": {
+      "128": "images/Multimedia-12-128.png",
+      "16": "images/glyphicons_154_more_windows.png",
+      "48": "images/Multimedia-12-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqwyjcDhqu/3SEan89Jjd06E1myp6couz/cODaz68e6ICJnQrpAHSk8kNT1wlhV9FIYNLyqRdAzBTbEzDJxGoH//dQ8RwOzQCtftM7eWyS6e+gXfFIuMmka1JRuSCe+Laz6IB8sLKWuC53AihueZbUmx/gwuGTE6eJHKE4ecg2M4bmGf7x8jABCERrKPlWTQD/Olje1FwbJsRJLT4BdIBSca8GfpGAuetC3ttZwEzpO4QydZWGfer4krGYpuuDphP3v2g+r9hGl+cwJ6ezowvuW8AEE9zCLiSWMzXr26Aua89gMLWttul74fu7MbQDuviw4SMwuOb24Jx4dOz0+9tMQIDAQAB",
+   "manifest_version": 2,
+   "name": "Tabli",
+   "permissions": [ "storage", "tabs", "bookmarks", "chrome://favicon/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.2"
+}

@@ -1,0 +1,44 @@
+:root {
+    --main-background-color: rgb(255, 255, 255);
+    --content-background-color: rgb(245, 245, 245);
+    --alt-background-color: rgb(230, 230, 230);
+    --dark-background-color: rgb(40, 40, 40);
+    --light-color: rgb(230, 230, 230);
+    --main-color: rgb(25, 25, 25);
+    --main-border-color: #bebebe;
+    --thin-border-color: rgba(140, 140, 140, 0.15);
+    --light-thin-border-color: rgba(220, 220, 220, 0.3);
+    --white-thin-border-color: rgba(255, 255, 255, 0.1);
+    --main-text-shadow-color: rgba(255, 255, 255, 0.8);
+    --logo-text-color: hsla(120, 100%, 10%, 1);
+    --main-input-shadow-color: rgba(0, 0, 0, 0.1);
+    --main-shadow-color: rgba(0, 0, 0, 0.6);
+    --tooltip-shadow-color: rgba(0, 0, 0, 0.85);
+    --tooltip-text-shadow-color: black;
+    --outline-color: var(--ml-main-link-color, rgb(0, 78, 223));
+    --icon-shadow-color: black;
+    --pseudo-background-color: var(--main-background-color);
+    --pseudo-color: var(--main-color);
+    --pseudo-border-color: var(--main-border-color);
+    --pseudo-text-shadow-color: darkgray;
+    --ml-footer-background-color: var(--alt-background-color);
+    --ml-error: hsla(0, 100%, 45%, 1);
+    --ml-success: hsla(124, 100%, 30%, 1);
+}
+
+html[ml-stage-mode]:not([ml-stage-mode="complete-complex"]) {
+    --pseudo-background-color: var(--ml-main-background-color);
+    --pseudo-color: var(--ml-main-text-color);
+    --pseudo-border-color: var(--ml-main-border-color);
+    --pseudo-text-shadow-color: var(--ml-main-range-fill-color);
+}
+
+html[ml-mode="filter"][ml-invert] {
+  --tooltip-shadow-color: rgba(255, 255, 255, 1);
+  --tooltip-text-shadow-color: white;
+  --main-input-shadow-color: rgba(255, 255, 255, 0.1);
+  --light-color: rgb(0, 0, 0);
+  --dark-background-color: rgb(231, 231, 231);
+  --content-background-color: rgb(242, 242, 242);
+  --light-thin-border-color: rgba(200, 200, 200, 0.3);
+}

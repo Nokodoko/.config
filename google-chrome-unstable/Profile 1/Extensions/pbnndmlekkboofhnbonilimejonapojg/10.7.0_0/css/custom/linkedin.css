@@ -1,0 +1,147 @@
+/* --- FILTER --- */
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__profile-member-photo:not(#imp),
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .profile-photo-edit__preview,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .youtube-player-btn>.youtube-player-image {
+  filter: var(--ml-image-revert-filter)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .profile-background-image--loading,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .org-top-card__hero-image .static-background-cover-image {
+  filter: brightness(var(--ml-border-lightness-limit)) var(--ml-image-revert-filter)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) #extended-nav {
+  background-color: hsl(201, 30%, 80%);
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link.active:not(.ember-transitioning-out) .nav-item__title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link.ember-transitioning-in .nav-item__title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:active .nav-item__title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:focus .nav-item__title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:hover .nav-item__title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link.active:not(.ember-transitioning-out) .nav-item__icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link.ember-transitioning-in .nav-item__icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:active .nav-item__badge,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:focus .nav-item__badge,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:focus .nav-item__icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:hover .nav-item__badge,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:hover .nav-item__icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:active .nav-item__icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link:hover .nav-item__dropdown-trigger--icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .open .nav-item__dropdown-trigger--title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__spotlight-upsell:visited,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .button-primary-large,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .t-white,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .pv-dashboard-section__title {
+  color: black !important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .pv-dashboard-section__subtitle {
+  color: hsla(0,0%,0%,0.6) !important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-main-container .nav-item__icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__dropdown-trigger--title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-container .dropdown-trigger li-icon {
+  color: hsl(205, 18%, 19%)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link--underline:after {
+  border-bottom-color: black!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__spotlight-upsell {
+  color: hsl(45, 44%, 25%)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) #extended-nav a {
+  color: hsl(201, 100%, 55%)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .modal-wormhole .modal-wormhole-overlay,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-modal-overlay {
+  background-color: white!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .side-panel__overlay,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) artdeco-modal-overlay {
+  background-color: hsla(0, 0%, 100%, 0.7)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .pv-dashboard-section {
+  background-color: hsl(206, 13%, 84%)!important;
+}
+
+/* --- MOBILE FILTER --- */
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) #core-nav .nav-main,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-form,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .snap-search-bar,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .button-primary-large,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .global-title-container .global-title,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .type-ahead-wormhole .type-ahead-wrapper.type-ahead-theme-primary .type-ahead-input-wrapper {
+  background-color: hsl(201, 100%, 88%)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__badge {
+  background-color: hsl(23, 100%, 56%)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline .keyword-search-box input,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-form__search-box input {
+  background-color: hsla(0, 0%, 100%, 0.2)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline .keyword-search-box input,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-form__search-box input,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline .open-filters,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline .location-search-form .type-ahead-input-icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline .location-search-form input,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline .location-search-form .location-type-ahead-icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-form__search-bar-icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .jobs-search-alert-footer__entry-btn,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .jobs-search-filters .global-title-container .global-title h1,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-alert-modal__container .global-title-container .global-title h1,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-facets-modal .global-title-container .global-title h1,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .artdeco-button--inverse.artdeco-button--tertiary,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .artdeco-button--inverse.artdeco-button--tertiary:focus,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .artdeco-button--inverse.artdeco-button--tertiary:hover,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .artdeco-button--inverse.artdeco-button--tertiary:active,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .type-ahead-wormhole .type-ahead-wrapper.type-ahead-theme-primary .type-ahead-input-wrapper>button,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .jobs-search-filters .global-title-container .global-title button:not(.artdeco-button),
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-alert-modal__container .global-title-container .global-title button:not(.artdeco-button),
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-facets-modal .global-title-container .global-title button:not(.artdeco-button),
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .type-ahead-input-wrapper>button {
+  color: black!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline .keyword-search-box li-icon,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .search-form__search-box li-icon {
+  color: hsla(0, 0%, 0%, 0.7)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .shared-search-box.not-inline .location-search-form input {
+  border-bottom-color: hsla(0, 0%, 0%, 0.3)!important;
+}
+
+html[ml-mode] .sub-nav.scrollable ul {
+  overflow-x: auto;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .button-primary-large.focus,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .button-primary-large.hover-not-disabled,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .button-primary-large:focus,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .button-primary-large:hover:not(:disabled):not(.disabled),
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .button-primary-large.active-not-disabled,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .button-primary-large:active:not(:disabled):not(.disabled) {
+  color: black!important;
+  background-color: hsl(202, 100%, 80%)!important;
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .nav-item__link.active {
+  border-bottom-color: black!important;
+}

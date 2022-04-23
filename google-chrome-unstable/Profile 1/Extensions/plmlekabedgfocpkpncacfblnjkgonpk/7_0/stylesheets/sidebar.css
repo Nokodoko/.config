@@ -1,0 +1,289 @@
+@keyframes rotation {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#greenhouse_sidebar {
+    height: 100%;
+    background-color: #f3f3f3;
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 0;
+    z-index: 999999999;
+    border-left: 1px solid lightgray;
+    width: 300px;
+    overflow: hidden;
+}
+
+#greenhouse_sidebar #gh_content{
+    height: calc(100% - 24px);
+    position: relative;
+}
+
+#gh_loading_spinner {
+    font-size: 20px;
+    text-indent: -9999em;
+    transform: translateZ(0px);
+    border-top: 0.5em solid rgba(0, 178, 169, 0.05);
+    border-right: 0.5em solid rgba(0, 178, 169, 0.05);
+    border-bottom: 0.5em solid rgba(0, 178, 169, 0.05);
+    border-left: 0.5em solid rgb(0, 133, 97);
+    animation: 1.1s linear 0s infinite normal none running rotation;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 34%;
+}
+
+#greenhouse_plugin_logo {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/images/greenhouse-icon.png");
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    display: inline-block;
+}
+
+#greenhouse_plugin_header {
+    padding: 2px;
+    height: 24px;
+    box-sizing: border-box;
+    border-bottom: solid 1px #e1e1e1;
+}
+
+#greenhouse_plugin_header #plugin_header {
+    display: inline-block;
+    font-weight: 400;
+    color: #222222;
+    font-size: 12px;
+    vertical-align: top;
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+#greenhouse_plugin_header .button-container {
+    float: right;
+    margin-right: 5px;
+    padding-top: 3px;
+    height: 15px;
+    width: 15px;
+    display: block;
+    vertical-align: middle;
+}
+
+#close_plugin_button {
+    float: right;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/images/x.png");
+    height: 12px;
+    width: 12px;
+    background-size: 12px 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#close_plugin_button:hover {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/images/x-hover.png");
+}
+
+iframe.greenhouse-iframe {
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    width: 300px;
+}
+
+.gh-plugin-screen {
+    height: 100%;
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: #f3f3f3;
+}
+
+.gh-plugin-screen.active {
+    display: block;
+}
+
+#gh_confirmation_screen {
+    text-align: center;
+}
+
+.gh-confirmation-column {
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.gh-merge-column {
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+    overflow-y: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#gh_confirmation_column div {
+    margin-bottom: 15px;
+}
+
+#gh_full_name {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#gh_confirmation_text {
+    line-height: 1.25em;
+    font-size: 20px;
+    color: #222222;
+}
+
+#gh_keep_prospecting {
+    padding: 10px;
+    font-size: 20px;
+    color: #666666;
+    font-weight: 600;
+    background: #fafafa;
+    border: solid 1px #e1e1e1;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 19px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#gh_view_in_greenhouse {
+    font-size: 12px;
+    color: #666666;
+    font-weight: 400;
+}
+
+#gh_merge_screen .gh-back-to-form {
+    color: #2975CA;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#gh_merge_screen .gh-back-to-form:hover {
+    text-decoration: underline;
+}
+
+.gh-plugin-button {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+    background: #fafafa;
+    border: solid 1px #e1e1e1;
+    color: #424242;
+    border-radius: 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.gh-plugin-button.disable {
+    cursor: default;
+    color: #909090 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) inset;
+}
+
+#gh_action_header {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.gh-merge-card {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.gh-merge-card-header {
+    background-color: #666666;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.gh-merge-card-body {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    color: #222222;
+}
+
+#gh_add_new_candidate_icon {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/images/add_candidate.png");
+    height: 35px;
+    width: 35px;
+    background-size: 35px 35px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+#gh_merge_existing_candidate_icon {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/images/merge_candidate.png");
+    height: 35px;
+    width: 50px;
+    background-size: 50px 35px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#gh_merge_header {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#gh_merge_reason_wrapper {
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.gh-card-name {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.gh-card-email {
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.gh-card-application {
+    padding: 10px 0 10px 0;
+    color: #222222;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.gh-card-application:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.gh-card-applications-header {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}

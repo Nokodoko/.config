@@ -1,0 +1,7 @@
+2022/04/09-17:57:08.367 fbf8 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/09-17:57:08.367 fbf8 Recovering log #3
+2022/04/09-17:57:08.367 fbf8 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000003.log 
+2022/04/09-17:59:26.136 146fe Level-0 table #5: started
+2022/04/09-17:59:26.140 146fe Level-0 table #5: 3288 bytes OK
+2022/04/09-17:59:26.145 146fe Delete type=0 #3
+2022/04/09-17:59:26.145 14119 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

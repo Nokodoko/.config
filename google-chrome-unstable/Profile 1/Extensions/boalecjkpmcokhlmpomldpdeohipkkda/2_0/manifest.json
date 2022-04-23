@@ -1,0 +1,31 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "commands": {
+      "open-extensions-page": {
+         "description": "Open extensions page",
+         "suggested_key": {
+            "default": "Ctrl+Shift+E"
+         }
+      }
+   },
+   "description": "Lets you create a keyboard shortcut to the extensions page",
+   "icons": {
+      "128": "icon/128.png",
+      "16": "icon/16.png",
+      "48": "icon/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApLYXMIaMSqPhCo2Tyk50lBv1o+d2mIppkf0T6TQjturql0IVpDIpr/VzFLHHAq/MAKFBqsvtT57Vqrz2rPhuifJMkQj/Gi6tidvG16rdBmZFs7zpqsMROwdzJ29H3TVpsicAGfVIer1jETsi7l479VF+rIfjnPjb8I8g2ZZPs183/h7gUmOqIygkytuaSkInop6z6sRZR7+JfmAFK+CDazq479FkaEI6dvOUyl++v5YGdv+C/1LAZgyfmNiuWIP6ENf9mtH+wvUDgnP1ndPxBeMs7SmDDdNGDmI4PmUigYZzsSxjqtbbJupAy3fTpnw9r5XSBAtrVwNvVkgbhBuj9wIDAQAB",
+   "manifest_version": 2,
+   "name": "Extensions shortcut",
+   "optional_permissions": [ "tabs" ],
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options/options.html"
+   },
+   "permissions": [ "commands" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2"
+}

@@ -1,0 +1,21 @@
+2022/04/21-21:03:19.475 9641 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/Sync Data/LevelDB/MANIFEST-000001
+2022/04/21-21:03:19.476 9641 Recovering log #95
+2022/04/21-21:03:19.478 9641 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/Sync Data/LevelDB/000095.log 
+2022/04/21-21:03:21.622 9644 Level-0 table #99: started
+2022/04/21-21:03:21.628 9644 Level-0 table #99: 119414 bytes OK
+2022/04/21-21:03:21.635 9644 Delete type=0 #95
+2022/04/21-21:03:21.636 9644 Compacting 4@0 + 1@1 files
+2022/04/21-21:03:21.641 9644 Generated table #100@0: 185 keys, 40106 bytes
+2022/04/21-21:03:21.641 9644 Compacted 4@0 + 1@1 files => 40106 bytes
+2022/04/21-21:03:21.648 9644 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/04/21-21:03:21.648 9644 Delete type=2 #99
+2022/04/21-21:03:21.648 9644 Delete type=2 #96
+2022/04/21-21:03:21.648 9644 Delete type=2 #93
+2022/04/21-21:03:21.648 9644 Delete type=2 #90
+2022/04/21-21:03:21.648 9644 Delete type=2 #88
+2022/04/22-11:54:52.666 200a9 Level-0 table #102: started
+2022/04/22-11:54:52.676 200a9 Level-0 table #102: 97526 bytes OK
+2022/04/22-11:54:52.684 200a9 Delete type=0 #98
+2022/04/22-13:42:34.711 2bf57 Level-0 table #104: started
+2022/04/22-13:42:34.722 2bf57 Level-0 table #104: 127797 bytes OK
+2022/04/22-13:42:34.727 2bf57 Delete type=0 #101

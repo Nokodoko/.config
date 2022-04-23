@@ -1,0 +1,25 @@
+body {
+  padding: 0 16px;
+}
+
+.header {
+  margin-block-start: 16px;
+}
+
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--magical-gray-80);
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.children {
+  margin-bottom: 10px;
+}

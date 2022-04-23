@@ -1,0 +1,15 @@
+2022/04/21-11:25:44.070 1a202 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_atlassian-slack-integration.services.atlassian.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/21-11:25:44.071 1a202 Recovering log #4
+2022/04/21-11:25:44.071 1a202 Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_atlassian-slack-integration.services.atlassian.com_0.indexeddb.leveldb/000004.log 
+2022/04/21-12:46:29.593 256f9 Level-0 table #8: started
+2022/04/21-12:46:29.596 256f9 Level-0 table #8: 13475 bytes OK
+2022/04/21-12:46:29.600 256f9 Delete type=0 #4
+2022/04/21-12:46:29.601 256f9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/04/21-12:46:29.601 256f9 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01"\x04\x02\x01\x1b\x00e\x00x\x00t\x00e\x00r\x00n\x00a\x00l\x00P\x00r\x00o\x00d\x00u\x00c\x00t\x00I\x00n\x00t\x00e\x00g\x00r\x00a\x00t\x00i\x00o\x00n\x00s\x03\x00\xa0\xb6\xd8\xcb\x04xB\x00\x01$\x000\x00d\x000\x001\x002\x000\x00d\x003\x00-\x00b\x001\x00e\x00c\x00-\x004\x000\x00d\x002\x00-\x009\x00e\x000\x00b\x00-\x000\x00e\x004\x00c\x004\x004\x005\x00b\x003\x00f\x001\x006' @ 344 : 1
+2022/04/21-12:46:29.601 256f9 Compacting 1@1 + 1@2 files
+2022/04/21-12:46:29.605 256f9 Generated table #9@1: 53 keys, 1719 bytes
+2022/04/21-12:46:29.605 256f9 Compacted 1@1 + 1@2 files => 1719 bytes
+2022/04/21-12:46:29.609 256f9 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/04/21-12:46:29.609 256f9 Delete type=2 #5
+2022/04/21-12:46:29.609 256f9 Delete type=2 #8
+2022/04/21-12:46:29.609 256f9 Manual compaction at level-1 from '\x00\x01\x01"\x04\x02\x01\x1b\x00e\x00x\x00t\x00e\x00r\x00n\x00a\x00l\x00P\x00r\x00o\x00d\x00u\x00c\x00t\x00I\x00n\x00t\x00e\x00g\x00r\x00a\x00t\x00i\x00o\x00n\x00s\x03\x00\xa0\xb6\xd8\xcb\x04xB\x00\x01$\x000\x00d\x000\x001\x002\x000\x00d\x003\x00-\x00b\x001\x00e\x00c\x00-\x004\x000\x00d\x002\x00-\x009\x00e\x000\x00b\x00-\x000\x00e\x004\x00c\x004\x004\x005\x00b\x003\x00f\x001\x006' @ 344 : 1 .. (end); will stop at (end)

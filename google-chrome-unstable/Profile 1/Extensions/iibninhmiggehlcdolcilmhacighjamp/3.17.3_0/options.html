@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head>
+  <meta charset="utf-8">
+  <!-- Warning: options-csp.js should be loaded before all other resources. -->
+  <script data-rollup-asset src="options-csp.js"></script>
+  <title>Workspace &#x2022; Magical</title>
+  <!-- Preload the loading page logo so it's more likely to appear. -->
+  <link rel="preload" href="assets/animated-logo.gif" as="image">
+
+  <link rel="stylesheet" href="shared-ui-components/common.css">
+  <link rel="stylesheet" href="shared-ui-components/variables.css">
+  <link rel="stylesheet" href="shared-ui-components/buttons.css">
+  <link rel="stylesheet" href="shared-ui-components/snippet-body-editor.css">
+  <link rel="stylesheet" href="shared-ui-components/referral-credits/referral-credits.css">
+  <link rel="stylesheet" href="shared-ui-components/tag-dropdown.css">
+  <link rel="stylesheet" href="shared-ui-components/toast.css">
+  <link rel="stylesheet" href="content-scripts/autofill/autofill.css">
+  <link rel="stylesheet" href="options/options.css">
+</head>
+
+<body>
+  <div id="options-app" hidden></div>
+
+  <dialog id="recovery-dialog">
+    <form method="dialog">
+      <button class="actionable-icon close-dialog-button" type="reset">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <use href="#CloseIcon"/>
+        </svg>
+      </button>
+      <h2>Did you lose any shortcuts?<br>We&#x2019;ve recovered them!</h2>
+      <p>How would you like to proceed with your recovered shortcuts?</p>
+      <menu>
+        <button id="recovery-overwrite" class="button-medium secondary">Recover and overwrite</button>
+        <p>We will overwrite your current
+          <span class="current-num-shortcuts"></span> shortcuts with
+          <span class="recovered-num-shortcuts"></span> recovered shortcuts.
+        </p>
+        <button id="recovery-choose-import" class="button-medium secondary">Choose which to
+          import</button>
+        <p>We&#x2019;ll show your
+          <span class="recovered-num-shortcuts"></span> recovered shortcuts. Choose which to recover.
+        </p>
+        <button type="reset" id="recovery-do-nothing" class="button-medium secondary">Recover nothing</button>
+        <p>We won&#x2019;t change your current shortcuts.</p>
+      </menu>
+    </form>
+  </dialog>
+
+  <dialog id="recovery-overwrite-dialog">
+    <form method="dialog">
+      <button class="actionable-icon close-dialog-button" type="reset">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <use href="#CloseIcon"/>
+        </svg>
+      </button>
+      <h2>Overwrite all current shortcuts with recovered shortcuts?</h2>
+      <p>We will delete the current
+        <span class="current-num-shortcuts"></span> shortcuts and immediately save the
+        <span class="recovered-num-shortcuts"></span> recovered shortcuts.
+      </p>
+      <menu>
+        <button class="button-medium primary" type="submit">Yes, overwrite and save</button>
+        <button class="button-medium secondary" type="reset">No, cancel</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script type="module" src="options/options.js"></script>
+
+
+
+</body></html>

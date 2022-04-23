@@ -10,13 +10,23 @@
   nm  (layer-toggle numLayer)
   fn  (layer-toggle functionLayer)
   ent (layer-toggle enterLayer)
+  hyp (layer-toggle hypLayer)
 
 #| VIMEMULATION |# 
-  lf  KeyLeft
+  lf  KeyLeft KeyDown KeyRight
   rg  KeyRight
   dw  KeyDown
   up  KeyUp
-  hyp  A-C
+  
+#| Scripts |#
+  aws  A-C-a
+  ptok A-C-p
+  stok A-C-s
+  hist A-C-KeyDown
+  man A-C-m
+  ctx A-C-KeyRight
+  kill A-C-x
+  spll A-C-KeyLeft
 
 #| WORKSPACES |#
   s1  A-1
@@ -62,7 +72,7 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt rctl  pgup
+  lctl lmet lalt           spc            ralt rctl  KeyLeft KeyDown KeyRight
 )
 
   #|----------------------------base------------------------------------------- |#
@@ -72,8 +82,8 @@
   @tm @s1  @s2  @s3  @s4  @s5  @s6  @ctm @fl  @tl  @al   -   =  @cl
   bspc q    w    e    r    t    y    u    i    o    p    @nm @sp   @mo
   esc  a    s    d    f    g    h    j    k    l    ;    '    @ent
-  lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lmet lalt lctl           spc            tab  @fn  pgup
+  lsft z    x    c    v    b    n    m    ,    .    /    @hyp
+  lmet lalt lctl           spc            tab  @fn  @spll @hist @ctx
 )
 
   #|----------------------------numLayer----------------------------------------- |#
@@ -84,7 +94,7 @@
   tab  q    w    e    r    t    $    7    8    9    p    [    ]    \
   @tl  a    s    d    f    g    =    4    5    6    ;    '    ret
   lsft z    x    c    v    b    0    1    2    3    /    rsft
-  lmet lalt lctl           spc            @hyp rmet pgup  
+  lmet lalt lctl           spc            @hyp rmet KeyLeft KeyDown KeyRight  
 )
 
   #|----------------------------enterLayer------------------------------------ |#
@@ -95,7 +105,7 @@
   @fl  q    w    \(   \)   t    y    +    -   \_    p    [    ]    \
   @tl  a    s    [    ]    ~    @lf  @dw  @up  @rg  `    '    @ent
   lsft z    x    <    >    b    n   F1    ,    .    |    rsft
-  lmet lalt lctl           ret            ralt rmet pgup  
+  lmet lalt lctl           ret            ralt rmet KeyLeft KeyDown KeyRight  
 )
 
   #|----------------------------functionLayer----------------------------------- |#
@@ -106,7 +116,7 @@
   bspc q    w    e    r    t    F11  F7   F8   F9   p    [    ]    \
   esc  a    s    d    f    g    F10  F4   F5   F6   ;    '    @ent
   lsft z    x    c    v    b    F12  F1   F2   F3   \    @sp
-  lmet lalt lctl           ret            ralt @fn pgup  
+  lmet lalt lctl           ret            ralt @fn KeyLeft KeyDown KeyRight  
 )
 
   #|----------------------------spaceLayer-------------------------------------- |#
@@ -117,5 +127,17 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h  @s4  @s5  @al    :    `    ret
   lsft z    x    c    v    b    n  @s1  @s2  @s3    /    rsft
-  lmet lalt lctl           ret            ralt rmet pgup  
+  lmet lalt lctl           ret            ralt rmet KeyLeft KeyDown KeyRight  
 )
+
+  #|-------------------------hypLayer---------------------------------------- |#
+
+(deflayer hypLayer
+  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o   @ptok [    ]    \
+  caps @aws @stok d    f    g    h    j    k    l    ;    '    ret
+  lsft z   @kill c    v    b    n   @man   ,    .    /    @hyp
+  lctl lmet lalt           spc            ralt rctl  KeyLeft KeyDown KeyRight
+)
+

@@ -1,0 +1,83 @@
+.docs-textcolormenubutton .goog-color-menu-button-indicator
+{
+    --ml-border-border-bottom-color:Text;
+    --ml-buttonborder-border-bottom-color:Text;
+}
+
+#bgColorButton .goog-color-menu-button-indicator
+{
+    --ml-border-border-bottom-color:Background;
+    --ml-buttonborder-border-bottom-color:Background;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .kix-paginateddocumentplugin-compact-mode, 
+html[ml-mode]:not([ml-mode="filter"]) .kix-page-paginated
+{
+    box-shadow: 0 0 1pt 0pt #ccc!important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .docs-listpreset-palette, 
+html[ml-mode]:not([ml-mode="filter"]) .docos-comment-bubble-icon:before, 
+html[ml-mode]:not([ml-mode="filter"]) .docs-instant-button-bubble-icon:before,
+html[ml-mode]:not([ml-mode="filter"]) .kix-pagenumber-img,
+html[ml-mode]:not([ml-mode="filter"]) .kix-toc-img
+{
+    filter: var(--ml-text-filter);
+}
+
+.kix-selection-overlay
+{
+    --ml-background-background-color:TextSelection;
+    --ml-border-border-color:TextSelection;
+    --ml-border-border-bottom-color:TextSelection;
+    --ml-border-border-left-color:TextSelection;
+    --ml-border-border-right-color:TextSelection;
+    --ml-border-border-top-color:TextSelection;
+}
+
+.docos-anchoreddocoview-arrow-inner
+{
+    --ml-border-border-color:Background;
+    --ml-border-border-bottom-color:Background;
+    --ml-border-border-left-color:Background;
+    --ml-border-border-right-color:Background;
+    --ml-border-border-top-color:Background;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) div:not(#imp):not(.imp):not(imp)>.kix-paragraphrenderer:not(#imp):not(.imp):not(imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .kix-paragraphrenderer:not(#imp):not(.imp):not(imp)>.kix-lineview:not(#imp):not(.imp):not(imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .kix-paragraphrenderer:not(#imp):not(.imp):not(imp)>.kix-lineview:not(#imp):not(.imp):not(imp)>.kix-lineview-decorations:not(#imp):not(.imp):not(imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .kix-paragraphrenderer:not(#imp):not(.imp):not(imp)>.kix-lineview:not(#imp):not(.imp):not(imp)>.kix-lineview-content:not(#imp):not(.imp):not(imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .kix-paragraphrenderer:not(#imp):not(.imp):not(imp)>.kix-lineview:not(#imp):not(.imp):not(imp)>.kix-lineview-content:not(#imp):not(.imp):not(imp) *:not(#imp):not(.imp):not(imp)
+{
+    background-color: transparent!important;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .kix-lineview:not(#imp):not(.imp):not(imp)>.kix-selection-overlay:not(#imp):not(.imp):not(imp) {
+    background-color: var(--ml-main-selection-color)!important;
+    border-color: var(--ml-main-selection-color)!important;
+}
+
+.docs-explore-icon svg {
+    --ml-small-svg-is-text:true!important;
+    --ml-svgbackground-fill:SvgBackground!important;
+}
+
+.docs-squarehandleselectionbox-handle,
+.docs-rotationhandle-circle,
+.docs-rotationhandle-stick {
+    --ml-background-background-color:Border;
+}
+
+/* .kix-lineview-background,
+.kix-commentoverlayrenderer-highlighted,
+.kix-commentoverlayrenderer-normal,
+.kix-findandreplaceoverlayprovider-match,
+.kix-findselectionprovider-underlay-match {
+    --ml-background-background-color:ButtonBackground;
+} */
+
+.kix-cursor-caret {
+    --ml-border-border-color:HighlightedText;
+    --ml-border-border-left-color:HighlightedText;
+}

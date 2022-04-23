@@ -1,0 +1,87 @@
+@-moz-document url-prefix() {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+      url(moz-extension://__MSG_@@extension_id__/font/roboto/Roboto.woff2)
+        format('woff2');
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+      url('chrome-extension://__MSG_@@extension_id__/font/roboto/Roboto.woff2')
+        format('woff2');
+  }
+}
+
+@-moz-document url-prefix() {
+  @font-face {
+    font-family: 'socicon';
+    src: url(moz-extension://__MSG_@@extension_id__/font/socicon/Socicon.eot);
+    src: url(moz-extension://__MSG_@@extension_id__/font/socicon/Socicon.eot?#iefix)
+        format('embedded-opentype'),
+      url(moz-extension://__MSG_@@extension_id__/font/socicon/Socicon.woff)
+        format('woff'),
+      url(moz-extension://__MSG_@@extension_id__/font/socicon/Socicon.ttf)
+        format('truetype'),
+      url(moz-extension://__MSG_@@extension_id__/font/socicon/Socicon.svg#socicon)
+        format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  @font-face {
+    font-family: 'socicon';
+    src: url('chrome-extension://__MSG_@@extension_id__/font/socicon/Socicon.eot');
+    src: url('chrome-extension://__MSG_@@extension_id__/font/socicon/Socicon.eot?#iefix')
+        format('embedded-opentype'),
+      url('chrome-extension://__MSG_@@extension_id__/font/socicon/Socicon.woff')
+        format('woff'),
+      url('chrome-extension://__MSG_@@extension_id__/font/socicon/Socicon.ttf')
+        format('truetype'),
+      url('chrome-extension://__MSG_@@extension_id__/font/socicon/Socicon.svg#socicon')
+        format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@-moz-document url-prefix() {
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    /* font-weight: $bmr-font-weight-normal; */
+    src: url(moz-extension://__MSG_@@extension_id__/font/material/MaterialIcons.eot); /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons'),
+      url(moz-extension://__MSG_@@extension_id__/font/material/MaterialIcons.woff2)
+        format('woff2'),
+      url(moz-extension://__MSG_@@extension_id__/font/material/MaterialIcons.woff)
+        format('woff'),
+      url(moz-extension://__MSG_@@extension_id__/font/material/MaterialIcons.ttf)
+        format('truetype');
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('chrome-extension://__MSG_@@extension_id__/font/material/MaterialIcons.eot'); /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons'),
+      url('chrome-extension://__MSG_@@extension_id__/font/material/MaterialIcons.woff2')
+        format('woff2'),
+      url('chrome-extension://__MSG_@@extension_id__/font/material/MaterialIcons.woff')
+        format('woff'),
+      url('chrome-extension://__MSG_@@extension_id__/font/material/MaterialIcons.ttf')
+        format('truetype');
+  }
+}

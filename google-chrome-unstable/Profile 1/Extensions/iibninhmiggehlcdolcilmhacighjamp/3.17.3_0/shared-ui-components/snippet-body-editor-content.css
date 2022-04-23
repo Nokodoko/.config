@@ -1,0 +1,27 @@
+/* For span[data-magical-source-id] styling */
+@import url(variable-highlight.css);
+
+body {
+  color: var(--magical-gray-80);
+  font-family: 'Magical DM Sans', sans-serif;
+  font-size: 0.9em; 
+  /* When the frame reaches max-height we want scrollbars to appear. */
+  overflow-y: auto !important;
+}
+
+.preview-body {
+  margin: 0;
+}
+
+.preview-body p {
+  margin: 0;
+}
+
+.mce-content-body {
+  margin: 8px 12px;
+}
+
+/* Override competing tinymce styling */
+.mce-content-body [contentEditable=false][data-mce-selected][data-magical-source-id] {
+  outline: 1px dashed var(--magical-secondary-60);
+}

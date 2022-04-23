@@ -1,18 +1,21 @@
-#!/bin/bash 
+#!/BIN/BASH 
 
-#Terminal
+#TERMINAL
 super + Return
    kitty
 
 
-#Program Launcher
+#PROGRAM LAUNCHER
 super + <Right>
    rofi -show 'run'
 
 super+s
-   exec kitty -e ssh admin@192.168.1.1
+    exec kitty -e sshing.zsh
 
-#Programs
+super+shift+s
+    exec kitty -e capsshing.zsh
+
+#PROGRAMS
 super+r 
    exec kitty -e refresh.sh
 
@@ -22,8 +25,15 @@ super+z
 super+a 
    exec now.zsh
 
+
+super+ctrl+p
+    exec mypass.zsh
+
 super+ctrl+b 
    exec terminal -e 'bmenu'
+
+super+c
+    exec clipped.zsh
 
 super+shift+p
    exec ~/scripts/piUpdate.zsh
@@ -35,7 +45,7 @@ super+shift+F2
    exec kitty -e ranger
 
 super+F3 
-   exec chromium
+   exec google-chrome
 
 super+F4 
    exec qutebrowser
@@ -44,13 +54,13 @@ super+F2
    exec /usr/sbin/slack
 
 super+F7 
-   exec kitty -e ~/.screenlayout/1plus1.sh
+   exec kitty -e ~/.screenlayout/above.sh
 
 super+shift+F8
    exec kitty -e ~/.screenlayout/basic.sh & refresh.sh
 
 super+F8
-   exec kitty -e ~/.screenlayout/battlestation.sh && refresh.sh
+   exec kitty -e ~/scripts/triple1tall.zsh
 
 super+w 
     exec wireshark
@@ -74,17 +84,40 @@ super+k
    exec kitty -e vpn
 
 super+shift+k 
-   exec kitty -e ~/Programs/openvpn3_manager/disconnect_cli.sh
+   exec killVpn.zsh
 
-super+Down 
-   exec rofi -show 'window'
+#SPELLS
+ctrl+alt+p
+   exec ~/scripts/prodApiTokens.zsh
 
+ctrl+alt+s
+   exec ~/scripts/stagingTokenCreator.sh
+
+ctrl+alt+a
+    exec ~/scripts/awsResetPass.zsh
+
+ctrl+alt+Down
+    exec ~/scripts/dhp.zsh
+
+ctrl+alt+m
+    exec ~/scripts/manny.sh
+
+ctrl+alt+x
+    exec ~/scripts/killer.zsh
+
+ctrl+alt+Right
+    exec ~/scripts/dcontext.zsh
+
+ctrl+alt+Left
+    exec ~/scripts/mkSpell.sh
+
+ctrl+alt+shift+Left
+    exec ~/scripts/modSpell.sh
 super+Up 
    exec rofi -show 'ssh'
 
 super+Right 
    exec rofi -show 'run'
-
 
 super+t 
    exec pkill picom
@@ -111,10 +144,10 @@ super+shift+v
    exec vlc
 
 super+ctrl+r 
-   exec kitty -e reboot
+   exec kitty -e rebooting.sh
 
 super+ctrl+s 
-   exec kitty -e shutdown -h now
+   exec shutItdown.sh
 
 super+ctrl+n 
    exec kitty -e ~/here.sh
@@ -141,7 +174,7 @@ super+n
    exec kitty -e tty-clock -cs -C 4
 
 super+shift+B 
-   exec kitty -e nvim ~/.zshrc
+   exec kitty -e nvim ~/.zshenv
 
 super+shift+g 
    exec kitty -e /usr/local/bin/buds.sh
@@ -150,7 +183,7 @@ super+m
    exec kitty -e neomutt
 
 super+y 
-   exec kitty -e dmenyt
+   exec dmenyt
 
 super+shift+y 
    exec kitty -e glances
@@ -161,8 +194,8 @@ super+q
 super+shift+i 
    exec kitty -e nvim ~/.config/nvim/init.vim
 
-super+shift+z 
-   exec kitty -e glava
+super+z 
+   exec zathura ~/Downloads/zshMan.pdf
 
 super+o
     exec kitty -e xinput set-prop 13 "Device Enabled" 0

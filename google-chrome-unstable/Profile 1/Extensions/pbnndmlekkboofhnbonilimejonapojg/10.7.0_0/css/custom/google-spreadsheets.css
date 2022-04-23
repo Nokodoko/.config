@@ -1,0 +1,35 @@
+#t-text-color .goog-color-menu-button-indicator
+{
+    --ml-border-border-bottom-color:Text;
+}
+
+#t-cell-color .goog-color-menu-button-indicator
+{
+    --ml-border-border-bottom-color:BackgroundNoContrast;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) #waffle-rich-text-editor:not(impt)
+{
+    background-color: rgb(253,253,253);
+}
+
+.autofill-handle
+{
+    --ml-background-background-color:Border;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .docs-title-input:not(imp)
+{
+    color: transparent;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .docs-icon-inputtools-button-inner,
+html[ml-mode]:not([ml-mode="filter"]) .docs-icon-inputtools-menuitem-inner,
+html[ml-mode]:not([ml-mode="filter"]) .docs-icon-img {
+    --ml-ignore:true;
+    filter: var(--ml-contrast-text-filter);
+}
+
+.goog-menuitem.goog-menuitem-highlight {
+    --ml-background-background-color:ButtonBackground;
+}

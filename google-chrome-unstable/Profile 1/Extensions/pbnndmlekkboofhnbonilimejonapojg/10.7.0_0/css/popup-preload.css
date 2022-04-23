@@ -1,0 +1,9 @@
+html[ml-stage]:not([ml-stage="complete"]) {
+    filter: var(--ml-preload-filter);
+}
+
+html[ml-stage]:not([ml-stage="complete"]) :before,
+html[ml-stage]:not([ml-stage="complete"]) :after,
+html[ml-stage]:not([ml-stage="complete"]) .ml-helio-button {
+    visibility: hidden;
+}

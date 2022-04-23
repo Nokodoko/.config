@@ -1,0 +1,12 @@
+2022/04/22-20:27:46.401 3b70 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/chrome-extension_oeopbcgkkoapgobdbedcemjljbihmemj_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/22-20:27:46.401 3b70 Recovering log #203
+2022/04/22-20:27:46.403 3b70 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/chrome-extension_oeopbcgkkoapgobdbedcemjljbihmemj_0.indexeddb.leveldb/000203.log 
+2022/04/22-21:20:19.716 a8de Level-0 table #208: started
+2022/04/22-21:20:19.730 a8de Level-0 table #208: 4129187 bytes OK
+2022/04/22-21:20:19.735 a8de Delete type=0 #203
+2022/04/22-21:23:49.661 a8de Compacting 1@1 + 1@2 files
+2022/04/22-21:23:49.665 a8de Generated table #209@1: 69 keys, 67414 bytes
+2022/04/22-21:23:49.665 a8de Compacted 1@1 + 1@2 files => 67414 bytes
+2022/04/22-21:23:49.669 a8de compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/04/22-21:23:49.669 a8de Delete type=2 #205
+2022/04/22-21:23:49.669 a8de Delete type=2 #208

@@ -1,0 +1,510 @@
+input[type='range'].ml-input-range,
+input[type='range'].ml-input-range::-webkit-slider-runnable-track,
+input[type='range'].ml-input-range::-webkit-slider-thumb
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+:root
+{
+  --input-value: 50;
+  --input-percent: 50%;
+  --input-relative-value: 50;
+  --input-relative-percent: 50%;
+
+  --range-track-shift: 7.5px;
+  --range-border: 1px;
+}
+
+.direct
+{
+  --range-track-left-color: var(--pseudo-text-shadow-color);
+  --range-track-right-color: var(--pseudo-background-color);
+}
+
+.reverse
+{
+  --range-track-left-color: var(--pseudo-background-color);
+  --range-track-right-color: var(--pseudo-text-shadow-color);
+}
+
+.time
+{
+  --current-value-line-color: currentColor;
+  --range-segment-width: 30px;
+  --range-track-width: 241px;
+  --range-width: calc(var(--range-border) + var(--range-track-shift) + var(--range-track-width) + var(--range-track-shift) + var(--range-border));
+  --range-track-background:
+    linear-gradient(180deg,
+      var(--range-track-right-color) 10%,
+      rgba(255,255,255,0) 30%,
+      rgba(255,255,255,0) 70%,
+      var(--range-track-right-color) 90%
+    ), 
+    linear-gradient(180deg,
+      var(--range-track-left-color) 10%,
+      rgba(255,255,255,0) 30%,
+      rgba(255,255,255,0) 70%,
+      var(--range-track-left-color) 90%
+    ), 
+    linear-gradient(90deg, 
+      currentColor 1.5%, 
+      rgba(255,255,255,0) 3%
+    ), 
+    linear-gradient(180deg,
+      var(--range-track-right-color) 20%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      var(--range-track-right-color) 80%
+    ), 
+    linear-gradient(180deg,
+      var(--range-track-left-color) 20%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      var(--range-track-left-color) 80%
+    ), 
+    linear-gradient(90deg, 
+      rgba(255,255,255,0) 50%, 
+      currentColor 50%, 
+      currentColor 52%, 
+      rgba(255,255,255,0) 53%
+    ), 
+    linear-gradient(180deg, 
+      var(--range-track-right-color) 30%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      var(--range-track-right-color) 70% 
+    ), 
+    linear-gradient(180deg, 
+      var(--range-track-left-color) 30%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      var(--range-track-left-color) 70% 
+    ), 
+    linear-gradient(90deg, 
+      var(--pseudo-text-shadow-color) 3.5%,
+      rgba(255,255,255,0) 3.5%,
+      rgba(255,255,255,0) 96%,
+      var(--pseudo-text-shadow-color) 97%
+    ),
+    linear-gradient(90deg, 
+      rgba(255,255,255,0) 16%,
+      currentColor 16%, 
+      currentColor 18%, 
+      rgba(255,255,255,0) 18.5%, 
+      
+      rgba(255,255,255,0) 32%,
+      currentColor 32%, 
+      currentColor 34%, 
+      rgba(255,255,255,0) 35.5%,
+      
+      rgba(255,255,255,0) 66%, 
+      currentColor 66%, 
+      currentColor 68%, 
+      rgba(255,255,255,0) 68.5%,
+      
+      rgba(255,255,255,0) 82%, 
+      currentColor 82%, 
+      currentColor 84%, 
+      rgba(255,255,255,0) 85.5%
+    ),
+    linear-gradient(90deg, 
+      var(--range-track-left-color) var(--input-relative-percent),
+      rgba(255,255,255,0) var(--input-relative-percent)
+    ),
+    linear-gradient(90deg, 
+      rgba(255,255,255,0) var(--input-relative-percent),
+      var(--range-track-right-color) var(--input-relative-percent)
+    );
+}
+
+.percent, .elements
+{
+  --current-value-line-color: currentColor;
+  --range-segment-width: 50px;
+  --range-track-width: 251px;
+  --range-width: calc(var(--range-border) + var(--range-track-shift) + var(--range-track-width) + var(--range-track-shift) + var(--range-border));
+  --range-track-background:
+    linear-gradient(180deg,
+      var(--pseudo-background-color) 10%,
+      rgba(255,255,255,0) 30%,
+      rgba(255,255,255,0) 70%,
+      var(--pseudo-background-color) 90%
+    ), 
+    linear-gradient(180deg,
+      var(--pseudo-text-shadow-color) 10%,
+      rgba(255,255,255,0) 30%,
+      rgba(255,255,255,0) 70%,
+      var(--pseudo-text-shadow-color) 90%
+    ), 
+    linear-gradient(90deg,
+      currentColor 1%,
+      rgba(255,255,255,0) 2%
+    ), 
+    linear-gradient(180deg,
+      var(--pseudo-background-color) 20%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      var(--pseudo-background-color) 80%
+    ), 
+    linear-gradient(180deg,
+      var(--pseudo-text-shadow-color) 20%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      var(--pseudo-text-shadow-color) 80%
+    ), 
+    linear-gradient(90deg, 
+      rgba(255,255,255,0) 50%, 
+      currentColor 50%,
+      currentColor 51%,
+      rgba(255,255,255,0) 52%
+    ), 
+    linear-gradient(180deg, 
+      var(--pseudo-background-color) 30%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      var(--pseudo-background-color) 70% 
+    ), 
+    linear-gradient(180deg, 
+      var(--pseudo-text-shadow-color) 30%,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0) 60%,
+      var(--pseudo-text-shadow-color) 70% 
+    ), 
+    linear-gradient(90deg, 
+      var(--pseudo-text-shadow-color) 3.5%,
+      rgba(255,255,255,0) 3.5%,
+      rgba(255,255,255,0) 96.5%,
+      var(--pseudo-text-shadow-color) 96.5%
+    ),
+    linear-gradient(90deg, 
+      rgba(255,255,255,0) 10%,
+      currentColor 10%, 
+      rgba(255,255,255,0) 12%, 
+      
+      rgba(255,255,255,0) 20%,
+      currentColor 20%, 
+      rgba(255,255,255,0) 22%, 
+      
+      rgba(255,255,255,0) 30%, 
+      currentColor 30%,
+      rgba(255,255,255,0) 32%, 
+      
+      rgba(255,255,255,0) 40%, 
+      currentColor 40%, 
+      rgba(255,255,255,0) 42%, 
+      
+      rgba(255,255,255,0) 60%, 
+      currentColor 60%, 
+      rgba(255,255,255,0) 62%, 
+      
+      rgba(255,255,255,0) 70%, 
+      currentColor 70%, 
+      rgba(255,255,255,0) 72%, 
+      
+      rgba(255,255,255,0) 80%, 
+      currentColor 80%, 
+      rgba(255,255,255,0) 82%, 
+      
+      rgba(255,255,255,0) 90%, 
+      currentColor 90%, 
+      rgba(255,255,255,0) 92%
+    ),
+    linear-gradient(90deg, 
+      var(--pseudo-text-shadow-color) var(--input-relative-percent),
+      rgba(255,255,255,0) var(--input-relative-percent)
+    );
+}
+
+.hue
+{
+  --current-value-line-color: hsl(calc(var(--input-value) + 180),100%,50%);
+  --range-segment-width: 251px;
+  --range-track-width: 251px;
+  --sat: 100%;
+  --range-width: calc(var(--range-border) + var(--range-track-shift) + var(--range-track-width) + var(--range-track-shift) + var(--range-border));
+  --edge-hue: hsl(0,var(--sat),50%);
+  --hues-range: linear-gradient(to right,hsl(0,var(--sat),50%),hsl(60,var(--sat),50%),hsl(120,var(--sat),50%),hsl(180,var(--sat),50%),hsl(240,var(--sat),50%),hsl(300,var(--sat),50%),hsl(359,var(--sat),50%));
+  --range-track-background:
+    linear-gradient(to right,transparent,transparent),
+    linear-gradient(to right,transparent,transparent),
+    linear-gradient(to right,transparent,transparent),
+    linear-gradient(to right,transparent,transparent),
+    linear-gradient(to right,transparent,transparent),
+    linear-gradient(to right,transparent,transparent),
+    linear-gradient(to right,transparent,transparent),
+    linear-gradient(to right,transparent,transparent),
+    linear-gradient(90deg, 
+      var(--edge-hue) 0%,
+      var(--edge-hue) 3%,
+      transparent 3%,
+      transparent 97%,
+      var(--edge-hue) 97%,
+      var(--edge-hue) 100%
+    ),
+    var(--hues-range),
+    linear-gradient(to right,transparent,transparent)
+}
+
+html[ml-mode="filter"] .hue {
+  --edge-hue: hsla(0, var(--sat), 70%, 1);
+  --hues-range: linear-gradient(to right,hsla(0, var(--sat), 70%, 1),hsla(60, var(--sat), 35%, 1),hsla(120, var(--sat), 40%, 1),hsla(180, var(--sat), 40%, 1),hsla(240, var(--sat), 75%, 1),hsla(300, var(--sat), 70%, 1),hsla(359, var(--sat), 70%, 1));
+}
+
+.ml-input-range {
+  width: var(--range-width);
+  cursor: text;
+  background-color: var(--main-background-color);
+  color: var(--main-color);
+  border: solid 0px var(--main-border-color);
+  border-radius: 3px;
+  height: 8px;
+  margin: 8px calc((100% - var(--range-width))/2) 18px calc((100% - var(--range-width))/2);
+}
+
+.ml-input-range-icon
+{
+  --ml-ignore:true;
+  fill: var(--ml-main-text-color, var(--main-color));
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 19px;
+  user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+}
+
+html[ml-mode="filter"] .ml-input-range-icon {
+  fill: var(--main-color);
+}
+
+.ml-input-range-icon.low
+{
+  left: calc(((100% - var(--range-width))/2 - 15px)/2);
+}
+
+.ml-input-range-icon.high
+{
+  right: calc(((100% - var(--range-width))/2 - 16px)/2);
+}
+
+input[type=range].ml-input-range:focus
+{
+  outline: none;
+  box-shadow: 0px 0px 3px 1px rgb(0, 122, 204);
+}
+
+input[type=range].ml-input-range::-moz-focus-inner
+{
+  border: 0;
+}
+
+.ml-input-range::-moz-range-track
+{
+  position: relative;
+  color: inherit;
+  height: 10px;
+  background-origin: border-box;
+  border-radius: 4px;
+  border: solid 1px var(--pseudo-border-color);
+  background-color: var(--pseudo-background-color);
+  background-image: var(--range-track-background);
+
+  --x: 8.49px;
+
+  background-size:
+    calc((100% - var(--x) * 2) - (100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    calc((100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    var(--range-segment-width) 100%,
+    calc((100% - var(--x) * 2) - (100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    calc((100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    var(--range-segment-width) 100%,
+    calc((100% - var(--x) * 2) - (100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    calc((100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    100% 100%,
+    var(--range-segment-width) 100%,
+    calc(100% - var(--x) * 2) 100%,
+    calc(100% - var(--x) * 2) 100%;
+
+  background-position:
+    calc(100% - var(--x)) 0px,
+    var(--x) 0px,
+    var(--x) 0px,
+    calc(100% - var(--x)) 0px,
+    var(--x) 0px,
+    var(--x) 0px,
+    calc(100% - var(--x)) 0px,
+    var(--x) 0px,
+    0px 0px,
+    var(--x) 0px,
+    var(--x) 0px,
+    var(--x) 0px;
+
+  background-repeat:
+    no-repeat, no-repeat,
+    repeat-x,
+    no-repeat, no-repeat,
+    repeat-x,
+    no-repeat, no-repeat, no-repeat,
+    repeat-x,
+    no-repeat, no-repeat;
+}
+
+.ml-input-range::-webkit-slider-runnable-track
+{
+  position: relative;
+  color: inherit;
+  height: 10px;
+  margin-top: -15px;
+  background-origin: border-box;
+  border-radius: 4px;
+  border: solid 1px var(--pseudo-border-color);
+  background-color: var(--pseudo-background-color);
+  background-image: var(--range-track-background);
+
+  --x: 9px;
+
+  background-size:
+    calc((100% - var(--x) * 2) - (100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    calc((100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    var(--range-segment-width) 100%,
+    calc((100% - var(--x) * 2) - (100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    calc((100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    var(--range-segment-width) 100%,
+    calc((100% - var(--x) * 2) - (100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    calc((100% - var(--x) * 2) * (var(--input-relative-value) / 100)) 100%,
+    100% 100%,
+    var(--range-segment-width) 100%,
+    calc(100% - var(--x) * 2) 100%,
+    calc(100% - var(--x) * 2) 100%;
+
+  background-position:
+    calc(100% - var(--x)) 0px,
+    var(--x) 0px,
+    var(--x) 0px,
+    calc(100% - var(--x)) 0px,
+    var(--x) 0px,
+    var(--x) 0px,
+    calc(100% - var(--x)) 0px,
+    var(--x) 0px,
+    0px 0px,
+    var(--x) 0px,
+    var(--x) 0px,
+    var(--x) 0px;
+
+  background-repeat:
+    no-repeat, no-repeat,
+    repeat-x,
+    no-repeat, no-repeat,
+    repeat-x,
+    no-repeat, no-repeat, no-repeat,
+    repeat-x,
+    no-repeat, no-repeat;
+}
+
+.ml-input-range::-moz-range-thumb
+{
+  position: relative;
+  cursor: default;
+  border: 1px solid transparent;
+  border-radius: 50% 50% 0;
+  background-color: currentColor;
+  background-image:
+    linear-gradient(-45deg, 
+      currentColor 30%, 
+      rgba(0,0,0,0) 35%, 
+      rgba(0,0,0,0) 65%,
+      currentColor 70%
+    ), 
+    linear-gradient(45deg,
+      rgba(  0,  0,  0, 0  ) 25%,
+      var(--pseudo-background-color) 25%,
+      var(--pseudo-background-color) 30%,
+      rgba(  0,  0,  0, 0  ) 30%,
+      rgba(  0,  0,  0, 0  ) 47%,
+      var(--pseudo-background-color) 47%,
+      var(--pseudo-background-color) 53%,
+      rgba(  0,  0,  0, 0  ) 53%,
+      rgba(  0,  0,  0, 0  ) 70%,
+      var(--pseudo-background-color) 70%,
+      var(--pseudo-background-color) 75%,
+      rgba(  0,  0,  0, 0  ) 75%
+    );
+  background-size: 12px 12px, 10px 10px;
+  background-position: 2px 2px, 3px 3px;
+  background-repeat: no-repeat, no-repeat;
+  width: 15px;
+  height: 15px;
+  box-shadow:
+    16.0px 16.0px 0px -7.5px var(--current-value-line-color),
+    15.5px 15.5px 0px -7.5px var(--current-value-line-color),
+    15.0px 15.0px 0px -7.5px var(--current-value-line-color),
+    14.5px 14.5px 0px -7.5px var(--current-value-line-color),
+    14.0px 14.0px 0px -7.5px var(--current-value-line-color),
+    13.5px 13.5px 0px -7.5px var(--current-value-line-color),
+    13.0px 13.0px 0px -7.5px var(--current-value-line-color),
+    12.5px 12.5px 0px -7.5px var(--current-value-line-color),
+    12.0px 12.0px 0px -7.5px var(--current-value-line-color),
+    11.5px 11.5px 0px -7.5px var(--current-value-line-color),
+    11.0px 11.0px 0px -7.5px var(--current-value-line-color),
+    10.5px 10.5px 0px -7.5px var(--current-value-line-color),
+    10.0px 10.0px 0px -7.5px var(--current-value-line-color),
+     9.5px  9.5px 0px -7.5px var(--current-value-line-color),
+     9.0px  9.0px 0px -7.5px var(--current-value-line-color),
+     8.5px  8.5px 0px -7.5px var(--current-value-line-color),
+     8.0px  8.0px 0px -7.5px var(--current-value-line-color);
+  transform: translate(0px, 18px) rotate(-135deg);
+}
+
+.ml-input-range::-webkit-slider-thumb
+{
+  position: relative;
+  cursor: default;
+  border: none;
+  border-radius: 50% 50% 0;
+  background-color: currentColor;
+  background-image:
+    linear-gradient(-45deg, 
+      currentColor 30%, 
+      rgba(0,0,0,0) 35%, 
+      rgba(0,0,0,0) 65%,
+      currentColor 70%
+    ), 
+    linear-gradient(45deg,
+      rgba(  0,  0,  0, 0  ) 25%,
+      var(--pseudo-background-color) 25%,
+      var(--pseudo-background-color) 30%,
+      rgba(  0,  0,  0, 0  ) 30%,
+      rgba(  0,  0,  0, 0  ) 47%,
+      var(--pseudo-background-color) 47%,
+      var(--pseudo-background-color) 53%,
+      rgba(  0,  0,  0, 0  ) 53%,
+      rgba(  0,  0,  0, 0  ) 70%,
+      var(--pseudo-background-color) 70%,
+      var(--pseudo-background-color) 75%,
+      rgba(  0,  0,  0, 0  ) 75%
+    );
+  background-size: 12px 12px, 10px 10px;
+  background-position: 2px 2px, 3px 3px;
+  background-repeat: no-repeat, no-repeat;
+  width: 15px;
+  height: 15px;
+  box-shadow:
+    14.0px 14.0px 0px -7px var(--current-value-line-color),
+    13.5px 13.5px 0px -7px var(--current-value-line-color),
+    13.0px 13.0px 0px -7px var(--current-value-line-color),
+    12.5px 12.5px 0px -7px var(--current-value-line-color),
+    12.0px 12.0px 0px -7px var(--current-value-line-color),
+    11.5px 11.5px 0px -7px var(--current-value-line-color),
+    11.0px 11.0px 0px -7px var(--current-value-line-color),
+    10.5px 10.5px 0px -7px var(--current-value-line-color),
+    10.0px 10.0px 0px -7px var(--current-value-line-color),
+     9.5px  9.5px 0px -7px var(--current-value-line-color),
+     9.0px  9.0px 0px -7px var(--current-value-line-color),
+     8.5px  8.5px 0px -7px var(--current-value-line-color),
+     8.0px  8.0px 0px -7px var(--current-value-line-color);
+  transform: translate(0px, 13px) rotate(-135deg);
+}

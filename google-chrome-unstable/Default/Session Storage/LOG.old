@@ -1,0 +1,21 @@
+2022/04/22-10:15:27.117 1c Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/Session Storage/MANIFEST-000001
+2022/04/22-10:15:27.117 1c Recovering log #70
+2022/04/22-10:15:27.117 1c Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/Session Storage/000070.log 
+2022/04/22-13:29:52.740 9b Level-0 table #74: started
+2022/04/22-13:29:52.751 9b Level-0 table #74: 17447 bytes OK
+2022/04/22-13:29:52.755 9b Delete type=0 #70
+2022/04/22-13:29:52.755 9b Compacting 4@0 + 1@1 files
+2022/04/22-13:29:52.760 9b Generated table #75@0: 2173 keys, 48601 bytes
+2022/04/22-13:29:52.760 9b Compacted 4@0 + 1@1 files => 48601 bytes
+2022/04/22-13:29:52.763 9b compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/04/22-13:29:52.763 9b Delete type=2 #74
+2022/04/22-13:29:52.764 9b Delete type=2 #71
+2022/04/22-13:29:52.764 9b Delete type=2 #66
+2022/04/22-13:29:52.764 9b Delete type=2 #63
+2022/04/22-13:29:52.764 9b Delete type=2 #69
+2022/04/22-17:46:30.654 13e Level-0 table #77: started
+2022/04/22-17:46:30.665 13e Level-0 table #77: 28433 bytes OK
+2022/04/22-17:46:30.671 13e Delete type=0 #73
+2022/04/22-17:50:13.342 131 Level-0 table #79: started
+2022/04/22-17:50:13.352 131 Level-0 table #79: 10099 bytes OK
+2022/04/22-17:50:13.357 131 Delete type=0 #76

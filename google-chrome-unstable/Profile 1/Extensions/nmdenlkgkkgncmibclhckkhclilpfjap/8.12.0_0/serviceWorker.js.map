@@ -1,0 +1,1 @@
+{"version":3,"file":"serviceWorker.js","mappings":";mBAAAA,cAAc,sCAEd,IACEA,cAAc,sBACd,MAAOC,GACPC,QAAQC,MAAMF","sources":["@beamery/browser-extension@8.12.0:///./js/serviceWorker.js?d228"],"names":["importScripts","e","console","error"],"sourceRoot":""}

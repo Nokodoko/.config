@@ -1,0 +1,71 @@
+board:
+  id: 210
+  name: Ops Kanban V2
+  type: kanban
+epic:
+  name: customfield_10119
+  link: customfield_10117
+installation: Cloud
+issue:
+  types:
+  - id: "10001"
+    name: Task
+    handle: Task
+    subtask: false
+  - id: "10302"
+    name: External Request
+    handle: External Request
+    subtask: false
+  - id: "10282"
+    name: User Access Change
+    handle: User Access Change
+    subtask: false
+  - id: "10204"
+    name: IT Support
+    handle: IT Support
+    subtask: false
+  - id: "10269"
+    name: Security
+    handle: Security
+    subtask: false
+  - id: "10003"
+    name: Bug
+    handle: Bug
+    subtask: false
+  - id: "10258"
+    name: Order
+    handle: Order
+    subtask: false
+  - id: "10270"
+    name: Spike
+    handle: Spike
+    subtask: false
+  - id: "10283"
+    name: Major Upgrade
+    handle: Major Upgrade
+    subtask: false
+  - id: "10004"
+    name: Epic
+    handle: Epic
+    subtask: false
+  - id: "10246"
+    name: Monitoring Change
+    handle: Monitoring Change
+    subtask: false
+  - id: "10002"
+    name: Sub-task
+    handle: Sub-task
+    subtask: true
+  - id: "10293"
+    name: Alert
+    handle: Alert
+    subtask: false
+  - id: "10303"
+    name: Contractor
+    handle: Contractor
+    subtask: false
+login: chris.montgomery@capacity.com
+project:
+  key: OPS
+  type: classic
+server: https://equity.atlassian.net

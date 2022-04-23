@@ -1,0 +1,49 @@
+body {
+  padding: 0 16px 10px 16px;
+}
+
+.header {
+  margin-block-start: 16px;
+}
+
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--magical-gray-80);
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.support-option {
+  --support-option-width: 192px;
+  --support-option-height: 60px;
+  width: var(--support-option-width);
+  height: var(--support-option-height);
+  background: var(--magical-primary-00);
+  border-radius: 8px;
+  border: 1px solid var(--magical-primary-10);
+  color: var(--magical-gray-80);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 10px 10px 0;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.support-option:hover {
+  text-decoration: none;
+  color: var(--magical-gray-80);
+}
+
+.support-option-graphic {
+  display: inline-block;
+  width: calc(var(--support-option-width) / 3.5);
+}
+
+.support-option-graphic > svg {
+  display: block;
+  margin: auto;
+  max-height: calc(var(--support-option-height) / 2);
+}

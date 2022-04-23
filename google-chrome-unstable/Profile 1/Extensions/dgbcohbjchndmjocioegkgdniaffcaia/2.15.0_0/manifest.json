@@ -1,0 +1,44 @@
+{
+   "background": {
+      "scripts": [ "SiteConf.js", "LeverOrigin.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icons/lever-chrome-icon-dark-19.png",
+         "38": "icons/lever-chrome-icon-dark-38.png"
+      },
+      "default_title": "Lever Hire"
+   },
+   "content_scripts": [ {
+      "js": [ "check_install.js" ],
+      "matches": [ "https://lever.co/*", "https://hire.lever.co/*", "https://hire.stage.lever.co/*", "https://hire.eu.lever.co/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "wrapper.css" ],
+      "js": [ "dragdrop.js", "wrapper.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "lib/inboxsdk.min.js" ],
+      "matches": [ "https://mail.google.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "default-src 'self' https://*.lever.co; script-src 'self' https://*.lever.co; style-src 'self' 'unsafe-inline'",
+   "description": "Import data to Lever Hire",
+   "icons": {
+      "128": "icons/lever-chrome-icon-dark-128.png",
+      "16": "icons/lever-chrome-icon-16.png",
+      "48": "icons/lever-chrome-icon-dark-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBKd/lzpunnjaDq/RDsRqYF9JS7sRIu7LJknTDJLcvgvzKE9iUhn2P2TmIs2OAmeDu1mos21ojNhs2QpZJpkXqTu5jZ3kmpWCfMtRsmV2kPM0XG4RlQ++v3tQnvHVSG+vddM1S89LvmLNdp2+cNhZIghcu31zcot4/VnKOVeVYwQIDAQAB",
+   "manifest_version": 2,
+   "name": "Lever Hire Extension",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "http://*/*", "https://*/*", "storage", "tabs", "unlimitedStorage", "webNavigation" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.15.0",
+   "web_accessible_resources": [ "loading.html", "panel.html", "panel.js", "toast.html", "toast.js", "icons/*.png", "fonts/*.woff" ]
+}

@@ -1,0 +1,4 @@
+html[ml-mode]:not([ml-mode="filter"]) .freebirdMaterialHeaderbannerSectionTriangleContainer
+{
+    display: none;
+}

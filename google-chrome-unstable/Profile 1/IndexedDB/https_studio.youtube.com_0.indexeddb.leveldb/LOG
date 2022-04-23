@@ -1,0 +1,6 @@
+2022/04/15-11:36:15.571 58496 Creating DB /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_studio.youtube.com_0.indexeddb.leveldb since it was missing.
+2022/04/15-11:36:15.582 58496 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_studio.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/15-11:36:26.305 589af Level-0 table #5: started
+2022/04/15-11:36:26.309 589af Level-0 table #5: 2544 bytes OK
+2022/04/15-11:36:26.313 589af Delete type=0 #3
+2022/04/15-11:36:26.313 589af Manual compaction at level-0 from (begin) .. (end); will stop at (end)

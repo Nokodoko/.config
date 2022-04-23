@@ -1,0 +1,231 @@
+.ytd-topbar-logo-renderer:first-child > path
+{
+    --ml-svgbackground-fill:Border;
+}
+
+.ytp-swatch-background-color, .ytp-swatch-background-color-secondary, .ytp-menuitem-toggle-checkbox,
+.toggle-bar, .ytd-sentiment-bar-renderer, .toggle-button[aria-pressed=false], paper-toggle-button[aria-pressed=false]
+{
+    --ml-background-background-color:Border;
+    --ml-buttonbackground-background-color:Border;
+}
+
+.ytp-volume-slider-handle:before, .ytp-volume-slider-handle, .ytp-button[aria-pressed]:after,
+#like-bar.ytd-sentiment-bar-renderer,
+.yt-icon[fill="#FFFFFF"], .yt-icon[fill="#fff"], .yt-icon[fill="#FFF"], .yt-icon[fill="#FAFAFA"],
+polygon.ytd-topbar-logo-renderer[fill="#FFFFFF"], #yt-logo-svg polygon[fill="#FFFFFF"]
+{
+    --ml-ignore:true;
+    filter: var(--ml-blue-filter);
+}
+
+html[ml-stage-mode="complete-complex"] yt-icon [fill="#f00"],
+html[ml-stage-mode="complete-complex"] yt-icon [fill="#F00"],
+html[ml-stage-mode="complete-complex"] yt-icon [fill="red"] {
+    --ml-ignore:true;
+    fill:var(--ml-main-red-button-background-color);
+}
+
+html[ml-stage-mode="complete-complex"] yt-icon [fill="#f80000"] {
+    --ml-ignore:true;
+    fill:var(--ml-main-text-color);
+}
+
+html[ml-stage-mode="complete-complex"] yt-icon [fill="#6f6f6f"] {
+    --ml-ignore:true;
+    fill:var(--ml-main-border-color);
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .ytp-volume-slider-handle:after
+{
+    background: linear-gradient(90deg,
+      rgba(255,255,255,0) 10%,
+      rgba(128,128,128,.5) 10%
+    ) !important;
+}
+
+.ytp-menuitem-toggle-checkbox:after, 
+.toggle-button[aria-pressed=true],
+paper-toggle-button[aria-pressed=true], 
+.toggle
+{
+    --ml-background-background-color:HighlightedText;
+    --ml-buttonbackground-background-color:HighlightedText;
+}
+
+#selectionBar.paper-tabs
+{
+    --ml-border-border-color:HighlightedText;
+    --ml-border-border-bottom-color:HighlightedText;
+    --ml-border-border-left-color:HighlightedText;
+    --ml-border-border-right-color:HighlightedText;
+    --ml-border-border-top-color:HighlightedText;
+}
+
+.style-scope.yt-icon, .ytp-button > svg *, .ytp-time-display
+{
+    --ml-svgbackground-fill:HighlightedText;
+    --ml-background-fill:HighlightedText;
+    --ml-text-fill:HighlightedText;
+}
+
+.ytp-button > svg
+{
+    --ml-svgbackground-fill:Background;
+    --ml-background-fill:Background;
+    --ml-text-fill:Background;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .arrow .yt-icon
+{
+    --ml-ignore:true;
+    fill: var(--ml-main-text-color);
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .ytp-settings-button.ytp-hd-quality-badge:after
+{
+  --ml-ignore:true;
+  filter: var(--ml-blue-filter);
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .checked
+{
+    --ml-no-invert:true;
+    transition: opacity 0.1s;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .yt-uix-checkbox-on-off input[type=checkbox]:not(:checked) + label > .checked
+{
+    opacity: 0;
+}
+
+.yt-uix-button-arrow
+{
+    --ml-background-border-bottom-color:Border;
+    --ml-background-border-left-color:Border;
+    --ml-background-border-right-color:Border;
+    --ml-background-border-top-color:Border;
+}
+
+.webgl canvas:not(imp)
+{
+    --ml-ignore:true;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) ytd-searchbox[mode=legacy] #container.ytd-searchbox,
+html[ml-mode]:not([ml-mode="filter"]) ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox
+{
+    box-shadow: none!important;
+}
+
+#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer:not(imp) {
+    --ml-link-color:Text;
+    --ml-visitedlink-color:Text;
+    --ml-link-active-color:Text;
+    --ml-visitedlink-active-color:Text;
+    --ml-link-hover-color:Text;
+    --ml-visitedlink-hover-color:Text;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) ytd-app:not(imp) {
+    background-color: #f9f9f9!important;
+}
+html[ml-mode]:not([ml-mode="filter"]) ytd-playlist-sidebar-renderer:not(imp) {
+    background-color: var(--yt-sidebar-background);
+}
+
+html[ml-stage-mode="complete-complex"] #chat.yt-live-chat-renderer {
+    --ml-ignore:true;
+    filter: var(--ml-text-filter);
+}
+
+html[ml-invert][ml-stage-mode="complete-complex"] #chat.yt-live-chat-renderer img,
+html[ml-invert][ml-stage-mode="complete-complex"] #chat.yt-live-chat-renderer svg {
+    filter: hue-rotate(180deg) invert(1);
+}
+
+html[ml-invert][ml-stage-mode="complete-complex"][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) #chat.yt-live-chat-renderer:not(.imp)::-webkit-scrollbar-track,
+html[ml-invert][ml-stage-mode="complete-complex"][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) #chat.yt-live-chat-renderer:not(.imp) :not(.imp)::-webkit-scrollbar-track {
+    background-color: #fcfcfc !important;
+}
+
+paper-item.ytd-menu-service-item-renderer:hover {
+    --ml-background-background-color:ButtonBackground;
+}
+
+/* BEGIN optimazations for video lists */
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer {
+    --ml-ignore:true;
+    border-bottom-color: var(--ml-main-trans-border-color) !important;
+}
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer * {
+    color: var(--ml-main-text-color)!important;
+}
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer .yt-img-shadow {
+    filter: brightness(var(--ml-image-lightness-limit)) saturate(var(--ml-image-saturation-limit)) var(--ml-blue-filter) !important;
+}
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer yt-icon-button.ytd-button-renderer[disabled] * {
+    color: var(--ml-main-trans-text-color)!important;
+}
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer #filter-menu.ytd-search-sub-menu-renderer,
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer #filter-group-name.ytd-search-filter-group-renderer,
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer .ytd-playlist-video-renderer {
+    border-bottom-color: var(--ml-main-trans-border-color) !important;
+}
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer .arrow.yt-horizontal-list-renderer,
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer .ytd-badge-supported-renderer:not(paper-tooltip):not(.badge-style-type-verified-artist):not(.badge-style-type-verified):not(yt-icon),
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer ytd-toggle-button-renderer.style-compact-gray[is-paper-button],
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer ytd-button-renderer.style-compact-gray[is-paper-button] {
+    background-color: var(--ml-main-button-background-color) !important;
+}
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer #tooltip.paper-tooltip {
+    background-color: var(--ml-main-button-background-color) !important;
+    color: var(--ml-main-text-color) !important;
+    opacity: 1 !important;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5));
+}
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer paper-button.ytd-subscribe-button-renderer,
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer ytd-button-renderer.style-destructive[is-paper-button] {
+    background-color: var(--ml-main-red-button-background-color) !important;
+}
+
+html[ml-stage-mode="complete-complex"] .ytd-section-list-renderer ytd-playlist-video-renderer:hover:not(.dragging) {
+    background-color: var(--ml-main-alt-background-color) !important;
+}
+
+/* END optimazations for video lists */
+
+html[ml-stage][ml-scrollbar-style="ml-simple"][hide-scrollbar]:not([ml-stage="preload"])::-webkit-scrollbar,
+html[ml-stage][ml-scrollbar-style="ml-simple"][hide-scrollbar]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar {
+    width: 0px!important;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .ytp-ad-overlay-container {
+  --ml-ignore:true;
+  filter: var(--ml-image-filter);
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([hide-scrollbar="true"]):not(:fullscreen) {
+  overflow: auto;
+}
+
+/*--- BEGIN FILTER MODE ---*/
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) #scrim {
+  filter: invert(1);
+}
+
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .ytp-cued-thumbnail-overlay-image,
+html[ml-mode="filter"][ml-invert]:not([ml-stage="preload"]) .ytp-tooltip-bg {
+  filter: var(--ml-image-revert-filter);
+}
+
+/*--- END FILTER MODE ---*/

@@ -1,0 +1,255 @@
+html[ml-stage]:not([ml-stage="preload"]) {}
+
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) object,
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) video {
+  filter: var(--ml-blue-filter);
+}
+
+html[ml-embed] { --ml-ignore:true; }
+html[ml-embed][ml-invert]:not([ml-stage="preload"]) embed[type="application/pdf"] {
+  filter: var(--pdf-bg-filter) var(--ml-text-filter);
+}
+html[ml-embed]:not([ml-invert]):not([ml-stage="preload"]) embed[type="application/pdf"] {
+  filter: var(--ml-text-filter);
+}
+html[ml-image]:not([ml-stage="preload"]):not([ml-mode="simple"]) {
+  --ml-ignore:true;
+}
+html[ml-image]:not([ml-stage="preload"]):not([ml-mode="simple"]) img {
+  filter: var(--ml-image-filter);
+}
+
+html[ml-stage]:not([ml-stage="preload"]):not(imp)::selection,
+html[ml-stage]:not([ml-stage="preload"]) :not(imp)::selection {
+    background-color: var(--ml-main-selection-color) !important;
+    color: var(--ml-main-selection-text-color) !important;
+    text-shadow: var(--ml-main-selection-shadow-color) 0px 0px 1px !important;
+}
+
+html[ml-stage]:not([ml-stage="preload"]):not(imp)::-moz-selection,
+html[ml-stage]:not([ml-stage="preload"]) :not(imp)::-moz-selection {
+    background-color: var(--ml-main-selection-color) !important;
+    color: var(--ml-main-selection-text-color) !important;
+    text-shadow: var(--ml-main-selection-shadow-color) 0px 0px 1px !important;
+}
+
+html[ml-stage]:not([ml-stage="preload"]) :not(imp)::placeholder {
+    color: var(--placeholder-color, var(--ml-main-trans-text-color)) !important;
+}
+
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) input:-webkit-autofill,
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) textarea:-webkit-autofill,
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) select:-webkit-autofill {
+    filter: var(--ml-highlighted-text-filter);
+}
+
+/* --- BEGIN SCROLLBAR STYLE --- */
+
+@supports (-moz-appearance: button) {
+  html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]),
+  html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) * {
+    scrollbar-color: var(--ml-main-scrollbar-thumb-normal-color) var(--ml-main-moz-scrollbar-track-color) !important;
+    scrollbar-width: var(--ml-main-moz-scrollbar-width) !important;
+  }
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar {
+    width: calc(var(--ml-main-scrollbar-size) / var(--ml-zoom)) !important;
+    height: calc(var(--ml-main-scrollbar-size) / var(--ml-zoom)) !important;
+    background: var(--ml-main-scrollbar-thumb-normal-color) !important;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-button:hover {
+    --bg-color: var(--ml-main-scrollbar-thumb-hover-color);
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-button:active {
+    --bg-color: var(--ml-main-scrollbar-thumb-active-color);
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-button {
+    --bg-color: var(--ml-main-scrollbar-thumb-normal-color);
+    --fg-color: var(--ml-main-scrollbar-marks-color);
+    width: calc(var(--ml-main-scrollbar-size) / var(--ml-zoom)) !important;
+    height: calc(var(--ml-main-scrollbar-size) / var(--ml-zoom)) !important;
+    box-shadow: inset 0 0 1px var(--ml-main-scrollbar-shadow-color) !important;
+    background: linear-gradient(var(--deg-one), var(--bg-color) 34%, transparent 35%, transparent 55%, var(--bg-color) 56%), linear-gradient(var(--deg-two), var(--bg-color) 34%, transparent 35%, transparent 55%, var(--bg-color) 56%), linear-gradient(var(--deg-one), transparent 49%, var(--fg-color) 50%, var(--fg-color) 55%, transparent 56%), linear-gradient(var(--deg-two), transparent 49%, var(--fg-color) 50%, var(--fg-color) 55%, transparent 56%), var(--bg-color) !important;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-button:vertical:decrement {
+    --deg-one: 45deg;
+    --deg-two: -45deg;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-button:vertical:increment {
+    --deg-one: 135deg;
+    --deg-two: -135deg;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-button:horizontal:decrement {
+    --deg-one: -135deg;
+    --deg-two: -45deg;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-button:horizontal:increment {
+    --deg-one: 45deg;
+    --deg-two: 135deg;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-thumb:hover {
+    --bg-color: var(--ml-main-scrollbar-thumb-hover-color);
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-thumb:active {
+    --bg-color: var(--ml-main-scrollbar-thumb-active-color);
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-thumb:horizontal {
+    --deg-one: 90deg;
+    --deg-two: 0deg;
+    min-width: calc(var(--ml-main-scrollbar-size) * 2 / var(--ml-zoom)) !important;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-thumb:vertical {
+    --deg-one: 0deg;
+    --deg-two: 90deg;
+    min-height: calc(var(--ml-main-scrollbar-size) * 2 / var(--ml-zoom)) !important;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-thumb {
+    --bg-color: var(--ml-main-scrollbar-thumb-normal-color);
+    --fg-color: var(--ml-main-scrollbar-marks-color);
+    border-radius: calc(1px / var(--ml-zoom)) !important;
+    border: none !important;
+    box-shadow: inset 0 0 1px var(--ml-main-scrollbar-shadow-color) !important;
+    background: linear-gradient(var(--deg-two), var(--bg-color) 30%, transparent 30%, transparent 70%, var(--bg-color) 70%), linear-gradient(var(--deg-one), transparent 9%, var(--fg-color) 10%, var(--fg-color) 15%, transparent 16%, transparent 34%, var(--fg-color) 35%, var(--fg-color) 40%, transparent 41%, transparent 59%, var(--fg-color) 60%, var(--fg-color) 65%, transparent 66%, transparent 84%, var(--fg-color) 85%, var(--fg-color) 90%, transparent 91%), var(--bg-color) !important;
+    background-size: calc(var(--ml-main-scrollbar-size) / var(--ml-zoom)) calc(var(--ml-main-scrollbar-size) / var(--ml-zoom)) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-track {
+    background: var(--ml-main-scrollbar-track-color) !important;
+    box-shadow: inset 0 0 calc(6px / var(--ml-zoom)) var(--ml-main-scrollbar-shadow-color) !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-track-piece {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+html[ml-stage][ml-scrollbar-style="ml-simple"]:not([ml-stage="preload"]) :not(impt)::-webkit-scrollbar-corner {
+    background: var(--ml-main-scrollbar-thumb-normal-color) !important;
+}
+
+/* --- END SCROLLBAR STYLE --- */
+
+
+/* --------------------- BEGIN Google Translate bubble ----------------------- */
+
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) .jfk-bubble.gtx-bubble:not(#imp):not(imp):not(.imp) {
+    background-color: rgb(255, 255, 255) !important;
+    border-color: rgb(187, 187, 187) rgb(187, 187, 187) rgb(168, 168, 168) !important;
+    color: #252525 !important;
+    --ml-ignore:true;
+    filter: var(--ml-text-filter);
+}
+
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) .jfk-bubble.gtx-bubble:not(#imp):not(imp):not(.imp) *:not(#imp):not(imp):not(.imp) {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #252525 !important;
+}
+
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) .jfk-bubble-arrowdown:not(#imp):not(imp):not(.imp) .jfk-bubble-arrowimplbefore:not(#imp):not(imp):not(.imp),
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) .jfk-bubble-arrowup:not(#imp):not(imp):not(.imp) .jfk-bubble-arrowimplbefore:not(#imp):not(imp):not(.imp) {
+    border-color: rgb(187, 187, 187) transparent !important;
+    background-color: transparent !important;
+}
+
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) .jfk-bubble-arrowdown:not(#imp):not(imp):not(.imp) .jfk-bubble-arrowimplafter:not(#imp):not(imp):not(.imp),
+html[ml-stage]:not([ml-mode="filter"]):not([ml-stage="preload"]) .jfk-bubble-arrowup:not(#imp):not(imp):not(.imp) .jfk-bubble-arrowimplafter:not(#imp):not(imp):not(.imp) {
+    border-color: rgb(255, 255, 255) transparent !important;
+    background-color: transparent !important;
+}
+
+/* --------------------- END Google Translate bubble ----------------------- */
+
+/* ---------------- BEGIN GRAMMARLY -------------------*/
+
+[data-grammarly-part="highlights"] [data-gramm="gramm"]>:before {
+  --ml-background-background-color:HighlightedBackground;
+}
+[data-grammarly-part="highlights"] [data-gramm="gramm"]>:after {
+  --ml-background-background-color:Border;
+}
+
+html[ml-stage-mode="complete-complex"] [data-grammarly-part="button"],
+html[ml-stage-mode="complete-complex"] grammarly-popup-editor,
+html[ml-stage-mode="complete-complex"] grammarly-highlights,
+html[ml-stage-mode="complete-complex"] grammarly-card,
+html[ml-stage-mode="complete-complex"] grammarly-mirror,
+html[ml-stage-mode="complete-complex"] grammarly-button {
+  --ml-ignore:true;
+}
+html[ml-stage-mode="complete-complex"] grammarly-popup-editor>*>iframe,
+html[ml-stage-mode="complete-complex"] grammarly-card>*,
+html[ml-stage-mode="complete-complex"] grammarly-mirror>*,
+html[ml-stage-mode="complete-complex"] grammarly-button>*,
+html[ml-stage-mode="complete-complex"] grammarly-highlights>*,
+html[ml-stage-mode="complete-complex"] [data-grammarly-part="button"] {
+  filter: var(--ml-highlighted-text-filter);
+}
+
+/* ---------------- END GRAMMARLY -------------------*/
+
+html[ml-invert][ml-mode="complex"] [ml-invert],
+html[ml-invert][ml-mode="complex"] img[width="8"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="9"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="10"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="11"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="12"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="13"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="14"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="15"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="16"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="17"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[width="19"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="8"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="9"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="10"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="11"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="12"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="13"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="14"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="15"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="16"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="17"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"]),
+html[ml-invert][ml-mode="complex"] img[height="19"]:not([src*="vatar"]):not([src*="ccount"]):not([src*="moji"]):not([class*="vatar"]):not([class*="ccount"]):not([class*="moji"]):not([class*="lag"]):not([src*="lag"]):not([src*="rofile"]):not([class*="rofile"])
+{
+  --ml-ignore:true;
+  filter: var(--ml-text-filter)!important;
+}
+
+/*--------------uBlock------------------*/
+html#ublock0-epicker
+{
+  --ml-ignore:true;
+  filter: var(--ml-text-filter)!important;
+}
+
+html#ublock0-epicker>body>svg
+{
+  filter: var(--ml-highlighted-text-filter)!important;
+}
+
+html#ublock0-epicker>#midnight-lizard-filters
+{
+  height: 0px!important;
+  width: 0px!important;
+  position: absolute!important;
+}
+/*--------------uBlock------------------*/

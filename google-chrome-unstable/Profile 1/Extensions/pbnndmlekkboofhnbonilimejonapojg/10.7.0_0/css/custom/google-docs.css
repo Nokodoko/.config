@@ -1,0 +1,40 @@
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbip,
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbii {
+  filter: var(--ml-image-revert-filter);
+}
+
+.jfk-palette-colorswatch, .hsv-hs-image, .hsv-v-image, .hsv-swatch
+{
+    --ml-ignore:true;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) #docs-toolbar-wrapper:not(imp)
+{
+    box-shadow: none!important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) #docs-omnibox-toolbar.goog-toolbar
+{
+    background-color: white;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .goog-toolbar-menu-button-dropdown:not(imprt),
+html[ml-mode]:not([ml-mode="filter"]) .goog-toolbar-combo-button-dropdown:not(imprt)
+{
+    --ml-no-invert:true;
+    --ml-backgroundimage:Text;
+    filter: brightness(calc(var(--ml-invert, 0) + 1))!important;
+}
+
+.jfk-tooltip-arrowimplafter
+{
+    --ml-border-border-bottom-color:Background;
+    --ml-border-border-top-color:Background;
+}
+
+.scb-private-icon-white, .scb-invalid-icon-white,
+.scb-unlisted-icon-white, .docs-icon-close-white,
+[class*="icon-white"]:not(.apps-share-sprite)
+{
+    --ml-no-invert:true;
+}

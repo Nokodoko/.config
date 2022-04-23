@@ -1,0 +1,69 @@
+html[ml-mode]:not([ml-mode="filter"]) img.jsoc-shr-logo, 
+html[ml-mode]:not([ml-mode="filter"]) .static-icon-gray,
+html[ml-mode]:not([ml-mode="filter"]) body:not(.dark-theme) i[class]:not(.white):not(.static-icon-download),
+html[ml-mode]:not([ml-mode="filter"]) body.dark-theme #close-search-box,
+html[ml-mode]:not([ml-mode="filter"]) body.dark-theme i.static-icon-apps,
+html[ml-mode]:not([ml-mode="filter"]) body.dark-theme i.static-icon-filter {
+    --ml-ignore:true;
+    filter: var(--ml-text-filter) brightness(calc(2 * var(--ml-invert)))!important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .folder-toggler {
+    --ml-ignore:true;
+    filter: var(--ml-text-filter)!important;
+}
+
+#texts_list {
+    --ml-no-invert:true;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .progress {
+    --ml-backgroundnocontrast-background-color:Border;
+    --ml-background-background-color:Border;
+    background-color: rgba(0,0,0,.15)!important;
+}
+
+.sortable:after, .sortable:before, #context_toggler:before {
+    --ml-background-border-top-color:Border;
+    --ml-background-border-bottom-color:Border;
+    --ml-background-border-left-color:Border;
+}
+.sortable.az:before, .sortable.za:after {
+    --ml-background-border-top-color:HighlightedText;
+    --ml-background-border-bottom-color:HighlightedText;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .navbar .nav>li>a:focus,
+html[ml-mode]:not([ml-mode="filter"]) .navbar .nav>li>a:hover {
+    background-color: var(--ml-main-trans-background-color) !important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .dropdown-menu li>a:hover,
+html[ml-mode]:not([ml-mode="filter"]) .dropdown-menu li>a:focus,
+html[ml-mode]:not([ml-mode="filter"]) .dropdown-submenu:hover>a,
+html[ml-mode]:not([ml-mode="filter"]) .drop-down-icon:hover+a,
+html[ml-mode]:not([ml-mode="filter"]) .general_activity_item:not(.opened):hover {
+    background-color: var(--ml-main-alt-background-color) !important;
+}
+
+html[ml-stage]:not([ml-mode="filter"]) .editor-pane-title:not(imp),
+html[ml-stage]:not([ml-mode="filter"]) .editor-current-translation-source .context:not(imp),
+html[ml-stage]:not([ml-mode="filter"]) .proofread-string-source .context:not(imp) {
+    color: hsla(0, 0%, 40%, 0.6);
+}
+
+.status_select {
+    --ml-background-background-color:HighlightedBackground;
+    --ml-link-color:HighlightedText;
+    --ml-link-active-color:HighlightedText;
+    --ml-link-hover-color:HighlightedText;
+    --ml-visitedlink-color:HighlightedText;
+    --ml-visitedlink-hover-color:HighlightedText;
+    --ml-visitedlink-active-color:HighlightedText;
+}
+
+html[ml-mode="filter"] #editor_search_bar,
+html[ml-mode="filter"] #texts_list,
+html[ml-mode="filter"] .approve-action {
+  --ml-ignore:true;
+}

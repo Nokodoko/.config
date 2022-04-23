@@ -1,0 +1,19 @@
+.view-referral-credits-update h1 {
+  margin-top: 0;
+}
+
+.view-referral-credits-update p {
+  font-size: 14px;
+}
+
+.view-referral-credits-update .referral-credits-copy {
+  margin-top: 45px;
+}
+
+.view-referral-credits-update .referral-credits-ctas {
+  display: flex;
+}
+
+.view-referral-credits-update .referral-credits-ctas > button {
+  flex-grow: 1;
+}

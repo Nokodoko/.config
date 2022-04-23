@@ -1,0 +1,39 @@
+.variable-picker > nav {
+    display: flex;
+}
+  
+.variable-picker > nav > div {
+  width: 25px;
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: none;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 3px;
+  background: var(--magical-gray-20);
+}
+
+.variable-picker > nav > div > img {
+  vertical-align: middle;
+}
+
+.variable-picker > nav > div.selected {
+  background: white;
+}
+
+.variable-picker > nav > div.disabled {
+  background: var(--magical-gray-40);
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+form[role="row"][data-mode="edit"] .variable-picker,
+.panel-view .variable-picker {
+  visibility: visible;
+}
+
+/* Hide editor toolbars by default. */
+.variable-picker {
+  background: var(--magical-gray-10);
+  padding: 8px;
+  visibility: hidden;
+}

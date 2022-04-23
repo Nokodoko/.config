@@ -4,8 +4,9 @@
 [character] # The name of the module we are configuring is "character"
 #success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
 success_symbol = "[\\[INSERT\\]](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+#success_symbol = "[\\[\\]](bold green) "
 #vicmd_symbol = "[\\(normal\\)](italic #949494) "
-#vicmd_symbol = "[\\[ NORMAL\\]](bold #949494) "
+#vicmd_symbol = "[\\[\\]](bold #949494) "
 vicmd_symbol = "[\\[NORMAL\\]](bold #949494) "
 
 

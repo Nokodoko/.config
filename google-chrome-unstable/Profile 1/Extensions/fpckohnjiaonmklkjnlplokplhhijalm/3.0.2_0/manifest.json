@@ -1,0 +1,38 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon16.png",
+      "default_popup": "popup/popup.html",
+      "default_title": "Web Safety"
+   },
+   "chrome_settings_overrides": {
+      "search_provider": {
+         "encoding": "UTF-8",
+         "favicon_url": "https://search.privatesearch.online/favicon.ico",
+         "is_default": true,
+         "keyword": "Web Safety",
+         "name": "Web Safety",
+         "search_url": "https://search.privatesearch.online/search/?category=web&yid=c5pr&vert=private&q={searchTerms}",
+         "suggest_url": "https://sug.privatesearch.online/v1/sug/?yid=c5pr&vert=private&q={searchTerms}"
+      }
+   },
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "Provides two search profiles for parents and children respectively to keep the family’s search activities separated and safe.",
+   "homepage_url": "https://search.privatesearch.online/wim/ds/gotohub?yid=c5pr",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "incognito": "spanning",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmwOZZw0IH3h72z6+Nb7tdpRFqWGViVmMphTP9tuSVqg3FPoS4ZXE7DkSR20kUNBaeh20cC+Orn4wbrt3rx4cqCsy+tIMQGzEUg8PH345cr156pJE78auJsCxoyAAv1UFINCu8t+/5GtsmUgW8QFHrVVqJXOFQ2SsONu1vr+6XpLVkqiykZcwntz7QDD300xtFBimCw17y1bLpq33ZKXo4dnn2Bgd66ZCdo9ocmS9qoSO0xOnqg2trzPHMcp8CDETN9OExFYPHdBYigH67OviaT84tPVTU9MxIbIGX0uYxRzvnzAuF7/JTy0MgDtGVMdlnxXwhWLnm7aUQJD7y/ah2wIDAQAB",
+   "manifest_version": 2,
+   "name": "Web Safety",
+   "permissions": [ "contextMenus", "cookies", "*://*.privatesearch.online/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.2",
+   "web_accessible_resources": [ "img/*", "site/*" ]
+}

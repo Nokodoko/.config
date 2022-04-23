@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+	  
+	 <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+  
+    <div id="login_form_container" class="body" style="text-align: center;">
+      <form id="login_form" style="width: 50%; display: inline-block;">
+        <div><img src="/data/icons/big.png" width="128" height="128" alt=""/></div>
+     <br>
+	  
+        <div><input type="submit" id="login_btn" value="IP LIST"/> </div>
+        <div id="login_error"></div>
+      </form>
+    </div>
+    <div id="main_container" class="hide" >
+
+      <div id="toolbar" style="text-align: center">
+        <span></span>
+      </div>
+      <table>
+        <colgroup>
+          <col width="50px">
+          <col width="20px">
+          <col width="150px">
+          <col width="40px" style="padding-right: 10px;">
+          <col>
+        </colgroup>
+        <tbody id="main_ips_table">
+        <!--<tr><td colspan="4"></td></tr>-->
+        </tbody>
+      </table>
+	   
+	  <div>
+        <input type="button" id="logout" value="Logout">
+        <br>
+      </div>
+    </div>
+    <div style="text-align: right; padding: 5px">
+   
+    </div>
+    <div id=notify></div>
+    <script src="utils.js"></script>
+    <script src="ui.js"></script>
+    <script src="toolbar.js"></script>
+  </body>
+</html>

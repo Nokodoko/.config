@@ -1,0 +1,219 @@
+.view-checklist .checklist-list {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+  margin-top: 0;
+}
+
+.view-checklist h1 {
+  margin: 0;
+  background-color: var(--magical-background-color);
+  position: sticky;
+  top: 0;
+  padding-bottom: 10px;
+}
+
+/* Icons as list bullets */
+.view-checklist .checklist-item > svg:first-child 
+.view-checklist li > svg:first-child {
+  margin-inline-end: 8px;
+  line-height: 0px;
+  vertical-align: text-bottom;
+}
+
+.view-checklist .checklist-item {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.view-checklist .checklist-item p {
+  color: var(--magical-gray-80);
+  display: inline;
+  font-size: 16px;
+  padding-left: 8px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.view-checklist .expanded {
+  background-color: var(--magical-gray-10);
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.view-checklist .checklist-item .strike {
+  text-decoration: line-through;
+  color: var(--magical-gray-50);
+  font-weight: 400;
+}
+
+.view-checklist .checklist-item > svg {
+  border-radius: 4px;
+}
+
+.view-checklist .no-expand {
+  cursor: auto;
+}
+
+.view-checklist .chevron {
+  float: right;
+}
+
+.view-checklist .dropdown {
+  padding: 0px 15px 10px;
+}
+
+.view-checklist .checklist-expansion {
+  padding: 13px;
+}
+
+.view-checklist .checklist-expansion h3 {
+  color: var(--magical-gray-80);
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.view-checklist .checklist-expansion p {
+  color: var(--magical-gray-60);
+  display: inline;
+  font-size: 14px;
+}
+
+.view-checklist .checklist-expansion li {
+  color: var(--magical-gray-60);
+}
+
+.view-checklist .checklist-expansion a {
+  text-decoration: none;
+}
+
+.view-checklist .create-account > ul {
+  font-size: 14px;
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+  margin: 10px;
+}
+
+.view-checklist .user-details > label {
+  font-size: 12px;
+  color: var(--magical-gray-60);
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+
+.view-checklist .user-details > input, select {
+  font-size: 14px;
+  border-radius: 8px;
+  color: var(--magical-gray-50);
+  padding: 8px;
+  width: 100%;
+  border: 1px var(--magical-gray-50);
+}
+
+.view-checklist .snippet-suggestions {
+  font-size: 12px;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.view-checklist .snippet-suggestions button.secondary {
+  margin-right: 8px;
+}
+
+.view-checklist .insert-snippet-textarea {
+  border-radius: 8px;
+  resize: none;
+  border: 1px solid var(--magical-gray-20);
+  width: 100%;
+  min-height: 150px;
+  padding: 5px;
+}
+
+.view-checklist .insert-snippet-textarea::placeholder {
+  font-size: 12px;
+}
+
+.view-checklist .insert-snippet .platform-logo {
+  width: 23px;
+  height: 23px;
+  margin: 8px 10px 8px 5px;
+  display: inline;
+  cursor: pointer;
+}
+
+.view-checklist .insert-snippet .platform-plus {
+  width: 76px;
+  height: 32px; 
+  background-color: var(--magical-gray-20);
+  border-radius: 8px;
+  color: var(--magical-gray-60);
+  font-size: 12px;
+  font-weight: bold;
+  display: inline;
+  padding: 8px 5px;
+}
+
+.view-checklist .add-variable-shortcut {
+  background: white;
+  display: flex;
+  border-radius: 8px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid var(--magical-gray-20);
+  align-items: center;
+}
+
+.view-checklist .add-variable-shortcut .platform-logo {
+  width: 23px;
+  height: 23px;
+  margin: 8px 10px 8px 5px;
+  display: inline;
+}
+
+.view-checklist .add-variable-shortcut:hover {
+  background: var(--magical-primary-10);
+}
+
+.view-checklist .add-variable-shortcut:focus {
+  background: var(--magical-primary-20);
+}
+
+.view-checklist .add-variable-shortcut .variable {
+  color: var(--magical-secondary-60);
+  font-weight: bold;
+}
+
+.view-checklist .add-variable-shortcut-body {
+  text-align: left;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.view-checklist .add-variable-shortcut-body h3 {
+  margin: 0;
+}
+
+.view-checklist .add-variable-shortcut-body h3 {
+  margin: 0;
+}
+
+.view-checklist .create-variable-shortcut-help {
+  line-height: 0;
+}
+
+.view-checklist .circular-hand-graphic {
+  max-height: 130px;
+  display: flex;
+  justify-content: left;
+}
+
+.view-checklist .insert-variable-snippet a{
+  color: var(--magical-primary-60);
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+}

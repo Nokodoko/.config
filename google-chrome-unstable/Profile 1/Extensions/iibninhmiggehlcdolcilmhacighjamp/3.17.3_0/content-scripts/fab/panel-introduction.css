@@ -1,0 +1,38 @@
+body {
+  padding: 16px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0;
+  line-height: 22px;
+}
+
+p {
+  font-size: 13px;
+  margin: 0 10px 0 0;
+}
+
+.panel-introduction-button {
+  max-width: 65px;
+  /* Default buttons have margins but don't want margins in panel intro footer */
+  margin: 0 !important;
+}
+
+.panel-introduction-footer {
+  display: flex;
+  align-items: center;
+}
+
+.panel-introduction-step {
+  flex-grow: 1;
+}
+
+.panel-introduction-graphic {
+  margin-top: 10px;
+}
+
+.panel-introduction-gif {
+  width: 100%;
+  margin: 10px 0;
+}

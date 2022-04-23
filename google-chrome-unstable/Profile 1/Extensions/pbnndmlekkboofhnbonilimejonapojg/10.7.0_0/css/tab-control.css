@@ -1,0 +1,209 @@
+.ml-tab
+{
+    display: table-cell;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px!important;
+    overflow: hidden;
+    background-color: var(--main-background-color);
+    width: 169px;
+    vertical-align: middle;
+}
+
+.ml-tab.right
+{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+}
+
+.ml-tab-item-icon
+{
+    margin: -10px 5px -6px -3px;
+    fill: var(--main-color);
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+}
+[content="activation-tab-content"]>.ml-tab-item-icon
+{
+    margin-right: 6px;
+    width: 17px;
+    height: 17px;
+}
+
+.right .ml-tab-item-icon
+{
+    margin: -10px -1px -6px 2px;
+}
+
+.ml-tab-item:hover .ml-tab-item-icon, .active .ml-tab-item-icon
+{
+    fill: var(--main-color);
+}
+
+.ml-tab-item
+{
+    cursor: pointer;
+    font-size: 16px;
+    border: solid 1px;
+    user-select: none;
+    -moz-user-select: none;
+    white-space: nowrap;
+    transition: opacity 150ms;
+}
+
+html:not([ml-color-scheme="custom"]) .ml-tab-item:not(:hover):not(.active) {
+    opacity: 0.8;
+}
+
+.left .ml-tab-item {
+    padding: 14px 2px 14px 15px;
+    margin-left: auto;
+    width: 140px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 3px 0px 0px 3px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: var(--thin-border-color);
+    border-image: linear-gradient(90deg, transparent 99.5%, var(--tab-item-border-color, var(--thin-border-color)) 99.5%) 1;
+}
+
+.right .ml-tab-item
+{
+    padding: 14px 13px 14px 2px;
+    margin-left: 0;
+    margin-right: 10px;
+    position: relative;
+    text-align: right;
+    font-size: 15px;
+    line-height: 17px;
+    border-radius: 0px 3px 3px 0px;
+    border-left-color: var(--thin-border-color);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-image: linear-gradient(90deg, var(--tab-item-border-color, var(--thin-border-color)) 0.5%, transparent 0.5%) 1;
+}
+
+.right:not(.imp):not(#imp):not(imp) .ml-tab-item:not(.imp):not(#imp):not(imp)>span:not(.imp):not(#imp):not(imp) {
+    display: inline-block;
+    max-width: 132px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom;
+    background-color: transparent!important;
+}
+
+.ml-tab-item:hover
+{
+    background-color: var(--alt-background-color);
+}
+
+.ml-tab-item-separator
+{
+    border-right: solid 1px var(--thin-border-color);
+    border-image: linear-gradient(90deg, transparent 99.5%, var(--tab-item-border-color, var(--thin-border-color)) 99.5%) 1;
+    height: 24.5px;
+}
+
+@supports (-moz-appearance: button)
+{
+    .ml-tab-item-separator
+    {
+        height: 25px;
+    }
+}
+
+.right .ml-tab-item-separator
+{
+    margin-left: 0px;
+    margin-right: 10px;
+    border-right: none;
+    border-left: solid 1px var(--thin-border-color);
+    border-image: linear-gradient(90deg, var(--tab-item-border-color, var(--thin-border-color)) 0.5%, transparent 0.5%) 1;
+    height: 23px;
+}
+
+.right .ml-tab-item-separator:first-of-type {
+    height: 69px;
+}
+
+.ml-tab-item.active:not(imp)
+{
+    background-color: var(--content-background-color);
+    border: solid 1px var(--thin-border-color);
+    --ml-text-color: HighlightedText;
+    cursor: default!important;
+    border-image: unset!important;
+    z-index: 100;
+}
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .ml-tab-item.active:not(#imp) {
+    background-color: var(--ml-main-trans-alt-background-color) !important;
+}
+
+.left:not(.imp):not(#imp):not(imp) .ml-tab-item.active:not(.imp):not(#imp):not(imp) {
+    border-right: solid 1px transparent !important;
+}
+
+.right:not(.imp):not(#imp):not(imp) .ml-tab-item.active:not(.imp):not(#imp):not(imp)
+{
+    border-left: solid 1px transparent !important;
+}
+
+.ml-tab-content
+{
+    position: relative;
+    display: none;
+    width: 340px;
+    animation: fadeEffect 0.4s ease-in-out;
+    background-color: var(--content-background-color);
+}
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .ml-tab-content:not(#imp) {
+    background-color: var(--ml-main-trans-alt-background-color) !important;
+}
+
+#default-tab-content.ml-tab-content
+{
+    animation: none;
+    display: table-cell;
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 15px;
+}
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) #default-tab-content.ml-tab-content *:not(#imp) {
+    background-color: transparent!important;
+}
+
+#default-tab-content.ml-tab-content p
+{
+    margin: 9px 20px 0px 20px;
+}
+
+#default-tab-content.ml-tab-content p.dense
+{
+    margin: 9px 15px 0px 15px;
+}
+
+#default-tab-content.ml-tab-content p b, #default-tab-content.ml-tab-content p span, #default-tab-content.ml-tab-content p i, .ml-ad
+{
+    color: var(--logo-text-color);
+}
+
+#default-tab-content.ml-tab-content h3
+{
+    text-align: center;
+    margin: 16px 16px 10px 16px;
+}
+
+@keyframes fadeEffect
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

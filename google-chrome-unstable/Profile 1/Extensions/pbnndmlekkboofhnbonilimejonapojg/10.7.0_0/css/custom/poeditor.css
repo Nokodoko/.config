@@ -1,0 +1,8 @@
+html[ml-mode]:not([ml-mode="filter"]) .img-responsive {
+    --ml-ignore:true;
+    filter: var(--ml-text-filter);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    --ml-background-background-color:Text;
+}

@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Greenhouse Prospecting Options</title>
+    <link rel="stylesheet" href="/stylesheets/options.css" />
+    <script src="/scripts/jquery-3.4.1.min.js"></script>
+    <script src="/scripts/options.js"></script>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <div class="heading">
+        <img src="/images/greenhouse-icon.png" class="logo"/>
+        <span>Greenhouse Prospecting Options</span>
+      </div>
+
+      <div class="section">
+        <label for="one_login">Does your organization use an SSO Provider?</label>
+        <select id="one_login">
+          <option value="false">No, my company logs in via http://app.greenhouse.io (Most Common)</option>
+          <option value="true">Yes, my company uses an SSO Provider</option>
+        </select>
+      </div>
+
+      <div class="section subdomain-container">
+        <label for="subdomain">Subdomain</label>
+        <input type="text" id="subdomain" placeholder="myCompany"/>
+      </div>
+
+      <div class="section subdomain-container">
+        <label for="subdomain">Greenhouse Hostname</label>
+        <input type="text" id="greenhouse_hostname" disabled="disabled" placeholder="myCompany.greenhouse.io"/>
+      </div>
+
+      <div class="section permission-container">
+        <label for="permission">
+          Allow the Greenhouse Prospecting extension to remain open when navigating between pages.
+        </label>
+
+        <input type="checkbox" id="permission"/>
+
+        <br>
+        <div class="description">
+          NOTE: This will prompt Google Chrome to ask you for more permissions. The Greenhouse Prospecting extension needs these extra permissions so it can insert the Prospecting Form on all of the pages that you visit.
+          <br><br>
+          See the official documentation for more information:
+          <a href="https://developer.chrome.com/extensions/activeTab">https://developer.chrome.com/extensions/activeTab</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <button id="save">Save</button>
+        <div id="message"></div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

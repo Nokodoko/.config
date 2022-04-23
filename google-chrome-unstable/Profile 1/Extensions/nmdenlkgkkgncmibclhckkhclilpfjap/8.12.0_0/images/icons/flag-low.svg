@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    class="priority-icon"
+    ng-class="vacancy.priority"
+    width="10px"
+    height="12px"
+    viewBox="0 0 10 12"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M9,7 L9,6 L7.5,6 L7.5,18 L9,18 L9,13 L16.5,13 L14.488623,10.0341309 L16.5,7 L9,7 Z" id="path-flag"></path>
+    </defs>
+    <g id="Page-flag" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-493.000000, -165.000000)">
+            <g id="icon/flag" transform="translate(486.000000, 159.000000)">
+                <rect id="icon-wrapper" x="0" y="0" width="24" height="24"></rect>
+                <mask id="mask-flag" fill="white">
+                    <use xlink:href="#path-flag"></use>
+                </mask>
+                <use id="Combined-Shape-flag" fill="#5BB0A4" xlink:href="#path-flag"></use>
+            </g>
+        </g>
+    </g>
+</svg>

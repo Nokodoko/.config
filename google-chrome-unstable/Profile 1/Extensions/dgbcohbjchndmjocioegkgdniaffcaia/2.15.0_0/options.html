@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lever Hire extension options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h2>Enabled sites</h2>
+  <p>
+    Configure the websites you use the most with Lever.  When enabled, you can easily create new candidates and work with candidates that already exist.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Domain
+        </th>
+        <th>
+          <span class="toast-tooltip tooltip-bottom" data-tooltip="Display a prompt on the page to quickly create a new candidate or jump straight to the profile of an existing candidate.">
+            Prompt & match
+          </span>
+        </th>
+        <th>
+          <span class="match-tooltip tooltip-bottom" data-tooltip="Automatically check for a matching candidate in Lever when you load a new webpage.">
+            Match
+          </span>
+        </th>
+        <th>
+          <span class="tooltip-bottom arrow-right">
+            Disabled
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody id="sites">
+
+    </tbody>
+  </table>
+  <br>
+  <div>
+    <input type="text" id="new-item">&nbsp;&nbsp;<button id="add">Add +</button>&nbsp;&nbsp;<button id="restore">Reset to defaults</button>
+  </div>
+  <br>
+  <div id="status"></div>
+  <script src="SiteConf.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

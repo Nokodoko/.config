@@ -1,0 +1,24 @@
+{
+   "background": {
+      "run_at": "document_start",
+      "scripts": [ "scripts/jquery-3.4.1.min.js", "scripts/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/greenhouse-icon.png"
+   },
+   "description": "Become a prospecting wizard with Greenhouse!",
+   "icons": {
+      "128": "images/greenhouse-icon.png",
+      "16": "images/greenhouse-icon.png",
+      "48": "images/greenhouse-icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoDcS7rdNvcfU/EV3ZPiyyOgZEjwOEJvcUZPffCnCDPcSDeUvxOzJ2LVIE0hWL8aFLl7viRb6Me5EeYAXTlkchYHNXIugOICgCCqOvGShd/uBEuQXlouvYdhkEmw0fariaXBQ+mRthc8548ra8jXxqri6LbhkYn1eGKGZnyzgDWOXu/MK6vaxhlqMHunDEa22MDPvJ0iGO9wgZBz6+1sjLVSN6b2bYMZR+HdjlpFtkh44hev0IAZEbIihwpznht5e4vOnk9HuEb2rDnWiNHPPMdEf72Y2vV13F5SQtombyR8YyQ/WRbBdptYlbkHzJN2+DVDoWvu+TClpYtXSjwhcewIDAQAB",
+   "manifest_version": 2,
+   "name": "Greenhouse Prospecting",
+   "optional_permissions": [ "\u003Call_urls>" ],
+   "options_page": "views/options.html",
+   "permissions": [ "webRequest", "webRequestBlocking", "activeTab", "*://*.greenhouse.io/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7",
+   "web_accessible_resources": [ "views/*", "images/*" ]
+}

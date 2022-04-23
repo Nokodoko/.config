@@ -1,0 +1,6 @@
+2022/04/12-11:58:49.695 234ff Creating DB /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb since it was missing.
+2022/04/12-11:58:49.704 234ff Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/12-11:59:35.188 2849c Level-0 table #5: started
+2022/04/12-11:59:35.191 2849c Level-0 table #5: 1316 bytes OK
+2022/04/12-11:59:35.194 2849c Delete type=0 #3
+2022/04/12-11:59:35.194 2849c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

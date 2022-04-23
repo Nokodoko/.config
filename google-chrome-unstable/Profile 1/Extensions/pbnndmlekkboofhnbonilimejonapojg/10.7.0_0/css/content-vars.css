@@ -1,0 +1,79 @@
+:root
+{
+    --ml-zoom:1;
+    --ml-ignore:false;
+    --ml-invert:0;
+    --ml-stage:0;
+    --ml-no-invert:false;
+    --ml-small-svg-is-text:true;
+
+    --ml-text-color:Text;
+    --ml-text-fill:Text;
+    --ml-link-color:Link;
+    --ml-link-fill:Link;
+    --ml-link-active-color:Link$Active;
+    --ml-link-active-fill:Link$Active;
+    --ml-link-hover-color:Link$Hover;
+    --ml-link-hover-fill:Link$Hover;
+    --ml-visitedlink-color:VisitedLink;
+    --ml-visitedlink-fill:VisitedLink;
+    --ml-visitedlink-hover-color:VisitedLink$Hover;
+    --ml-visitedlink-hover-fill:VisitedLink$Hover;
+    --ml-visitedlink-active-color:VisitedLink$Active;
+    --ml-visitedlink-active-fill:VisitedLink$Active;
+
+    --ml-background-background-color:Background;
+    --ml-background-fill:Background;
+    --ml-background-border-color:Background;
+    --ml-background-border-bottom-color:Background;
+    --ml-background-border-left-color:Background;
+    --ml-background-border-right-color:Background;
+    --ml-background-border-top-color:Background;
+
+    --ml-backgroundnocontrast-background-color:BackgroundNoContrast;
+    --ml-backgroundnocontrast-fill:BackgroundNoContrast;
+    --ml-backgroundnocontrast-border-color:BackgroundNoContrast;
+    --ml-backgroundnocontrast-border-bottom-color:BackgroundNoContrast;
+    --ml-backgroundnocontrast-border-left-color:BackgroundNoContrast;
+    --ml-backgroundnocontrast-border-right-color:BackgroundNoContrast;
+    --ml-backgroundnocontrast-border-top-color:BackgroundNoContrast;
+
+    --ml-buttonbackground-background-color:ButtonBackground;
+    --ml-buttonbackground-fill:ButtonBackground;
+
+    --ml-backgroundimage:BackgroundImage;
+    --ml-image:Image;
+    --ml-svgbackground-background-color:SvgBackground;
+    --ml-svgbackground-fill:SvgBackground;
+
+    --ml-border-background-color:Border;
+    --ml-border-border-color:Border;
+    --ml-border-border-bottom-color:Border;
+    --ml-border-border-left-color:Border;
+    --ml-border-border-right-color:Border;
+    --ml-border-border-top-color:Border;
+    --ml-border-stroke:Border;
+    --ml-border-fill:Border;
+
+    --ml-buttonborder-background-color:ButtonBorder;
+    --ml-buttonborder-border-color:ButtonBorder;
+    --ml-buttonborder-border-bottom-color:ButtonBorder;
+    --ml-buttonborder-border-left-color:ButtonBorder;
+    --ml-buttonborder-border-right-color:ButtonBorder;
+    --ml-buttonborder-border-top-color:ButtonBorder;
+    --ml-buttonborder-stroke:ButtonBorder;
+    --ml-buttonborder-fill:ButtonBorder;
+}
+
+.ml-ignore, symbol, defs, script, head {
+    --ml-ignore:true;
+}
+
+#hc_extension_bkgnd:not(impt)
+{
+    display: none !important;
+}
+
+em {
+    --ml-text-color:HighlightedText;
+}

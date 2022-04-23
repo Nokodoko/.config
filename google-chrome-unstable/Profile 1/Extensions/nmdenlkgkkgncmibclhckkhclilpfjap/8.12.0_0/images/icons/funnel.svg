@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/funnel</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.9762045,6.14350057 C17.9352043,6.05600022 17.846704,6 17.7502036,6 L6.2501582,6 C6.15315782,6 6.06515747,6.05600022 6.02365731,6.14350057 C5.98265715,6.23100091 5.9956572,6.33500132 6.05715744,6.40950162 L11.0001769,12.3855252 L11.0001769,17.7500464 C11.0001769,17.8510468 11.0606772,17.9425471 11.1546776,17.9810473 C11.1851777,17.9930473 11.2181778,18.0000473 11.2501779,18.0000473 C11.3151782,18.0000473 11.3791784,17.9745472 11.4271786,17.9265471 L12.9266845,16.4265411 C12.9736847,16.381041 13.0001848,16.3165407 13.0001848,16.2500404 L13.0001848,12.3855252 L17.9427043,6.40950162 C18.0047046,6.33500132 18.0172046,6.23100091 17.9762045,6.14350057" id="path-1"></path>
+    </defs>
+    <g id="components/level-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="components" transform="translate(-278.000000, -760.000000)">
+            <g id="icons" transform="translate(50.000000, 711.000000)">
+                <g id="icon/funnel" transform="translate(222.000000, 43.000000)">
+                    <g>
+                        <rect id="icon-wrapper" x="0" y="0" width="24" height="24"></rect>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Fill-1" fill="#B7C9D7" xlink:href="#path-1"></use>
+                        <g id="color/bmr-dark-80" mask="url(#mask-2)" fill="#496174">
+                            <circle cx="12" cy="12" r="12"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

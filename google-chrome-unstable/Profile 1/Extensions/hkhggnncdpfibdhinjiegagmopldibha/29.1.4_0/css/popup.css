@@ -1,0 +1,731 @@
+@keyframes anim {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+	1% {
+		display: block;
+	}
+	100% {
+		opacity: 1;
+		/* bug: couldn't use transform translatex because if i had polymer menu dropdown inside the element then the dropdown would be off???  */
+	}
+}
+
+.hide {display:none}
+
+body {
+    margin:0;
+    padding:0;
+    font-size:14px;
+    color: black;
+}
+html[calendarView] body {height:600px}
+@-moz-document url-prefix() {
+	html[calendarView] body {height:550px} /* on laptop screen the bottom would be clipped */
+}
+html:not([calendarView='agenda']) body {width:800px}
+html[calendarView='agenda'] body {width:500px} /* makes sure edit bubble code still works: document.body.clientWidth >= 500 */
+
+html:not(.fromToolbar) .close {display:none}
+
+app-header-layout::before {content:' ';position:absolute;top:0;left:0;height:100%;width:100%;transition:opacity 0.1s ease-in;opacity:0}
+
+[contenteditable=true]:empty:before {
+	content: attr(placeholder);
+	color:#777;
+	font-size:1.2em;
+	display: block; /* For Firefox */
+}
+
+#mainContent {overflow-x:hidden;overflow-y:auto}
+@-moz-document url-prefix() {
+	#agenda {background:white} /* ff patch for black background */
+}
+
+#topLeft {white-space:nowrap}
+
+@-moz-document url-prefix() {
+	#betaCalendar .fc-timegrid-now-indicator-container {
+        position: static;
+    }
+}
+
+.open-below {top:-8px;left:15px}
+
+#bigAddEventButtonWrapper {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+}
+#bigAddEventButton {
+    transition: all 0.2s ease-in;
+    box-shadow:0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+#bigAddEventButtonWrapper.visible {
+    transition: opacity 0.2s ease-in;
+    opacity: 1;
+    pointer-events: initial;
+}
+#bigAddEventButton:hover {background-color:#ee766d}
+#bigAddEventButton.rotated {transform: rotate(90deg)}
+html[calendarView='agenda'] #bigAddEventButtonWrapper {right:40px}
+
+#topRight {display:none;white-space: nowrap}
+#topRight paper-menu-button {padding:0}
+
+#saveEvent.extraFeature {background:#cecece !important}
+
+#quickAddWrapper {display:none}
+#quickAddOptions {display:none}
+#quickAddCalendars, #searchCalendars {max-width:100px}
+#save-quick-add {min-width:4em;margin-left:7px;padding:9px;font-size:16px}
+#quickAddWrapper.inputEntered #quickAddOptions {display:flex}
+html.quickAddVisible #menu {display:none}
+html.quickAddVisible #topLeft {display:none}
+html.quickAddVisible #quickAddWrapper {display:flex;z-index:100}
+html.quickAddVisible #quickAddWrapper.inputEntered {top:-1px}
+html.quickAddVisible #topRight {display:none}
+#quickAdd {background-color: inherit;font-size:20px;-webkit-appearance: none;-moz-appearance: none;padding-left:5px;outline:none;border:none}
+html:not([calendarView='agenda']) #quickAdd {width:249px} /* patch really for Firefox only because the placeholder Dinner at Bobs text was being clipped */
+
+html:not([calendarView='agenda']) #goToToday {display:none}
+#gotoDateDialog paper-dropdown-menu {width:80px}
+
+#searchInputWrapper {display:none;z-index:2}
+#searchInput {background-color: inherit;font-size:20px;-webkit-appearance: none;-moz-appearance: none;padding:10px;outline:none;border:none;max-width:300px}
+#search iron-icon {margin-right:0}
+html.searchInputVisible #searchInputWrapper {animation: anim .3s ease-in-out forwards}
+html.searchInputVisible #menu {display:none}
+html.searchInputVisible #topLeft {display:none}
+html.searchInputVisible #searchInputWrapper {display:flex}
+html.searchInputVisible #topRight {display:none}
+html.searchInputVisible #betaCalendarWrapper {display:none}
+html.searchInputVisible #agenda {display:block}
+html.searchInputVisible .agendaMonthHeader {font-size:1em}
+
+#calendarTitle {
+	cursor:pointer;
+	margin-top:-2px;
+	font-size:115%;
+	padding:5px;
+	text-align:center;
+	display:inline-block;
+	min-width:135px;
+	user-select: none;
+	max-width: 33vw;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+html[calendarView='agendaWeek'] #calendarTitle, html[calendarView='custom'] #calendarTitle {min-width:220px}
+#calendarTitleDropdown {display:none;cursor:pointer;margin-left:1px;transition:transform 218ms cubic-bezier(0.4, 0, 0.2, 1)}
+.datePickerVisible #calendarTitleDropdown {transform: rotate(180deg)}
+#datepickerToolbar {display:none;height:100%}
+
+#drawer-scrollarea::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+#drawer-scrollarea {
+    height: 89%;
+    overflow: auto;
+    margin-right: 4px;
+}
+
+#options-menu .iron-selected iron-icon {opacity:1}
+
+#betaCalendar a {font-family:Arial, sans-serif}
+a:visited {color:blue}
+
+#donate:hover {text-decoration:underline}
+#alarmDetails {clear:both;display:none;border-radius:5px;background:#E3E9FF;padding:5px;margin-bottom:8px}
+
+#title:hover {background-color:transparent}
+#title:focus:before {background:none}
+
+.contactPhoto {width:40px;height:40px;margin-inline-end:16px;border-radius:50%}
+
+#addGuestInput {font-size:1.1em;width:100%;padding:6px 0;text-indent: 5px}
+#addGuestInput:focus {outline:none} 
+
+.chip {margin: 3px 6px 3px 3px;border-radius: 12px;font-size:1.1em}
+.chip .contactPhoto {width:24px;height:24px;margin-inline-end:0}
+.chipName {padding:0 10px;vertical-align:middle;color:#555;font-size:0.9em}
+.removeChip {cursor:pointer;width:12px !important;height:12px !important;margin-top:3px;padding:0 4px;color:gray}
+.removeChip:hover {color:black}
+#fetchContacts {display:none;position:absolute}
+
+.acSuggestions {position:absolute;display:none;background:white;z-index:1;margin-top:0;margin-left:25px;padding:0;border:1px solid #eee}
+.acItem {padding:12px;cursor:pointer}
+.acItem.selected, .acItem:hover {background-color:#f5f5f5}
+.acItem .contactPhoto {width:26px;height:26px;margin-inline-end:10px}
+.acName {white-space:nowrap;margin-inline-end:10px;width:150px;overflow-x:hidden;text-overflow: ellipsis}
+.acEmail {color:gray}
+
+#skinsDialog {opacity:0.9;transition:opacity 0.3s ease-in-out}
+#skinsDialog .buttons paper-button:not(.colored) {
+    color: gray;
+}
+
+#skinsDialog #availableSkins paper-item {margin-left:45px;padding-left:8px;min-height:32px}
+#skinsDialog #availableSkins paper-item.iron-selected .addButton,
+#skinsDialog .addButton.selected {
+	visibility: visible;
+}
+#skinsDialog .addButton {
+	margin-right: 10px;
+	background:#eee;
+	border-radius:50%;
+	visibility: hidden;
+	position:absolute;
+	transition:0.4s transform ease-in 0.5s;
+	--add-button-translateX: translateX(-53px);
+	transform: var(--add-button-translateX);
+}
+
+#skinsDialog .addButton:not(.selected).highlight {
+	transform: var(--add-button-translateX) rotate(180deg) scale(3);
+}
+
+#skinAuthorWrapper {font-size:0.8em;font-style:italic;padding:11px;color:gray}
+#skinAuthorWrapper a {text-decoration:none}
+#skinAuthorInner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+}
+@media screen and (max-width: 699px) {
+    .skin-by {
+        display: none;
+    }
+}
+#skinWatermark {display:none;position:absolute;left:8px;bottom:5px;opacity:0.3;color:black;text-decoration:none;transition:opacity 0.1s ease-in-out;z-index:10}
+#skinWatermark:hover {opacity:0.7}
+.rtl #skinWatermark {left:auto;right:8px}
+#skinWatermark.visible {display:block}
+
+#visibleCalendars {font-size:16px;margin-left:18px}
+#visibleCalendars paper-checkbox {xxmargin:5px 0}
+#visibleCalendars .visibleCalendarLabel {text-overflow: ellipsis;width:155px;overflow-x: hidden;white-space: nowrap;display:inline-block;vertical-align: middle}
+#visibleCalendars .displayThisCalendarOnly {visibility:hidden;width:35px;height:35px}
+#visibleCalendars .visible-calendar:hover .displayThisCalendarOnly,
+#visibleCalendars .visible-calendar:hover #task-color-picker {
+    visibility:visible
+}
+
+#task-color-picker {
+    visibility: hidden;
+    margin: -11px 0px 0px -57px;
+    height: 20px;
+}
+
+#betaCalendar.ctrlKey .fc-event-draggable,
+#betaCalendar.ctrlKey .fc-event[href] {cursor:copy}
+
+#betaCalendar .fc-event {border-radius: 2px}
+
+
+/* put title before time in day & week views */
+#betaCalendar .fc-v-event .fc-event-main-frame {
+    xxheight: auto;
+    flex-direction: column-reverse;
+}
+#betaCalendar .fc-timegrid-event-short .fc-event-main-frame {
+    xxflex-direction: row-reverse;
+}
+#betaCalendar .fc-v-event .fc-event-title-container {
+    xxflex-shrink: 0;
+}
+#betaCalendar .fc-v-event .fc-event-time {
+    flex-shrink: 2;
+    flex-grow: 100; /* move time higher */
+}
+
+#betaCalendar .fc-timegrid-event-short .fc-event-time:after {
+    content: none; /* remove dash */
+}
+
+
+/* do not dim multiple day events that have not ended: .fc-daygrid-event-harness:not(.fc-daygrid-event-harness-abs) */
+#betaCalendar.dim-past-events .fc-day-past:not(.fc-popover) .fc-daygrid-event-harness:not(.fc-daygrid-event-harness-abs) .fc-event,
+#betaCalendar.dim-past-events .fc-day-past:not(.fc-popover) .fc-daygrid-day-bottom,
+#betaCalendar.dim-past-events .fc-timegrid .fc-event-past,
+.pastEvent {
+    opacity: 0.4;
+}
+#betaCalendar.dim-past-events .fc-day-past:not(.fc-popover) .fc-daygrid-event-harness:not(.fc-daygrid-event-harness-abs) .fc-daygrid-block-event .fc-event-time,
+#betaCalendar.dim-past-events .fc-day-past:not(.fc-popover) .fc-daygrid-event-harness:not(.fc-daygrid-event-harness-abs) .fc-daygrid-block-event .fc-event-title {
+    color: black;
+}
+
+#betaCalendar .eventIcon svg {fill:white}
+#betaCalendar .eventIcon svg path {stroke:white !important}
+
+#eventColor,
+.colorIndicator,
+.colorChoice {
+    border-radius:50%;
+    min-width:16px;
+    min-height:16px;
+}
+
+:is(#betaCalendar .needs-action, #betaCalendar .fcDeclinedEvent) .fc-daygrid-event-dot {
+    border-width: 1px;
+    border-style: solid;
+    min-width: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+#betaCalendar .fc-daygrid-dot-event .fc-event-title {
+    font-weight: normal;
+}
+
+#betaCalendar .fc-daygrid-dot-event:hover,
+#betaCalendar .fc-more-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#betaCalendar .fc-more-link {
+    width: 100%;
+    display: inline-block;
+}
+
+.fc-timeGridWeek-view .fc-col-header-cell.fc-day {
+    cursor: pointer;
+}
+
+#betaCalendar .fc-col-header th {font-weight:normal}
+
+#betaCalendar .fc-dayGrid-view .fc-daygrid-week-number,
+#betaCalendar .fc-daygrid-day-number {
+    color:#757575;
+    margin: 2px 4px;
+    padding: 0;
+}
+
+#betaCalendar.fc-direction-ltr .fc-daygrid-day-top {
+    justify-content: center;
+}
+#betaCalendar.fc-direction-ltr .fc-daygrid-day-number {
+    xxfont-size: 0.9em;
+}
+
+#betaCalendar .fc-day-today .fc-daygrid-day-number {
+    min-width: 22px;
+    padding: 2px;
+    margin-top: 1px;
+    margin-bottom: -1px;
+    text-align: center;
+
+    color: #fff;
+    background-color: var(--today-date-bg-color);
+    border-radius: 50%;
+}
+
+#betaCalendar .snoozedEvent {opacity:0.6}
+#betaCalendar .snoozedEvent .fc-event-title::before {
+    content: "💤 ";
+}
+
+#betaCalendar .task .fc-event-title,
+#agenda .task {
+    background-image: url("/images/task.svg");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    padding-left:18px;
+}
+#betaCalendar .fc-view:not(.fc-list) .task.task-completed,
+#agenda .task-completed {
+    border-color: rgb(252, 203, 188) !important;
+    background-color: rgb(252, 203, 188) !important;
+}
+#betaCalendar .task.task-completed .fc-event-title,
+#agenda .task-completed .agendaEventTitle {
+    background-image: url("/images/task-completed.svg");
+    background-repeat: no-repeat;
+    color: rgba(32,33,36,0.38);
+    text-decoration: line-through;
+}
+
+#betaCalendar .fcDeclinedEvent .fc-event-time,
+#betaCalendar .fcDeclinedEvent .fc-event-title {
+    text-decoration: line-through;
+}
+ 
+#betaCalendar.highlightWeekends .fc-day-sat:not(.fc-day-today),
+#betaCalendar.highlightWeekends .fc-day-sun:not(.fc-day-today) {
+    background-color: var(--fc-today-bg-color); /* #ececec8f */
+}
+/*
+.background-skin #betaCalendar.highlightWeekends .fc-day-sat:not(.fc-day-today),
+.background-skin #betaCalendar.highlightWeekends .fc-day-sun:not(.fc-day-today) {
+    background-color: #ffffff8f;
+}
+*/
+
+#betaCalendar.fc-direction-ltr .fc-timegrid-col-events {margin-right: 7px} /* Add space in weekview so user can add another event at same start time ref: https://jasonsavard.com/forum/discussion/comment/4322#Comment_4322 */
+#betaCalendar .fc-daygrid-week-number {
+    background-color:transparent;
+    font-size:80%;
+    font-style:italic;
+}
+
+#betaCalendar .fc-list-event-graphic {
+    padding-top: 11px;
+}
+#betaCalendar .fc-list-event:hover {cursor:pointer}
+
+#agenda {display:none;padding:5px}
+.agendaMonthHeader {font-size:2.4em;color:gray;padding:10px 0}
+.agendaDay {margin-bottom:20px}
+.agendaDay.today {padding-top:10px}
+.agendaDay.today .agendaDateWrapper {color:rgb(2, 154, 228)}
+.agendaDateWrapper {width:38px;color:#aaa;margin-left:4px}
+.agendaDate {font-size:1.8em}
+.agendaDayEvents {margin-top:4px}
+.agendaEvent {color:white;margin-bottom:6px;padding:5px 9px;border-radius:2px;cursor:pointer}
+
+#agendaEvents.dim-past-events .agendaEvent.pastEvent,
+.agendaEvent.declined {
+    opacity:0.3;
+    zoom:0.7;
+}
+.searchInputVisible #agendaEvents.dim-past-events .agendaEvent.pastEvent {
+    opacity: 0.8;
+}
+
+.agendaEventTitleWrapper {text-overflow: ellipsis;overflow:hidden; position: relative}
+.agendaEventTitle {margin-inline-end: 4px}
+.agendaEventTime, .agendaEventLocation, .agendaEventVideo {margin-top:2px;font-size:0.8em}
+.agendaEventLocation {word-break: break-word}
+.placeHolderForToday {padding:8px 0;cursor:pointer}
+.repeating {filter: invert(100%); position:absolute; top: 4px; right: 0; opacity: 0.8}
+.repeating:hover {
+    opacity: 1;
+}
+
+html[calendarView='agenda'] #betaCalendar {display:none}
+html[calendarView='agenda'] #agenda {display:block}
+html[calendarView='agenda'] #calendarTitle {min-width:inherit}
+html[calendarView='agenda'] #prev, html[calendarView='agenda'] #next {display:none}
+html[calendarView='agenda'] #calendarTitleDropdown {display:inline-block}
+
+#dialogsWrapper {position:absolute;top:0;left:0;height:100vh;width:0}
+@-moz-document url-prefix() {
+	#dialogsWrapper {height:100%}
+}
+
+#clickedEventDialog {min-width:400px;max-width:550px}
+#clickedEventDialog a {text-decoration:none}
+#clickedEventTitle {font-size:140%;line-height: initial;cursor:pointer;margin-right:40px;overflow: hidden;text-overflow: ellipsis}
+#clickedEventsTopRightButtons {position:absolute;top:0;right:0;color:#666}
+#clickedEventOpenInCalendar {margin-right:-12px}
+xx#clickedEventDate {margin-bottom:10px}
+.clickedEventSubDetailsLabel, .clickedEventSubDetails {margin:1px 8px 1px 0;display:inline-block;vertical-align:top}
+.clickedEventSubDetailsLabel {width:70px;color:gray}
+.clickedEventSubDetails {overflow:auto;max-height:60px}
+
+.attachment {
+    color: black !important;
+    padding: 6px;
+    margin-inline-end: 10px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 3px 0 rgb(0 0 0 / 20%);
+ }
+ .attachment img {
+    vertical-align: middle;
+ }
+
+#clickedEventAttendeesWrapper .clickedEventSubDetails {max-height:max-content}
+#clickedEventAttendeesWrapper .clickedEventSubDetails a {color:gray}
+
+#clickedEventGoingWrapper {
+	color:#555;
+}
+
+#clickedEventAttendeesWrapper .chip {
+	background-color:transparent;
+}
+
+.attendee-photo-wrapper {
+	display:inline-block;
+	position:relative;
+}
+
+.attendee-status {
+	display:none;
+	border: 2px solid white;
+	position:absolute;
+	right: -7px;
+	bottom: -2px; /* to far and it would evoke scrollbars on container */
+	border-radius:50%;
+	padding:2px;
+	width:9px;
+	height:9px;
+	line-height:9px;
+	text-align: center;
+}
+
+.attendee-status.going {
+	display:block;
+	color:#68a97d;
+	background-color:#f0f8ff;
+}
+.attendee-status.going:before {
+	content: "\2713"
+}
+
+.attendee-status.tentative {
+	display:block;
+	color:#666;
+	background-color:lightgray;
+}
+.attendee-status.tentative:before {
+	content: '?'
+}
+
+.attendee-status.declined {
+	display:block;
+	color:red;
+	background-color:pink;
+}
+.attendee-status.declined:before {
+	content: '\d7'
+}
+
+.chipDetails {
+	color:gray;
+	font-size:0.7em;
+	line-height: normal;
+}
+
+#clickedEventAttendeesWrapper .removeChip {
+	display:none;
+}
+
+#clickedEventGoingWrapper paper-button {
+	margin:0;
+	padding:2px 6px;
+	min-width:auto;
+}
+#clickedEventGoingWrapper paper-button:hover {
+	background-color:#f6f6f6;
+}
+.goingStatusHighlighted {font-weight:bold;color:#1a73e8}
+
+#datepickerWrapper {display:none;margin-bottom:10px; width: 100%}
+
+#miniCalendar {margin-bottom:10px}
+
+#pendingNotifications {display:none}
+#pendingNotifications {color:#FFD000}
+
+.share-button-real .share-button.swing {color:blue}
+
+.swing {
+	animation: 0.7s ease-in-out 0s normal none 3 swing;
+	transform-origin: center top;
+}
+
+#newsNotification {color:green}
+
+#createEventDialog {padding:20px 0 5px 0}
+#createEventDialog ::-webkit-input-placeholder, #createEventDialog ::-moz-placeholder {opacity:0.3}
+#createEventDialog > * {margin-top:0}
+
+#createEventDate {text-align:right;margin-top:5px}
+#createEventDialog paper-dialog-scrollable {max-height:80vh}
+
+#createEventDialog:not(.task-selected) #event-time-related-wrapper {
+    min-height: 66px; /* min-height to avoid jumping content when time dropdowns appear */
+}
+
+#eventStartEndTimeWrapper input {
+    font-size:105%;
+    margin-bottom:5px;
+    padding:2px 0 4px 2px;
+    width:94px;
+    border:none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.466);
+}
+
+:is(html[lang='ja'], html[lang='pt-BR'], html[lang='ru'], html[lang='ko'], html[lang*='zh']) #eventStartDate,
+:is(html[lang='ja'], html[lang='pt-BR'], html[lang='ru'], html[lang='ko'], html[lang*='zh']) #eventEndDate {
+    width: 110px;
+}
+
+#eventStartEndTimeWrapper input#eventStartTime,
+#eventStartEndTimeWrapper input#eventEndTime {
+    width:68px;
+}
+
+:is(html[lang='fa'], html[lang='ko'], html[lang='he'], html[lang='fr-ca']) #eventStartEndTimeWrapper input#eventStartTime,
+:is(html[lang='fa'], html[lang='ko'], html[lang='he'], html[lang='fr-ca']) #eventStartEndTimeWrapper input#eventEndTime {
+    width:90px;
+}
+
+#eventStartEndTimeWrapper input#eventStartTime {margin-inline-start:5px}
+#eventStartEndTimeWrapper input#eventEndTime {margin-inline-end:5px}
+#eventStartEndTimeWrapper input:focus {outline:none;border-bottom:1px solid #0016B1}
+
+#clickedEventDialog.task-selected #clickedEventNotificationsWrapper,
+#clickedEventDialog.task-selected #clickedEventColor,
+#clickedEventDialog.task-selected #clickedEventDuplicate,
+#clickedEventDialog:not(.task-selected) #clickedEventMarkCompleted,
+#clickedEventDialog:not(.task-selected) #clickedEventMarkUncompleted {
+    display: none;
+}
+
+#clickedEventDialog.task-completed #clickedEventMarkCompleted,
+#clickedEventDialog:not(.task-completed) #clickedEventMarkUncompleted {
+    display: none;
+}
+
+#createEventDialog.task-selected #eventEndDate,
+#createEventDialog.task-selected #time-separator,
+#createEventDialog.task-selected #eventAllDay,
+#createEventDialog.task-selected .repeat-placeholder,
+#createEventDialog.task-selected #eventConferenceWrapper,
+#createEventDialog.task-selected #eventLocation-wrapper,
+#createEventDialog.task-selected #createEventCalendar-wrapper,
+#createEventDialog.task-selected event-reminders,
+#createEventDialog.task-selected #inviteGuests,
+#createEventDialog.task-selected #openEventInCalendar,
+#createEventDialog:not(.task-selected) #event-task-list-wrapper {
+    display: none;
+}
+
+.task-selected #eventDescription-wrapper {
+    margin-top:10px;
+}
+
+#event-task-selection {
+    margin-left: 37px;
+    margin-bottom: 10px;
+}
+
+#event-task-selection paper-button {
+    margin: 2px;
+    padding: 2px;
+}
+
+#event-task-selection paper-button[toggles][active] {
+    color: #1a73e8;
+    background:#e8f0fe;
+}
+
+#eventAllDay, #detectTime {
+	margin: 9px 0 2px 0;
+	--paper-checkbox-checked-color:gray;
+	--paper-checkbox-unchecked-color:gray;
+}
+#detectTime {margin-top:3px}
+
+#repeat-dropdown-wrapper {
+    zoom: 0.9;
+    padding: 0 !important;
+    width: 130px;
+}
+#detectTimeWrapper #repeat-dropdown-wrapper {
+    margin-top: -7px;
+}
+
+#createEventCalendar {
+    width:80%
+}
+
+#createEventCalendar,
+#createEventTaskList,
+.calendarReminder paper-dropdown-menu:first-child paper-menu-button {
+    margin-left:-7px
+}
+
+#eventDescription { /* patch because setting .value programmatically on paper-textarea would not obey the maxrows */
+	max-height: 100px;
+	xxmax-width:290px;
+	width:290px;
+	overflow-x: hidden;
+    overflow-y: auto;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #666;
+	outline:none;
+	cursor:text;
+}
+#eventDescription:focus {
+	padding-bottom: 3px;
+	border-bottom:2px solid darkblue;
+}
+
+#currentPage {margin-right:-10px}
+
+.fc-event .eventIcon {margin-right:3px;display:inline-block;vertical-align:middle}
+.fc-event .eventIcon svg {max-height:11px !important;max-width:11px !important}
+#clickedEventDialog .eventIcon {margin-right:10px}
+.agendaDay .eventIcon {vertical-align:middle}
+.agendaDay .eventIcon svg {fill:white;max-height:13px !important;margin-right:6px}
+.agendaDay .eventIcon svg path {stroke:white !important}
+
+.field {margin:10px 0}
+.fieldIcon {color:#8a8a8a}
+#createEventDialog .fieldIcon {margin:0 20px 0 -5px}
+#clickedEventDialog .fieldIcon {margin-right:14px;width:21px;height:21px}
+
+#eventToast paper-button {margin:0;min-width:20px}
+.toastUndoEvent {margin-left:10px !important}
+
+.day-of-year-top {
+    justify-content: space-between !important;
+}
+.day-of-year {
+    color:#bbb;
+    font-size: 9px;
+    padding: 2px;
+}
+
+.colorChoice {position:relative;display:inline-block;margin-right:7px;cursor:pointer}
+
+@-webkit-keyframes spin {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+.rotate {animation: spin 1s linear infinite}
+
+@-webkit-keyframes swing {
+	0%   {transform: rotate(0deg)}
+	25%  {transform: rotate(-15deg)}
+	75%  {transform: rotate(15deg)}
+	100% {transform: rotate(0deg)}
+}
+
+@media screen and (min-width: 251px) {
+	#bigAddEventButtonWrapper {display:inline-block}
+	.agendaDateWrapper {width:50px}
+	html.searchInputVisible .agendaMonthHeader {display:none}
+	html.searchInputVisible .agendaDateWrapper {width:120px;font-size:0.5em;margin-top:10px}
+}
+
+@media screen and (min-width: 490px) { /* used to be 500px but zoom 80% would still keep top right hidden */
+	#topRight {display:block}
+}
+
+@media screen and (min-width: 650px) {
+	#quickAddCalendars, #searchCalendars {max-width:141px}
+	.share-button {display:inline-block !important}
+}
+
+@media screen and (max-width: 650px) {
+	.share-button, .share-button-real {display:none !important}
+}
+
+@media screen and (max-width: 800px) {
+	#betaCalendar .fc-day:not(.fc-popover) .fc-daygrid-event-dot {
+        margin-left: 1px;
+    }
+}

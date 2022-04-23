@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "style-gchat.css" ],
+      "matches": [ "*://hangouts.google.com/*" ]
+   } ],
+   "description": "Black Dark Gmail Hangouts Chat Theme. Make your Gmail Chat dark!",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqb3fxCYC6Ny9DzhmX2HXhmpx13VACYD9ctZaIXpUp0HVX6f2a4cY/DFComHA9poPn440f4CWVw39Orqg5EsX3eqrZjEbhsBNCfV/5C4hdFZKT0fwCAbn71unKiKNqCT/Py/NirWb/Uo9PSKoSDq58jWovpIgnzb5hsRJlm6g3KnGM5soX1F+5/Wymiharb0+3W7lLiqlR/Ew9xFmEq/6a89GieAuEqPdkRMULW+N95ES84tX/TGyqcC8kJNk9GyRjXgm+kdn+5yrbJBELEBNMLL/CRUiJvgGQSy5KLV3iHXsfpyjNw6Rn79s7xXOCIeOEHYKOOrFafA2QRiFAU3b9wIDAQAB",
+   "manifest_version": 2,
+   "name": "Black Dark Gmail Hangouts Chat Theme",
+   "short_name": "Black Dark Gmail Hangouts Chat Theme",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.3"
+}

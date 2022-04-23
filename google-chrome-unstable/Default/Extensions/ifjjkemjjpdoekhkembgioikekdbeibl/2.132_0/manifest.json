@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "data/panel/utils.js", "common.js", "jquery.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "data/icons/16.png",
+         "32": "data/icons/32.png"
+      },
+      "default_popup": "data/panel/index.html"
+   },
+   "description": "OpenVPN For Android is the official VPN application for Android developed by OpenVPN, Inc. [100% Working, Mod, Pro]",
+   "homepage_url": "https://turbo-vpn-pro-apk.a1shayari.com/",
+   "icons": {
+      "128": "data/icons/128.png",
+      "16": "data/icons/16.png",
+      "48": "data/icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA25XxwHOE8UXH9lf1zLn5aQFMtviGSMirwMkblpZET+ZofI4xjWF4YxWFwzUE2DbWLoLayJrWUmYbsPj8SOY/aoT6YNrmEQbxFHURZpx9S8iJHVi47e6StOvQglbRT0XaB0f+DVyT7k8HPrH/fUnLMb1/aPJBehJqeHb3oRhGzsNOdSG0vHJmLZKVQNb7VImFP+NTRosylvNrM5MR/HMw8DRZ86qWI/IzEAarPTD9yx0kQ6Iwlr28uQyfVwS358HUkVhvC4UulvN/GelRoeEw8kf12DiMnLJvg/q3EDTw6NniWGF/MI2XiOYS7b4tVCikDkUJPGMAlgDEnqOHt39t4wIDAQAB",
+   "manifest_version": 2,
+   "name": "OpenVPN For Android [100% Working, Mod, Pro]",
+   "permissions": [ "storage", "webRequest", "webRequestBlocking", "proxy", "\u003Call_urls>" ],
+   "short_name": "FreeVpn",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.132"
+}

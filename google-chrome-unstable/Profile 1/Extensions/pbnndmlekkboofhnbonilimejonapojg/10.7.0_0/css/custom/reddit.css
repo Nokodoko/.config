@@ -1,0 +1,89 @@
+html[ml-mode]:not([ml-mode="filter"]) #header-img:not([alt="firefox"]) {
+    --ml-ignore:true;
+    --hue-rotate: calc(var(--ml-invert) * 180deg);
+    filter: saturate(var(--ml-image-saturation-limit, 1)) hue-rotate(var(--hue-rotate)) invert(var(--ml-invert)) brightness(var(--ml-text-lightness-limit, 1));
+}
+
+.morelink,
+.subscribe-button {
+    --ml-backgroundimage:Background;
+}
+
+#search[action="https://www.reddit.com/r/firefox/search"]>input[type="submit"] {
+    --ml-no-invert:true;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .entry .tagline *[style*=--link]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--link]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--link]:not(:visited),
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain[style*=--link]:not(imp):before,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--link]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--link]:not(:visited),
+html[ml-mode]:not([ml-mode="filter"]) .entry .flatlist li .redditSingleClick[style*=--link]:not(imp):after {
+    color: var(--link-color) !important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .entry .tagline *[style*=--visited]:visited:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--visited]:visited:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a:visited [style*=--visited]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain[style*=--visited]:visited:not(imp):before,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--visited]:visited:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a:visited [style*=--visited]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .flatlist li .redditSingleClick[style*=--visited]:visited:not(imp):after {
+    color: var(--visited-color) !important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .entry .tagline *[style*=--visited]:visited:not(imp):hover,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--visited]:visited:not(imp):hover,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain[style*=--visited]:visited:not(imp):hover:before,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--visited]:visited:not(imp):hover,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flatlist li .redditSingleClick[style*=--visited]:visited:not(imp):hover:after {
+    color: var(--visited-color-hover) !important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .entry .tagline *[style*=--visited]:visited:not(imp):active,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--visited]:visited:not(imp):active,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a:visited:active [style*=--visited]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain[style*=--visited]:visited:not(imp):active:before,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--visited]:visited:not(imp):active,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a:visited:active [style*=--visited]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .entry .flatlist li .redditSingleClick[style*=--visited]:visited:not(imp):active:after {
+    color: var(--visited-color-active) !important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .entry .tagline *[style*=--link]:not(imp):active,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--link]:not(imp):active,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--link]:not(:visited):active,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain[style*=--link]:not(imp):active:before,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--link]:not(imp):active,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--link]:not(:visited):active,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flatlist li .redditSingleClick[style*=--link]:not(imp):active:after {
+    color: var(--link-color-active) !important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .entry .tagline *[style*=--link]:not(imp):hover,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--link]:not(imp):hover,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain a[style*=--link]:not(:visited):hover,
+html[ml-mode]:not([ml-mode="filter"]) .entry .title .domain[style*=--link]:not(imp):hover:before,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--link]:not(imp):hover,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flat-list li a[style*=--link]:not(:visited):hover,
+html[ml-mode]:not([ml-mode="filter"]) .entry .flatlist li .redditSingleClick[style*=--link]:not(imp):hover:after {
+    color: var(--link-color-hover) !important;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .link:hover>.entry .tagline[style*=--link]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .link:hover>.entry .title .domain a[style*=--link]:not(imp),
+html[ml-mode]:not([ml-mode="filter"]) .link:hover>.entry .title .domain[style*=--link]:not(imp):before,
+html[ml-mode]:not([ml-mode="filter"]) .link:hover>.entry .flat-list li a[style*=--link]:not(imp):not(.comments),
+html[ml-mode]:not([ml-mode="filter"]) .link:hover>.entry .flatlist li .redditSingleClick[style*=--link]:not(imp):after {
+    color: var(--link-color-hover) !important;
+}
+
+.flair:before {
+    --ml-no-invert:true;
+    --ml-backgroundimage:Image;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) .hdtAEI:not(imp):not(.ml):not(#imp):before {
+    background-color: transparent!important;
+}

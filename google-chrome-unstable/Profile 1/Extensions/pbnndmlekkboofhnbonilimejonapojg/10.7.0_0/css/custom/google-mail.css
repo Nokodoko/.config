@@ -1,0 +1,95 @@
+html[ml-mode]:not([ml-mode="filter"]) a[href="#inbox"][title="Gmail"]:not(#imp):not(.imp):not(imp) span[class]:not(#imp):not(.imp):not(imp) {
+    --ml-ignore:true;
+    --hue-rotate: calc(var(--ml-invert) * 180deg);
+    background-color: transparent!important;
+    filter: var(--ml-text-filter);
+}
+
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbip,
+html[ml-mode="filter"]:not([ml-stage="preload"]) .gbii {
+  filter: var(--ml-image-revert-filter);
+}
+
+td[class]:empty:first-child {
+    --ml-no-invert:true;
+}
+
+div[role="tab"]>div:nth-child(2) {
+    --ml-background-background-color:Border;
+}
+
+div[role="search"] button[aria-label],
+.ZC {
+    --ml-no-invert:true;
+}
+
+div.T-Kw-Jt {
+    --ml-ignore:true;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) .J-N-JT .J-N-Jz,
+html[ml-mode]:not([ml-mode="filter"]) .J-N-JW .J-N-Jz {
+    color: rgb(50, 50, 50) !important;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) div[role="button"]:not(#imp):not(.imp):not(imp)>span[class]:not(#imp):not(.imp):not(imp):after,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) div[role="checkbox"]:not(#imp):not(.imp):not(imp)>span[class]:not(#imp):not(.imp):not(imp):before,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) span[role="link"][id]:not(#imp):not(.imp):not(imp):before,
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) span[role="button"][id]:not(#imp):not(.imp):not(imp):before,
+html[ml-stage]:not([ml-mode="filter"]) div[role="button"]:not(#imp):not(.imp):not(imp)>span>img[src]:not(#imp):not(.imp):not(imp),
+html[ml-stage]:not([ml-mode="filter"]) div[role="button"]:not(#imp):not(.imp):not(imp)>img[src]:not(#imp):not(.imp):not(imp),
+html[ml-stage]:not([ml-mode="filter"]) div[role="menuitem"]:not(#imp):not(.imp):not(imp)>img[src]:not(#imp):not(.imp):not(imp),
+html[ml-stage]:not([ml-mode="filter"]) :not(.Hm)>img[src$="cleardot.gif"]:not(#imp):not(.imp):not(imp),
+html[ml-stage]:not([ml-mode="filter"]) img[src*="black"]:not(#imp):not(.imp):not(imp) {
+    filter: var(--ml-text-filter) !important;
+    background-color: transparent !important;
+    --ml-ignore:true;
+}
+
+html[ml-mode]:not([ml-mode="filter"]) div[tabid="chat"][role="tab"]:not(#imp):not(.imp):not(imp)>div[aria-hidden="true"]:not(#imp):not(.imp):not(imp) {
+    --ml-ignore:true;
+    filter: invert(var(--ml-invert, 0))!important;
+    background-color: transparent!important;
+}
+
+div[role="tab"][aria-selected="true"]:before {
+    --ml-background-background-color:Border;
+}
+
+div[role="navigation"] .qj:after {
+    --ml-background-border-color:Border;
+    --ml-background-border-bottom-color:Border;
+    --ml-background-border-left-color:Border;
+    --ml-background-border-right-color:Border;
+    --ml-background-border-top-color:Border;
+}
+
+.zE {
+    --ml-background-background-color:ButtonBackground;
+}
+
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) table:not(#imp):not(.imp):not(imp) .zE:not(#imp):not(.imp):not(imp) {
+    background-color: var(--ml-main-button-background-color)!important;
+}
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) table:not(#imp):not(.imp):not(imp) .zE:not(#imp):not(.imp):not(imp)>*:not(#imp):not(.imp):not(imp),
+html[ml-stage-mode]:not([ml-mode="filter"]):not([ml-stage-mode="complete-complex"]) table:not(#imp):not(.imp):not(imp) .zE:not(#imp):not(.imp):not(imp)>*:not(#imp):not(.imp):not(imp)>*:not(#imp):not(.imp):not(imp) {
+    background-color: transparent!important;
+}
+
+#loading div[style*="animation"][style*="background:#db4437"],
+#loading div[style*="animation"][style*="background:#d23f31"] {
+    --ml-background-background-color:HighlightedBackground;
+}
+
+#loading #nlpt:before {
+    --ml-background-background-color:Border;
+}
+
+html[ml-stage-mode="complete-complex"] [id][role="tabpanel"] {
+    --ml-ignore:true;
+    filter: var(--ml-text-filter);
+}
+
+html[ml-stage-mode="complete-complex"] [role="tabpanel"] img[src$="cleardot.gif"]:not(#imp):not(.imp):not(imp) {
+    filter:none!important;
+}
