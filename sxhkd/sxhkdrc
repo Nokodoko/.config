@@ -109,12 +109,16 @@ ctrl+alt+Right
     exec ~/scripts/dcontext.zsh
 
 ctrl+alt+Left
-    exec ~/scripts/mkSpell.sh
+    exec ~/scripts/modSpell.sh
+
+ctrl+alt+Up
+    exec ~/scripts/capRepoFind.sh
 
 ctrl+alt+shift+Left
-    exec ~/scripts/modSpell.sh
-super+Up 
-   exec rofi -show 'ssh'
+    exec ~/scripts/mkSpell.sh
+
+#super+Up 
+#   exec rofi -show 'ssh'
 
 super+Right 
    exec rofi -show 'run'

@@ -27,6 +27,7 @@
   ctx A-C-KeyRight
   kill A-C-x
   spll A-C-KeyLeft
+  cfnd A-C-KeyUp
 
 #| WORKSPACES |#
   s1  A-1
