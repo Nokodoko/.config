@@ -4,7 +4,6 @@
 super + Return
    kitty
 
-
 #PROGRAM LAUNCHER
 super + <Right>
    rofi -show 'run'
@@ -24,7 +23,6 @@ super+z
 
 super+a 
    exec now.zsh
-
 
 super+ctrl+p
     exec mypass.zsh
@@ -60,7 +58,7 @@ super+shift+F8
    exec kitty -e ~/.screenlayout/basic.sh & refresh.sh
 
 super+F8
-   exec kitty -e ~/scripts/triple1tall.zsh
+   exec kitty -e ~/.screenlayout/1Up1Down.sh
 
 super+w 
     exec wireshark
@@ -111,11 +109,17 @@ ctrl+alt+Right
 ctrl+alt+Left
     exec ~/scripts/modSpell.sh
 
-ctrl+alt+Up
+ctrl+alt+f
     exec ~/scripts/capRepoFind.sh
 
 ctrl+alt+shift+Left
     exec ~/scripts/mkSpell.sh
+
+alt+F10
+    exec ~/scripts/dpause.sh
+
+alt+shift+ctrl+F10
+    exec ~/scripts/dresume.sh
 
 #super+Up 
 #   exec rofi -show 'ssh'

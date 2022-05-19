@@ -1,6 +1,6 @@
 (defcfg
   #|input /dev/input/by-path/pci-0000:00:14.0-usb-0:3:1.0-event-kbd|#
-  input (device-file "/dev/input/by-path/platform-i8042-serio-0-event-kbd")
+  input (device-file "/dev/input/by-path/pci-0000:00:14.0-usb-0:5.1:1.0-event-kbd")
   output (uinput-sink "Onboard")
   )
 
@@ -45,10 +45,6 @@
   m1 M-F7
   m2 M-F8
 
-#| Tap Keys |#
-  tlr (tap-hold 200 tab @fn)
-  cat (tap-hold 200 esc lalt)
-
  #| LAYOUTS |#
  tl  A-t    #|       tiled     |#
  ct  A-c    #|     centered    |#
@@ -89,9 +85,9 @@
   @qt @qu  @LF  @ch  @sl  @mg  F6  @m1  @m2   F9   F10  F11   F12
   @tm @s1  @s2  @s3  @s4  @s5  @s6  @ctm @fl  @tl  @al   -   =  @dcl
   bspc q    w    e    r    t    y    u    i    o    p    @nm @sp   @mo
-  @cat  a    s    d    f    g    h    j    k    l    ;    '    @ent
+  esc  a    s    d    f    g    h    j    k    l    ;    '    @ent
   lsft z    x    c    v    b    n    m    ,    .    /    @hyp
-  lmet lalt lctl           spc            @tlr  @fn  @spll @hist @ctx
+  lmet lalt lctl           spc            tab  @fn  @spll @hist @ctx
 )
 
   #|----------------------------numLayer----------------------------------------- |#
