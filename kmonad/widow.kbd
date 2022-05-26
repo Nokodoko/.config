@@ -1,5 +1,4 @@
-(defcfg
-  #|input /dev/input/by-path/pci-0000:00:14.0-usb-0:3:1.0-event-kbd|#
+(defcfg #|input /dev/input/by-path/pci-0000:00:14.0-usb-0:3:1.0-event-kbd|#
   input (device-file "/dev/input/by-id/usb-Razer_Razer_BlackWidow_V3_Mini_000000000000-if01-event-kbd")
   output (uinput-sink "Onboard")
   )
@@ -11,8 +10,6 @@
   fn  (layer-toggle functionLayer)
   ent (layer-toggle enterLayer)
   hyp (layer-toggle hypLayer)
-  alt (layer-toggle altLayer)
-  ctrl (layer-toggle ctrlLayer)
 
 #| ACTIONS |#
   qt C-q
@@ -54,6 +51,7 @@
   dcl C-S-spc
   dps A-F10       #| dunst pause |#
   drsm A-S-C-F10  #|dunst resume |# 
+  pss C-M-p
 
 #| WORKSPACES |#
   s1  (tap-hold 200 A-1 C-A-1)
@@ -64,83 +62,8 @@
   s6  (tap-hold 200 A-6 C-A-6)
   al  (tap-hold 200 A-0 C-A-0)
 
-#| altLayer |#
-  Aa A-a
-  Ab A-b
-  Ac A-c
-  Ad A-d
-  Ae A-e
-  Af A-f
-  Ag A-g
-  Ah A-h
-  Ai A-i
-  Aj A-j
-  Ak A-k
-  Al A-l
-  Am A-m
-  An A-n
-  Ao A-o
-  Ap A-p
-  Aq A-q
-  Ar A-r
-  As A-s
-  At A-t
-  Au A-u
-  Av A-v
-  Aw A-w
-  Ax A-x
-  Ay A-y
-  Az A-z
-  A1 A-1
-  A2 A-2
-  A3 A-3
-  A4 A-4
-  A5 A-5
-  A6 A-6
-  A7 A-7
-  A8 A-8
-  A9 A-9
-  A0 A-0
-
-dspc A-spc
-
-#| ctrlLayer|#
-  Ca C-a
-  Cb C-b
-  Cc C-c
-  Cd C-d
-  Ce C-e
-  Cf C-f
-  Cg C-g
-  Ch C-h
-  Ci C-i
-  Cj C-j
-  Ck C-k
-  Cl C-l
-  Cm C-m
-  Cn C-n
-  Co C-o
-  Cp C-p
-  Cq C-q
-  Cr C-r
-  Cs C-s
-  Ct C-t
-  Cu C-u
-  Cv C-v
-  Cw C-w
-  Cx C-x
-  Cy C-y
-  Cz C-z
-  C1 C-1
-  C2 C-2
-  C3 C-3
-  C4 C-4
-  C5 C-5
-  C6 C-6
-  C7 C-7
-  C8 C-8
-  C9 C-9
-  C0 C-0
+#| move tags |#
+  5 A-S-5
 
 #| Monitors |#
   m1 M-F7
@@ -152,26 +75,31 @@ dspc A-spc
  ctm A-S-c  #|  center master  |#
  fl  A-S-t  #|    fullscreen   |#
  cl  A-S-e  #|    close xorg   |#
+
+
+
  
 #| Tap Keys |#
   tlr (tap-hold 200 tab @fn)
-  cat (tap-hold 200 esc lctl)
-  ldr (tap-hold 200 space @cs)
+  eat (tap-hold 200 esc lalt)
   ttm (tap-hold 200 bspc @tm)
   die (tap-hold 200 @qt @qqt)
-  sly (tap-hold 200 @tmn @ent)
+  ;;sly (tap-hold 200 @tmn @ent)
   dun (tap-hold 200 @dps @drsm)
   dmg (tap-hold 200 C-spc @dcl)
   sch (tap-hold 200 f @sea)
-  
-
+  pass (tap-hold 200 p @pss)
+  mov (tap-hold 200 a lalt)
+  stl (tap-hold 200 s lctl)
+  efn (tap-hold 200 e @fn)
+  z (tap-hold 200 z C-S)
+  sly (tap-hold 200 spc @sp)
   )
 
   #|-------------------------sourceLayer---------------------------------------- |#
 
 (defsrc
-  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
-  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  esc  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
@@ -181,18 +109,16 @@ dspc A-spc
   #|----------------------------base------------------------------------------- |#
 
 (deflayer base
-  @die @qu  @LF  @ch  @sl  @mg  F6  @m1  @m2   F9   F10  F11   F12
   @die @s1  @s2  @s3  @s4  @s5  @s6  @ctm @fl  @tl  @al   -   =  @dmg
-  @ttm q    w    e    r    t    y    u    i    o    p    @nm @sp   @mo
-  @cat  a    s    d  @sch   g    h    j    k    l    ;    '    @sly
-  lsft z    x    c    v    b    n    m    ,    .    /    @hyp
-  lmet @tmn lalt           @ldr            @tlr  @fn  @spll @hist @ctx
+  @ttm q    w    @efn  r    t    y    u    i    o   @pass @nm @sp   @mo
+  @eat @mov @stl  d  @sch   g    h    j    k    l   ;  '    @ent
+  lsft @z   x    c    v    b    n    m    ,    .    /    @hyp
+  lmet @tmn lctl           @sly            @tlr  @fn  @spll @hist @ctx
 )
 
   #|----------------------------numLayer----------------------------------------- |#
 
 (deflayer numLayer
-  @sd  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    $    7    8    9    p    [    ]    \
   @tl  a    s    d    f    g    =    4    5    6    ;    '    ret
@@ -203,7 +129,6 @@ dspc A-spc
   #|----------------------------enterLayer------------------------------------ |#
 
 (deflayer enterLayer
-  esc  F1  F2   F3   F4   F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   @fl  q    w    \(   \)   t    y    +    -   \_    p    [    ]    \
   @tl  a    s    [    ]    ~    @lf  @dw  @up  @rg  `    '    @ent
@@ -214,7 +139,6 @@ dspc A-spc
   #|----------------------------functionLayer----------------------------------- |#
 
 (deflayer functionLayer
-  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   bspc q    w    e    r    t    F11  F7   F8   F9   p    [    ]    \
   esc  a    s    d    f    g    F10  F4   F5   F6   ;    '    @ent
@@ -225,43 +149,20 @@ dspc A-spc
   #|----------------------------spaceLayer-------------------------------------- |#
 
 (deflayer spaceLayer
-  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  caps a    s    d    f    g    h  @s4  @s5  @al    :    `    ret
-  lsft z    x    c    v    b    n  @s1  @s2  @s3    /    rsft
+  tab  q    w    e    r   @fl   y   M-F7  i    o    p    [    ]    \
+  caps a    s    d   @tl   g    h  @s4  @s5  @al    :    `    ret
+  lsft z    x   @ctm  v    b    n  @s1  @s2  @s3    /    rsft
   lmet lalt lctl           ret            ralt rmet KeyLeft KeyDown KeyRight  
 )
 
   #|-------------------------hypLayer---------------------------------------- |#
 
 (deflayer hypLayer
-  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    @cl
   tab  q    w    e    r    t    y    u    i    o   @ptok [    ]    \
-  caps @aws @stok d  @cfnd  g    h    j    k    l    ;    '    ret
+  caps @aws @stok d  @cfnd g    h    j   @5    l    ;    '    ret
   lsft z   @kill c    v    b    n   @man   ,    .    /    @hyp
   lctl lmet lalt           @dun            ralt rctl  @drsm KeyDown KeyRight
 )
 
-  #|-------------------------altLayer---------------------------------------- |#
-
-(deflayer altLayer
-  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
-  esc  @A1    @A2    @A3    @A4    @A5    @A6    @A7    @A8    @A9    @A0    -    =    bspc
-  tab  @Aq    @Aw    @Ae    @Ar    @At    @Ay    @Au    @Ai    @Ao    @Ap    [    ]    \
-  caps @Aa    @As    @Ad    @Af    @Ag    @Ah    @Aj    @Ak    @Al   ;    '    ret
-  lsft @Az    @Ax    @Ac    @Av    @Ab    @An    @Am    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt rctl  KeyLeft KeyDown KeyRight
-)
-
-  #|-------------------------ctrlLayer---------------------------------------- |#
-
-(deflayer ctrlLayer
-  esc  F1  F2   F3    F4  F5   F6   F7   F8   F9   F10  F11   F12
-  esc  @C1    @C2    @C3    @C4    @C5    @C6    @C7    @C8    @C9    @C0    -    =    bspc
-  tab  @Cq    @Cw    @Ce    @Cr    @Ct    @Cy    @Cu    @Ci    @Co    @Cp    [    ]    \
-  caps @Ca    @Cs    @Cd    @Cf    @Cg    @Ch    @Cj    @Ck    @Cl   ;    '    ret
-  lsft @Cz    @Cx    @Cc    @Cv    @Cb    @Cn    @Cm    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt rctl  KeyLeft KeyDown KeyRight
-)
