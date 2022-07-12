@@ -1,1 +1,0 @@
-/*! @beamery/browser-extension - Copyright (c) Beamery Ltd. */

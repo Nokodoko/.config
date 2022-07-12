@@ -1,5 +1,24 @@
-2022/04/21-11:55:26.987 1d972 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/21-11:55:26.987 1d972 Recovering log #47
-2022/04/21-11:55:26.990 1d972 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/000047.log 
-2022/04/21-11:55:26.990 1d972 Delete type=2 #48
-2022/04/21-11:55:26.990 1d972 Delete type=2 #45
+2022/06/16-16:30:19.042 11001 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/16-16:30:19.042 11001 Recovering log #108
+2022/06/16-16:30:19.052 11001 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/000108.log 
+2022/06/16-16:30:20.428 11001 Level-0 table #113: started
+2022/06/16-16:30:20.436 11001 Level-0 table #113: 982831 bytes OK
+2022/06/16-16:30:20.440 11001 Delete type=0 #108
+2022/06/16-16:30:26.362 11001 Compacting 1@1 + 1@2 files
+2022/06/16-16:30:26.368 11001 Generated table #114@1: 3323 keys, 93341 bytes
+2022/06/16-16:30:26.368 11001 Compacted 1@1 + 1@2 files => 93341 bytes
+2022/06/16-16:30:26.372 11001 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/16-16:30:26.372 11001 Delete type=2 #113
+2022/06/16-16:30:26.372 11001 Delete type=2 #110
+2022/06/17-13:43:12.038 2999e Level-0 table #116: started
+2022/06/17-13:43:12.048 2999e Level-0 table #116: 488658 bytes OK
+2022/06/17-13:43:12.052 2999e Delete type=0 #112
+2022/06/17-13:43:12.053 2999e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/06/17-13:43:12.053 2999e Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x07\x01\x1f\x04\x03\x01\x06\x00Q\x00U\x00E\x00U\x00E\x00D\x03\x00\x00\x00\x00\x00\xc0P@\x033\xb3\x1a\xf5+\x17xB\x00\x03\x00\x00\x00\x00\x00\x97\xb4@' @ 244965 : 1
+2022/06/17-13:43:12.053 2999e Compacting 1@1 + 1@2 files
+2022/06/17-13:43:12.061 2999e Generated table #117@1: 3254 keys, 91074 bytes
+2022/06/17-13:43:12.061 2999e Compacted 1@1 + 1@2 files => 91074 bytes
+2022/06/17-13:43:12.065 2999e compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/17-13:43:12.065 2999e Delete type=2 #116
+2022/06/17-13:43:12.065 2999e Delete type=2 #114
+2022/06/17-13:43:12.065 2999e Manual compaction at level-1 from '\x00\x07\x01\x1f\x04\x03\x01\x06\x00Q\x00U\x00E\x00U\x00E\x00D\x03\x00\x00\x00\x00\x00\xc0P@\x033\xb3\x1a\xf5+\x17xB\x00\x03\x00\x00\x00\x00\x00\x97\xb4@' @ 244965 : 1 .. (end); will stop at (end)

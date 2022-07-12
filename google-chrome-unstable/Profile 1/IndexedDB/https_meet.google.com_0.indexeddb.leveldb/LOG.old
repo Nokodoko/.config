@@ -1,3 +1,15 @@
-2022/04/22-10:15:19.299 11ca8 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_meet.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/22-10:15:19.299 11ca8 Recovering log #7
-2022/04/22-10:15:19.299 11ca8 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_meet.google.com_0.indexeddb.leveldb/000007.log 
+2022/06/14-14:49:45.227 1997 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_meet.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/14-14:49:45.227 1997 Recovering log #11
+2022/06/14-14:49:45.227 1997 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_meet.google.com_0.indexeddb.leveldb/000011.log 
+2022/06/14-14:50:26.427 1e8d Level-0 table #16: started
+2022/06/14-14:50:26.431 1e8d Level-0 table #16: 2807 bytes OK
+2022/06/14-14:50:26.436 1e8d Delete type=0 #11
+2022/06/14-14:50:26.436 1e8d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/06/14-14:50:26.436 1e8d Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x02\x01\x13\x00c\x00l\x00i\x00e\x00n\x00t\x00R\x00e\x00g\x00i\x00s\x00t\x00r\x00a\x00t\x00i\x00o\x00n\x00s' @ 849 : 1
+2022/06/14-14:50:26.436 1e8d Compacting 1@1 + 1@2 files
+2022/06/14-14:50:26.440 1e8d Generated table #17@1: 36 keys, 2423 bytes
+2022/06/14-14:50:26.440 1e8d Compacted 1@1 + 1@2 files => 2423 bytes
+2022/06/14-14:50:26.444 1e8d compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/14-14:50:26.444 1e8d Delete type=2 #16
+2022/06/14-14:50:26.444 1e8d Delete type=2 #13
+2022/06/14-14:50:26.445 1e8d Manual compaction at level-1 from '\x00\x02\x01\x02\x01\x13\x00c\x00l\x00i\x00e\x00n\x00t\x00R\x00e\x00g\x00i\x00s\x00t\x00r\x00a\x00t\x00i\x00o\x00n\x00s' @ 849 : 1 .. (end); will stop at (end)

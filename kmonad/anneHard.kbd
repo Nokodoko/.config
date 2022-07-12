@@ -1,0 +1,263 @@
+(defcfg
+  #|input /dev/input/by-path/pci-0000:00:14.0-usb-0:3:1.0-event-kbd|#
+  input (device-file "/dev/input/by-id/usb-OBINS_OBINS_AnnePro2_SN0000000001-event-kbd")
+  output (uinput-sink "Onboard")
+  )
+
+(defalias
+#| Layers |#
+  sp  (layer-toggle spaceLayer)
+  nm  (layer-toggle numLayer)
+  fn  (layer-toggle functionLayer)
+  ent (layer-toggle enterLayer)
+  hyp (layer-toggle hypLayer)
+  alt (layer-toggle altLayer)
+  ctrl (layer-toggle ctrlLayer)
+
+#| ACTIONS |#
+  qt C-q
+  qqt A-q
+  mo M-o   #|  kill Trakpad |#
+  sd M-C-s #|    Shutdown   |#
+
+#| PROGRAMS |#
+  qu M-F1       #| qutebrowser |#
+  LF M-F2       #|    LF       |#
+  ch M-F3       #|    Chrome   |#
+  sl M-F4       #|    Slack    |#
+  mg M-a        #| andmessages |#
+  rf M-KeyRight #| launcher    |#
+  tm M-ret      #|  terminal   |#
+  sea M-spc      #|  launcher   |#
+
+#| Kitty |#
+  cs C-S
+  tmn C-S-ret
+
+
+#| VIMEMULATION |# 
+  lf  KeyLeft KeyDown KeyRight
+  rg  KeyRight
+  dw  KeyDown
+  up  KeyUp
+
+#| Scripts |#
+  aws  A-C-a
+  ptok A-C-p
+  stok A-C-s
+  hist A-C-KeyDown
+  man A-C-m
+  ctx A-C-KeyRight
+  kill A-C-x
+  spll A-C-KeyLeft
+  cfnd A-C-f
+  dcl C-S-spc
+  dps A-F10       #| dunst pause |#
+  drsm A-S-C-F10  #|dunst resume |# 
+  pss C-M-p
+
+#| WORKSPACES |#
+  s1  (tap-hold 200 A-1 C-A-1)
+  s2  (tap-hold 200 A-2 C-A-2)
+  s3  (tap-hold 200 A-3 C-A-3)
+  s4  (tap-hold 200 A-4 C-A-4)
+  s5  (tap-hold 200 A-5 C-A-5)
+  s6  (tap-hold 200 A-6 C-A-6)
+  al  (tap-hold 200 A-0 C-A-0)
+
+#| altLayer |#
+  Aa A-a
+  Ab A-b
+  Ac A-c
+  Ad A-d
+  Ae A-e
+  Af A-f
+  Ag A-g
+  Ah A-h
+  Ai A-i
+  Aj A-j
+  Ak A-k
+  Al A-l
+  Am A-m
+  An A-n
+  Ao A-o
+  Ap A-p
+  Aq A-q
+  Ar A-r
+  As A-s
+  At A-t
+  Au A-u
+  Av A-v
+  Aw A-w
+  Ax A-x
+  Ay A-y
+  Az A-z
+  A1 A-1
+  A2 A-2
+  A3 A-3
+  A4 A-4
+  A5 A-5
+  A6 A-6
+  A7 A-7
+  A8 A-8
+  A9 A-9
+  A0 A-0
+
+dspc A-spc
+
+#| ctrlLayer|#
+  Ca C-a
+  Cb C-b
+  Cc C-c
+  Cd C-d
+  Ce C-e
+  Cf C-f
+  Cg C-g
+  Ch C-h
+  Ci C-i
+  Cj C-j
+  Ck C-k
+  Cl C-l
+  Cm C-m
+  Cn C-n
+  Co C-o
+  Cp C-p
+  Cq C-q
+  Cr C-r
+  Cs C-s
+  Ct C-t
+  Cu C-u
+  Cv C-v
+  Cw C-w
+  Cx C-x
+  Cy C-y
+  Cz C-z
+  C1 C-1
+  C2 C-2
+  C3 C-3
+  C4 C-4
+  C5 C-5
+  C6 C-6
+  C7 C-7
+  C8 C-8
+  C9 C-9
+  C0 C-0
+
+#| Monitors |#
+  m1 M-F7
+  m2 M-F8
+
+ #| LAYOUTS |#
+ tl  A-t    #|       tiled     |#
+ ct  A-c    #|     centered    |#
+ ctm A-S-c  #|  center master  |#
+ fl  A-S-t  #|    fullscreen   |#
+ cl  A-S-e  #|    close xorg   |#
+ 
+#| Tap Keys |#
+  tlr (tap-hold 200 tab @fn)
+  eat (tap-hold 200 esc lalt)
+  salt (tap-hold 200 space @alt)
+  ttm (tap-hold 200 bspc @tm)
+  die (tap-hold 200 @qt @qqt)
+  ;;sly (tap-hold 200 @tmn @ent)
+  dun (tap-hold 200 @dps @drsm)
+  dmg (tap-hold 200 C-spc @dcl)
+  sch (tap-hold 200 f @sea)
+  pass (tap-hold 200 p @pss)
+  mov (tap-hold 200 a lalt)
+  stl (tap-hold 200 s lctl)
+  efn (tap-hold 200 e @fn)
+  
+
+  )
+
+  #|-------------------------sourceLayer---------------------------------------- |#
+
+(defsrc
+  esc  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rctl  KeyLeft KeyDown KeyRight
+)
+
+  #|----------------------------base------------------------------------------- |#
+
+(deflayer base
+  @die @s1  @s2  @s3  @s4  @s5  @s6  @ctm @fl  @tl  @al   -   =  @dmg
+  @ttm q    w   @efn  r    t    y    u    i    o   @pass @nm @sp   @mo
+  @eat @mov @stl  d  @sch   g    h    j    k    l    ;    '    @ent
+  lsft z    x    c    v    b    n    m    ,    .    /    @hyp
+  lmet @tmn lctl           @salt            @tlr  @fn  @spll @hist @ctx
+)
+
+  #|----------------------------numLayer----------------------------------------- |#
+
+(deflayer numLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    $    7    8    9    p    [    ]    \
+  @tl  a    s    d    f    g    =    4    5    6    ;    '    ret
+  lsft z    x    c    v    b    0    1    2    3    /    rsft
+  lmet lalt lctl           spc            @hyp rmet KeyLeft KeyDown KeyRight  
+)
+
+  #|----------------------------enterLayer------------------------------------ |#
+
+(deflayer enterLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  @fl  q    w    \(   \)   t    y    +    -   \_    p    [    ]    \
+  @tl  a    s    [    ]    ~    @lf  @dw  @up  @rg  `    '    @ent
+  lsft z    x    <    >    b    n   F1    ,    .    |    rsft
+  lmet lalt lctl           ret            ralt rmet @dps KeyDown KeyRight  
+)
+
+  #|----------------------------functionLayer----------------------------------- |#
+
+(deflayer functionLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  bspc q    w    e    r    t    F11  F7   F8   F9   p    [    ]    \
+  esc  a    s    d    f    g    F10  F4   F5   F6   ;    '    @ent
+  lsft z    x    c    v    b    F12  F1   F2   F3   \    @sp
+  lmet lalt lctl           ret            ralt @fn KeyLeft KeyDown KeyRight  
+)
+
+  #|----------------------------spaceLayer-------------------------------------- |#
+
+(deflayer spaceLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h  @s4  @s5  @al    :    `    ret
+  lsft z    x    c    v    b    n  @s1  @s2  @s3    /    rsft
+  lmet lalt lctl           ret            ralt rmet KeyLeft KeyDown KeyRight  
+)
+
+  #|-------------------------hypLayer---------------------------------------- |#
+
+(deflayer hypLayer
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    @cl
+  tab  q    w    e    r    t    y    u    i    o   @ptok [    ]    \
+  caps @aws @stok d  @cfnd  g    h    j    k    l    ;    '    ret
+  lsft z   @kill c    v    b    n   @man   ,    .    /    @hyp
+  lctl lmet lalt           @dun            ralt rctl  @drsm KeyDown KeyRight
+)
+
+  #|-------------------------altLayer---------------------------------------- |#
+
+(deflayer altLayer
+  esc  @A1    @A2    @A3    @A4    @A5    @A6    @A7    @A8    @A9    @A0    -    =    bspc
+  tab  @Aq    @Aw    @Ae    @Ar    @At    @Ay    @Au    @Ai    @Ao    @Ap    [    ]    \
+  caps @Aa    @As    @Ad    @Af    @Ag    @Ah    @Aj    @Ak    @Al   ;    '    ret
+  lsft @Az    @Ax    @Ac    @Av    @Ab    @An    @Am    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rctl  KeyLeft KeyDown KeyRight
+)
+
+  #|-------------------------ctrlLayer---------------------------------------- |#
+
+(deflayer ctrlLayer
+  esc  @C1    @C2    @C3    @C4    @C5    @C6    @C7    @C8    @C9    @C0    -    =    bspc
+  tab  @Cq    @Cw    @Ce    @Cr    @Ct    @Cy    @Cu    @Ci    @Co    @Cp    [    ]    \
+  caps @Ca    @Cs    @Cd    @Cf    @Cg    @Ch    @Cj    @Ck    @Cl   ;    '    ret
+  lsft @Cz    @Cx    @Cc    @Cv    @Cb    @Cn    @Cm    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rctl  KeyLeft KeyDown KeyRight
+  )

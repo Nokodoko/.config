@@ -1,15 +1,15 @@
-2022/04/22-12:24:07.648 230b4 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_id.atlassian.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/22-12:24:07.648 230b4 Recovering log #4
-2022/04/22-12:24:07.649 230b4 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_id.atlassian.com_0.indexeddb.leveldb/000004.log 
-2022/04/22-12:26:59.922 230b3 Level-0 table #8: started
-2022/04/22-12:26:59.929 230b3 Level-0 table #8: 137610 bytes OK
-2022/04/22-12:26:59.933 230b3 Delete type=0 #4
-2022/04/22-12:26:59.933 230b3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2022/04/22-12:26:59.933 230b3 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01"\x04\x02\x01\x08\x00i\x00d\x00e\x00n\x00t\x00i\x00t\x00y\x03\x00\xd0\x10h!\x05xB\x00\x01$\x009\x006\x004\x008\x001\x004\x008\x00e\x00-\x00f\x00c\x00a\x00f\x00-\x004\x000\x00e\x003\x00-\x009\x000\x008\x003\x00-\x002\x009\x004\x000\x008\x001\x00f\x00c\x004\x007\x009\x006' @ 3130 : 1
-2022/04/22-12:26:59.933 230b3 Compacting 1@1 + 1@2 files
-2022/04/22-12:26:59.939 230b3 Generated table #9@1: 218 keys, 14029 bytes
-2022/04/22-12:26:59.939 230b3 Compacted 1@1 + 1@2 files => 14029 bytes
-2022/04/22-12:26:59.943 230b3 compacted to: files[ 0 0 1 0 0 0 0 ]
-2022/04/22-12:26:59.943 230b3 Delete type=2 #5
-2022/04/22-12:26:59.943 230b3 Delete type=2 #8
-2022/04/22-12:26:59.944 230b3 Manual compaction at level-1 from '\x00\x01\x01"\x04\x02\x01\x08\x00i\x00d\x00e\x00n\x00t\x00i\x00t\x00y\x03\x00\xd0\x10h!\x05xB\x00\x01$\x009\x006\x004\x008\x001\x004\x008\x00e\x00-\x00f\x00c\x00a\x00f\x00-\x004\x000\x00e\x003\x00-\x009\x000\x008\x003\x00-\x002\x009\x004\x000\x008\x001\x00f\x00c\x004\x007\x009\x006' @ 3130 : 1 .. (end); will stop at (end)
+2022/05/02-11:05:12.714 15116 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_id.atlassian.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/02-11:05:12.714 15116 Recovering log #7
+2022/05/02-11:05:12.714 15116 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_id.atlassian.com_0.indexeddb.leveldb/000007.log 
+2022/05/02-11:05:20.302 1a09a Level-0 table #12: started
+2022/05/02-11:05:20.305 1a09a Level-0 table #12: 39974 bytes OK
+2022/05/02-11:05:20.309 1a09a Delete type=0 #7
+2022/05/02-11:05:20.309 1a09a Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/05/02-11:05:20.309 1a09a Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01"\x04\x02\x01\x08\x00i\x00d\x00e\x00n\x00t\x00i\x00t\x00y\x03\x00 \x8f\xddT\x08xB\x00\x01$\x007\x003\x007\x006\x00d\x006\x002\x002\x00-\x004\x000\x009\x004\x00-\x004\x001\x003\x00b\x00-\x008\x009\x005\x00e\x00-\x00c\x00b\x00d\x00d\x00c\x00d\x005\x002\x006\x00b\x00e\x005' @ 3666 : 1
+2022/05/02-11:05:20.309 1a09a Compacting 1@1 + 1@2 files
+2022/05/02-11:05:20.312 1a09a Generated table #13@1: 245 keys, 15963 bytes
+2022/05/02-11:05:20.312 1a09a Compacted 1@1 + 1@2 files => 15963 bytes
+2022/05/02-11:05:20.316 1a09a compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/05/02-11:05:20.316 1a09a Delete type=2 #12
+2022/05/02-11:05:20.316 1a09a Delete type=2 #9
+2022/05/02-11:05:20.316 1a09a Manual compaction at level-1 from '\x00\x01\x01"\x04\x02\x01\x08\x00i\x00d\x00e\x00n\x00t\x00i\x00t\x00y\x03\x00 \x8f\xddT\x08xB\x00\x01$\x007\x003\x007\x006\x00d\x006\x002\x002\x00-\x004\x000\x009\x004\x00-\x004\x001\x003\x00b\x00-\x008\x009\x005\x00e\x00-\x00c\x00b\x00d\x00d\x00c\x00d\x005\x002\x006\x00b\x00e\x005' @ 3666 : 1 .. (end); will stop at (end)

@@ -19,3 +19,6 @@ hosts:
         api_host: gitlab.com
         # Your GitLab access token. Get an access token at https://gitlab.com/-/profile/personal_access_tokens
         token:
+    gitlab.aisoftware.com:
+        api_protocol: https
+        token: glpat-Jn-Rnc8bSbrmmzW42YM4

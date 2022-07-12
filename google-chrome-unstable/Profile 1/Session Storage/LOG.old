@@ -1,17 +1,18 @@
-2022/04/21-21:03:25.556 3 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/Session Storage/MANIFEST-000001
-2022/04/21-21:03:25.557 3 Recovering log #351
-2022/04/21-21:03:25.558 3 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/Session Storage/000351.log 
-2022/04/22-15:29:50.456 df Level-0 table #355: started
-2022/04/22-15:29:50.468 df Level-0 table #355: 14726 bytes OK
-2022/04/22-15:29:50.475 df Delete type=0 #351
-2022/04/22-15:29:50.476 df Compacting 4@0 + 3@1 files
-2022/04/22-15:29:50.501 df Generated table #356@0: 996 keys, 65363 bytes
-2022/04/22-15:29:50.501 df Compacted 4@0 + 3@1 files => 65363 bytes
-2022/04/22-15:29:50.505 df compacted to: files[ 0 1 1 0 0 0 0 ]
-2022/04/22-15:29:50.506 df Delete type=2 #346
-2022/04/22-15:29:50.506 df Delete type=2 #355
-2022/04/22-15:29:50.506 df Delete type=2 #343
-2022/04/22-15:29:50.507 df Delete type=2 #344
-2022/04/22-15:29:50.507 df Delete type=2 #349
-2022/04/22-15:29:50.507 df Delete type=2 #334
-2022/04/22-15:29:50.507 df Delete type=2 #352
+2022/07/10-19:08:00.073 3 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/Session Storage/MANIFEST-000001
+2022/07/10-19:08:00.073 3 Recovering log #438
+2022/07/10-19:08:00.074 3 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/Session Storage/000438.log 
+2022/07/10-19:08:17.320 5 Level-0 table #442: started
+2022/07/10-19:08:17.332 5 Level-0 table #442: 23560 bytes OK
+2022/07/10-19:08:17.337 5 Delete type=0 #438
+2022/07/10-19:08:17.338 5 Compacting 4@0 + 1@1 files
+2022/07/10-19:08:17.348 5 Generated table #443@0: 3833 keys, 136165 bytes
+2022/07/10-19:08:17.348 5 Compacted 4@0 + 1@1 files => 136165 bytes
+2022/07/10-19:08:17.352 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/07/10-19:08:17.354 5 Delete type=2 #439
+2022/07/10-19:08:17.354 5 Delete type=2 #442
+2022/07/10-19:08:17.354 5 Delete type=2 #436
+2022/07/10-19:08:17.354 5 Delete type=2 #430
+2022/07/10-19:08:17.354 5 Delete type=2 #433
+2022/07/11-21:20:17.248 538 Level-0 table #445: started
+2022/07/11-21:20:17.259 538 Level-0 table #445: 22620 bytes OK
+2022/07/11-21:20:17.266 538 Delete type=0 #441

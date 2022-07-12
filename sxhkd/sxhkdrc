@@ -1,4 +1,4 @@
-#!/BIN/BASH 
+#!/bin/bash 
 
 #TERMINAL
 super + Return
@@ -52,7 +52,7 @@ super+F2
    exec /usr/sbin/slack
 
 super+F7 
-   exec kitty -e ~/.screenlayout/above.sh
+   exec kitty -e ~/.screenlayout/1big.sh
 
 super+shift+F8
    exec kitty -e ~/.screenlayout/basic.sh & refresh.sh
@@ -136,9 +136,6 @@ super+shift+t
 super+shift+d 
    kitty -e ~/dtest.sh
 
-super+shift+semicolon 
-   exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
-
 super+ctrl+x 
    exec --no-startup-id xkill
 
@@ -160,8 +157,8 @@ super+ctrl+s
 super+ctrl+n 
    exec kitty -e ~/here.sh
 
-super+b 
-   exec kitty -e calcurse
+#super+b 
+#   exec kitty -e calcurse
 
 super+v 
    exec kitty -e screenkey
@@ -178,8 +175,8 @@ super+i
 super+shift+c
    exec kitty -e nvim ~/Programs/dwm-6.2/config.h
 
-super+n 
-   exec kitty -e tty-clock -cs -C 4
+#super+n 
+#   exec kitty -e tty-clock -cs -C 4
 
 super+shift+B 
    exec kitty -e nvim ~/.zshenv
@@ -205,9 +202,9 @@ super+shift+i
 super+z 
    exec zathura ~/Downloads/zshMan.pdf
 
-super+o
-    exec kitty -e xinput set-prop 13 "Device Enabled" 0
-
 super+shift+o
-    exec kitty -e xinput set-prop 13 "Device Enabled" 1
+    exec xinput set-prop 21 "Device Enabled" 0 
+
+super+o
+    exec xinput set-prop 21 "Device Enabled" 1
 

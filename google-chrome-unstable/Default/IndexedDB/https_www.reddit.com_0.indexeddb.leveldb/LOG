@@ -1,3 +1,15 @@
-2022/04/22-19:56:10.834 4cfec Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/22-19:56:10.834 4cfec Recovering log #11
-2022/04/22-19:56:10.834 4cfec Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000011.log 
+2022/07/08-14:53:23.981 208e1 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/07/08-14:53:23.981 208e1 Recovering log #119
+2022/07/08-14:53:23.981 208e1 Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000119.log 
+2022/07/08-14:53:56.601 20afb Level-0 table #124: started
+2022/07/08-14:53:56.605 20afb Level-0 table #124: 209 bytes OK
+2022/07/08-14:53:56.609 20afb Delete type=0 #119
+2022/07/08-14:53:56.609 20afb Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/07/08-14:53:56.610 20afb Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 259 : 1
+2022/07/08-14:53:56.610 20afb Compacting 1@1 + 1@2 files
+2022/07/08-14:53:56.613 20afb Generated table #125@1: 21 keys, 1403 bytes
+2022/07/08-14:53:56.613 20afb Compacted 1@1 + 1@2 files => 1403 bytes
+2022/07/08-14:53:56.617 20afb compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/07/08-14:53:56.617 20afb Delete type=2 #124
+2022/07/08-14:53:56.617 20afb Delete type=2 #121
+2022/07/08-14:53:56.617 20afb Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 259 : 1 .. (end); will stop at (end)

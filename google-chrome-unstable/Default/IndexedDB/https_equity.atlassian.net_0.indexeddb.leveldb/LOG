@@ -1,15 +1,36 @@
-2022/04/22-16:08:44.753 3f884 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/22-16:08:44.753 3f884 Recovering log #126
-2022/04/22-16:08:44.753 3f884 Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/000126.log 
-2022/04/22-17:47:16.264 4b3d7 Level-0 table #131: started
-2022/04/22-17:47:16.279 4b3d7 Level-0 table #131: 1712886 bytes OK
-2022/04/22-17:47:16.286 4b3d7 Delete type=0 #126
-2022/04/22-17:47:16.728 4b3d9 Compacting 1@1 + 1@2 files
-2022/04/22-17:47:16.759 4b3d9 Generated table #132@1: 29409 keys, 2186908 bytes
-2022/04/22-17:47:16.759 4b3d9 Compacted 1@1 + 1@2 files => 2186908 bytes
-2022/04/22-17:47:16.766 4b3d9 compacted to: files[ 0 0 1 0 0 0 0 ]
-2022/04/22-17:54:44.120 4c437 Level-0 table #134: started
-2022/04/22-17:54:44.132 4c437 Level-0 table #134: 1726045 bytes OK
-2022/04/22-17:54:44.137 4c437 Delete type=2 #131
-2022/04/22-17:54:44.137 4c437 Delete type=0 #130
-2022/04/22-17:54:44.137 4c437 Delete type=2 #128
+2022/07/08-13:23:04.756 1e97e Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/MANIFEST-000001
+2022/07/08-13:23:04.756 1e97e Recovering log #284
+2022/07/08-13:23:04.756 1e97e Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/000284.log 
+2022/07/08-13:29:54.954 1f1e4 Level-0 table #290: started
+2022/07/08-13:29:54.968 1f1e4 Level-0 table #290: 1701799 bytes OK
+2022/07/08-13:29:54.975 1f1e4 Delete type=0 #284
+2022/07/08-13:29:55.122 1e981 Compacting 1@1 + 2@2 files
+2022/07/08-13:29:55.151 1e981 Generated table #291@1: 30804 keys, 2208411 bytes
+2022/07/08-13:29:55.168 1e981 Generated table #292@1: 18666 keys, 1359961 bytes
+2022/07/08-13:29:55.168 1e981 Compacted 1@1 + 2@2 files => 3568372 bytes
+2022/07/08-13:29:55.172 1e981 compacted to: files[ 0 0 2 0 0 0 0 ]
+2022/07/08-13:29:55.172 1e981 Delete type=2 #290
+2022/07/08-13:29:55.172 1e981 Delete type=2 #287
+2022/07/08-13:29:55.172 1e981 Delete type=2 #286
+2022/07/08-13:32:01.918 1e981 Level-0 table #294: started
+2022/07/08-13:32:01.941 1e981 Level-0 table #294: 1760500 bytes OK
+2022/07/08-13:32:01.945 1e981 Delete type=0 #289
+2022/07/08-13:32:39.032 1f1e3 Compacting 1@1 + 2@2 files
+2022/07/08-13:32:39.061 1f1e3 Generated table #295@1: 31334 keys, 2210262 bytes
+2022/07/08-13:32:39.079 1f1e3 Generated table #296@1: 18562 keys, 1354030 bytes
+2022/07/08-13:32:39.079 1f1e3 Compacted 1@1 + 2@2 files => 3564292 bytes
+2022/07/08-13:32:39.082 1f1e3 compacted to: files[ 0 0 2 0 0 0 0 ]
+2022/07/08-13:32:39.082 1f1e3 Delete type=2 #294
+2022/07/08-13:32:39.082 1f1e3 Delete type=2 #291
+2022/07/08-13:32:39.082 1f1e3 Delete type=2 #292
+2022/07/08-13:34:10.803 1f1e3 Level-0 table #298: started
+2022/07/08-13:34:10.817 1f1e3 Level-0 table #298: 1765373 bytes OK
+2022/07/08-13:34:10.824 1f1e3 Delete type=0 #293
+2022/07/08-13:34:17.297 1f728 Compacting 1@1 + 2@2 files
+2022/07/08-13:34:17.329 1f728 Generated table #299@1: 31201 keys, 2210183 bytes
+2022/07/08-13:34:17.351 1f728 Generated table #300@1: 19427 keys, 1414774 bytes
+2022/07/08-13:34:17.351 1f728 Compacted 1@1 + 2@2 files => 3624957 bytes
+2022/07/08-13:34:17.355 1f728 compacted to: files[ 0 0 2 0 0 0 0 ]
+2022/07/08-13:34:17.355 1f728 Delete type=2 #295
+2022/07/08-13:34:17.355 1f728 Delete type=2 #298
+2022/07/08-13:34:17.355 1f728 Delete type=2 #296

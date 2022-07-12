@@ -92,7 +92,8 @@
   mov (tap-hold 200 a lalt)
   stl (tap-hold 200 s lctl)
   efn (tap-hold 200 e @fn)
-  z (tap-hold 200 z C-S)
+  z (tap-hold 200 z A-S)
+  x (tap-hold 200 x @sp)
   sly (tap-hold 200 spc @sp)
   )
 

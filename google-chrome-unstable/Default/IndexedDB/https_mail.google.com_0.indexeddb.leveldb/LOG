@@ -1,3 +1,6 @@
-2022/04/19-08:42:02.880 43ce Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/19-08:42:02.880 43ce Recovering log #4
-2022/04/19-08:42:02.881 43ce Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000004.log 
+2022/06/14-15:05:40.078 25ff Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/14-15:05:40.078 25ff Recovering log #36
+2022/06/14-15:05:40.080 25ff Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000036.log 
+2022/06/14-15:05:55.248 24a3 Level-0 table #42: started
+2022/06/14-15:05:55.261 24a3 Level-0 table #42: 2299582 bytes OK
+2022/06/14-15:05:55.265 24a3 Delete type=0 #36

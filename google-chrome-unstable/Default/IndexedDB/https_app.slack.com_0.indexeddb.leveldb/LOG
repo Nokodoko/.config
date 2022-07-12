@@ -1,2 +1,7 @@
-2022/04/11-07:06:47.972 f4a Creating DB /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_app.slack.com_0.indexeddb.leveldb since it was missing.
-2022/04/11-07:06:47.980 f4a Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_app.slack.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/23-16:38:54.117 12e58 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_app.slack.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/23-16:38:54.117 12e58 Recovering log #3
+2022/05/23-16:38:54.117 12e58 Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_app.slack.com_0.indexeddb.leveldb/000003.log 
+2022/05/23-16:39:26.145 12e58 Level-0 table #5: started
+2022/05/23-16:39:26.149 12e58 Level-0 table #5: 2833 bytes OK
+2022/05/23-16:39:26.152 12e58 Delete type=0 #3
+2022/05/23-16:39:26.152 12e58 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

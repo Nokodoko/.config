@@ -1,7 +1,9 @@
-2022/04/15-13:28:50.640 f721 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/15-13:28:50.640 f721 Recovering log #3
-2022/04/15-13:28:50.640 f721 Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
-2022/04/15-13:47:18.043 118f7 Level-0 table #5: started
-2022/04/15-13:47:18.050 118f7 Level-0 table #5: 948838 bytes OK
-2022/04/15-13:47:18.054 118f7 Delete type=0 #3
-2022/04/15-13:47:18.054 118f7 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/06/14-15:04:27.447 266c Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/14-15:04:27.447 266c Recovering log #36
+2022/06/14-15:04:27.447 266c Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000036.log 
+2022/06/14-15:04:30.919 25ff Compacting 1@1 + 1@2 files
+2022/06/14-15:04:30.924 25ff Generated table #39@1: 108 keys, 213409 bytes
+2022/06/14-15:04:30.924 25ff Compacted 1@1 + 1@2 files => 213409 bytes
+2022/06/14-15:04:30.928 25ff compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/14-15:04:30.928 25ff Delete type=2 #37
+2022/06/14-15:04:30.928 25ff Delete type=2 #34

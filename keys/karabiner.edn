@@ -1,0 +1,100 @@
+  {:profiles {:n0ko {:default true
+         :alone   00   ; hold for .. ms to register single tap
+         :held    00   ; TODO: not sure what it's for
+         :delay   00    ; time after which the key press is delayed
+         :sim     03}} ; keys need to be pressed within this threshold to be considered simultaneous
+ :templates {:alfred "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
+             :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+             :open "open \"%s\""
+             }
+ :simlayers {
+             :numLayer        {:key :open_bracket                     }
+             :enterLayer      {:key :return_or_enter                  }
+             :functionLayer   {:key :right_option                     }
+             :shiftNumLayer   {:key :open_bracket :modi {:key left_shift}   }
+             :shiftEnterLayer {:key :return_or_enter :modi {:key left_shift}}
+             }
+ :main [{:des "nullified layer keys"
+         :rules [:open_bracket nil   ]
+                [:right_option nil   ]
+                [:return_or_enter nil]
+         }
+        {:des "numLayer"
+         :rules [:numLayer
+                 [:y             :$  ]
+                 [:n             :0  ]
+                 [:m             :1  ]
+                 [:comma         :2  ]
+                 [:period        :3  ]
+                 [:j             :4  ]
+                 [:k             :5  ]
+                 [:l             :6  ]
+                 [:u             :7  ]
+                 [:i             :8  ]
+                 [:o             :9  ]
+                 [:h      :equal_sign]
+                 ]}
+        {:des "shiftNumLayer"
+         :rules [:shiftNumLayer
+                 [:n      :!S0 :shiftNumLayer   ]
+                 [:m      :!S1 :shiftNumLayer   ]
+                 [:comma  :!S2 :shiftNumLayer   ]
+                 [:period :!S3 :shiftNumLayer   ]
+                 [:j      :!S4 :shiftNumLayer   ]
+                 [:k      :!S5 :shiftNumLayer   ]
+                 [:l      :!S6 :shiftNumLayer   ]
+                 [:u      :!S7 :shiftNumLayer   ]
+                 [:i      :!S8 :shiftNumLayer   ]
+                 [:o      :!S9 :shiftNumLayer   ]
+                 [:h      :!TOequal_sign        ]
+                 [:g      :grave_accent_and_tilde] 
+                 ]}
+        {:des "enterLayer"
+         :rules [:enterLayer
+                 [:spacebar :return_or_enter          ]
+                 [:g        :!Sgrave_accent_and_tilde ] 
+                 [:k        :up_arrow                 ]
+                 [:h        :left_arrow               ]
+                 [:j        :down_arrow               ]
+                 [:l        :right_arrow              ]
+                 [:i        :hyphen                   ] 
+                 [:r        :!Sclose_bracket          ]
+                 [:f        :close_bracket            ]
+                 [:d        :open_bracket             ]
+                 [:e        :!Sopen_bracket           ]
+                 [:c        :!S9                      ]
+                 [:v        :!S0                      ]
+                 ]}
+        {:des "shiftEnterLayer"
+         :rules [:shiftEnterLayer
+                 [:spacebar :return_or_enter] 
+                 [:f        :close_bracket  ]
+                 [:d        :open_bracket   ]
+                 [:e        :open_bracket   ]
+                 [:r        :close_bracket  ]
+                 ]}
+        {:des "functionLayer"
+         :rules [:functionLayer
+                 [:m           :f1 ]
+                 [:comma       :f2 ]
+                 [:period      :f3 ]
+                 [:j           :f4 ]
+                 [:k           :f5 ]
+                 [:l           :f6 ]
+                 [:u           :f7 ]
+                 [:i           :f8 ]
+                 [:o           :f9 ]
+                 [:n           :f11]
+                 [:h           :f10]
+                 [:h      :!TOequal_sign]
+                 [:y      :!TO4 :modi :left_shift]
+                 [:g      :grave_accent_and_tilde] 
+                 ]}
+;;        {:des "return deadkey"
+;;         :rules [[:return_or_enter :return_or_enter nil {:alone :enterLayer}]]}
+;;        {:des "open_bracket deadkey"
+;;         :rules [[:open_bracket  :open_bracket nil {:alone :numLayer}]]}
+    ]
+}
+
+

@@ -1,3 +1,15 @@
-2022/04/19-16:17:13.974 dc7a Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/19-16:17:13.974 dc7a Recovering log #15
-2022/04/19-16:17:13.974 dc7a Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/000015.log 
+2022/05/26-10:52:15.035 3dbc0 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/26-10:52:15.036 3dbc0 Recovering log #23
+2022/05/26-10:52:15.036 3dbc0 Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/000023.log 
+2022/05/26-10:52:21.342 3dbc0 Level-0 table #28: started
+2022/05/26-10:52:21.345 3dbc0 Level-0 table #28: 209 bytes OK
+2022/05/26-10:52:21.349 3dbc0 Delete type=0 #23
+2022/05/26-10:52:21.350 3dbc0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/05/26-10:52:21.350 3dbc0 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 167 : 1
+2022/05/26-10:52:21.350 3dbc0 Compacting 1@1 + 1@2 files
+2022/05/26-10:52:21.353 3dbc0 Generated table #29@1: 54 keys, 1000 bytes
+2022/05/26-10:52:21.353 3dbc0 Compacted 1@1 + 1@2 files => 1000 bytes
+2022/05/26-10:52:21.357 3dbc0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/05/26-10:52:21.357 3dbc0 Delete type=2 #25
+2022/05/26-10:52:21.357 3dbc0 Delete type=2 #28
+2022/05/26-10:52:21.358 3dbc0 Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 167 : 1 .. (end); will stop at (end)

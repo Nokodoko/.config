@@ -1,33 +1,17 @@
-2022/04/22-12:27:21.280 230b3 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/22-12:27:21.280 230b3 Recovering log #116
-2022/04/22-12:27:21.288 230b3 Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/000116.log 
-2022/04/22-12:27:32.405 2445f Level-0 table #121: started
-2022/04/22-12:27:32.419 2445f Level-0 table #121: 1743027 bytes OK
-2022/04/22-12:27:32.424 2445f Delete type=0 #116
-2022/04/22-12:27:34.418 2445b Compacting 1@1 + 1@2 files
-2022/04/22-12:27:34.444 2445b Generated table #122@1: 27419 keys, 1928166 bytes
-2022/04/22-12:27:34.444 2445b Compacted 1@1 + 1@2 files => 1928166 bytes
-2022/04/22-12:27:34.454 2445b compacted to: files[ 0 0 1 0 0 0 0 ]
-2022/04/22-12:29:55.982 24444 Level-0 table #124: started
-2022/04/22-12:29:56.004 24444 Level-0 table #124: 1757021 bytes OK
-2022/04/22-12:29:56.009 24444 Delete type=0 #120
-2022/04/22-12:29:56.009 24444 Delete type=2 #118
-2022/04/22-12:29:56.009 24444 Delete type=2 #121
-2022/04/22-12:29:56.589 2445b Compacting 1@1 + 1@2 files
-2022/04/22-12:29:56.621 2445b Generated table #125@1: 28435 keys, 2038438 bytes
-2022/04/22-12:29:56.621 2445b Compacted 1@1 + 1@2 files => 2038438 bytes
-2022/04/22-12:29:56.625 2445b compacted to: files[ 0 0 1 0 0 0 0 ]
-2022/04/22-12:29:56.625 2445b Delete type=2 #124
-2022/04/22-12:29:56.625 2445b Delete type=2 #122
-2022/04/22-13:03:21.056 2833d Level-0 table #127: started
-2022/04/22-13:03:21.061 2833d Level-0 table #127: 245299 bytes OK
-2022/04/22-13:03:21.065 2833d Delete type=0 #123
-2022/04/22-13:03:21.065 2833d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2022/04/22-13:03:21.065 2833d Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01"\x04\x02\x01\x0a\x00c\x00o\x00n\x00f\x00l\x00u\x00e\x00n\x00c\x00e\x03\x00\xc0\x05\xf5"\x05xB\x00\x01$\x00a\x003\x00d\x009\x003\x007\x00f\x00c\x00-\x000\x00a\x008\x00b\x00-\x004\x005\x00f\x000\x00-\x00b\x00c\x002\x005\x00-\x00a\x005\x001\x00e\x003\x003\x009\x000\x001\x001\x004\x00e' @ 573734 : 1
-2022/04/22-13:03:21.065 2833d Compacting 1@1 + 1@2 files
-2022/04/22-13:03:21.089 2833d Generated table #128@1: 28207 keys, 1978505 bytes
-2022/04/22-13:03:21.089 2833d Compacted 1@1 + 1@2 files => 1978505 bytes
-2022/04/22-13:03:21.095 2833d compacted to: files[ 0 0 1 0 0 0 0 ]
-2022/04/22-13:03:21.095 2833d Delete type=2 #125
-2022/04/22-13:03:21.095 2833d Delete type=2 #127
-2022/04/22-13:03:21.096 2833d Manual compaction at level-1 from '\x00\x01\x01"\x04\x02\x01\x0a\x00c\x00o\x00n\x00f\x00l\x00u\x00e\x00n\x00c\x00e\x03\x00\xc0\x05\xf5"\x05xB\x00\x01$\x00a\x003\x00d\x009\x003\x007\x00f\x00c\x00-\x000\x00a\x008\x00b\x00-\x004\x005\x00f\x000\x00-\x00b\x00c\x002\x005\x00-\x00a\x005\x001\x00e\x003\x003\x009\x000\x001\x001\x004\x00e' @ 573734 : 1 .. (end); will stop at (end)
+2022/07/07-10:44:58.711 42cf Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/MANIFEST-000001
+2022/07/07-10:44:58.711 42cf Recovering log #279
+2022/07/07-10:44:58.717 42cf Reusing old log /home/n0ko/.config/google-chrome-unstable/Default/IndexedDB/https_equity.atlassian.net_0.indexeddb.leveldb/000279.log 
+2022/07/07-10:45:04.280 42e3 Level-0 table #285: started
+2022/07/07-10:45:04.289 42e3 Level-0 table #285: 1087907 bytes OK
+2022/07/07-10:45:04.292 42e3 Delete type=0 #279
+2022/07/07-10:45:04.293 42e3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/07/07-10:45:04.293 42e3 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01"\x04\x02\x01\x04\x00j\x00i\x00r\x00a\x03\x00\xe0@\xf1\x91\x1dxB\x00\x01$\x00f\x004\x00f\x003\x00d\x009\x007\x00a\x00-\x007\x00c\x000\x006\x00-\x004\x004\x005\x00b\x00-\x00b\x004\x007\x004\x00-\x004\x00f\x00e\x005\x002\x007\x007\x009\x004\x00a\x005\x00b' @ 986848 : 1
+2022/07/07-10:45:04.293 42e3 Compacting 1@1 + 2@2 files
+2022/07/07-10:45:04.320 42e3 Generated table #286@1: 31062 keys, 2208586 bytes
+2022/07/07-10:45:04.336 42e3 Generated table #287@1: 17693 keys, 1292611 bytes
+2022/07/07-10:45:04.336 42e3 Compacted 1@1 + 2@2 files => 3501197 bytes
+2022/07/07-10:45:04.340 42e3 compacted to: files[ 0 0 2 0 0 0 0 ]
+2022/07/07-10:45:04.340 42e3 Delete type=2 #285
+2022/07/07-10:45:04.340 42e3 Delete type=2 #282
+2022/07/07-10:45:04.340 42e3 Delete type=2 #281
+2022/07/07-10:45:04.341 42e3 Manual compaction at level-1 from '\x00\x01\x01"\x04\x02\x01\x04\x00j\x00i\x00r\x00a\x03\x00\xe0@\xf1\x91\x1dxB\x00\x01$\x00f\x004\x00f\x003\x00d\x009\x007\x00a\x00-\x007\x00c\x000\x006\x00-\x004\x004\x005\x00b\x00-\x00b\x004\x007\x004\x00-\x004\x00f\x00e\x005\x002\x007\x007\x009\x004\x00a\x005\x00b' @ 986848 : 1 .. (end); will stop at (end)

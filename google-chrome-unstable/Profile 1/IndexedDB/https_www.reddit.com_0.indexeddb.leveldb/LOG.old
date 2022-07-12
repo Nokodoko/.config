@@ -1,7 +1,15 @@
-2022/04/09-17:57:08.367 fbf8 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/09-17:57:08.367 fbf8 Recovering log #3
-2022/04/09-17:57:08.367 fbf8 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000003.log 
-2022/04/09-17:59:26.136 146fe Level-0 table #5: started
-2022/04/09-17:59:26.140 146fe Level-0 table #5: 3288 bytes OK
-2022/04/09-17:59:26.145 146fe Delete type=0 #3
-2022/04/09-17:59:26.145 14119 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/04/14-23:59:04.500 33bfb Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/14-23:59:04.500 33bfb Recovering log #4
+2022/04/14-23:59:04.500 33bfb Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000004.log 
+2022/04/15-00:00:07.161 32417 Level-0 table #8: started
+2022/04/15-00:00:07.165 32417 Level-0 table #8: 1440 bytes OK
+2022/04/15-00:00:07.169 32417 Delete type=0 #4
+2022/04/15-00:00:07.169 33bfb Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/04/15-00:00:07.169 33bfb Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x15\x00v\x002\x00_\x00e\x00v\x00e\x00n\x00t\x00_\x00b\x00o\x00i\x00l\x00e\x00r\x00_\x00p\x00l\x00a\x00t\x00e' @ 87 : 1
+2022/04/15-00:00:07.170 33bfb Compacting 1@1 + 1@2 files
+2022/04/15-00:00:07.173 33bfb Generated table #9@1: 21 keys, 1394 bytes
+2022/04/15-00:00:07.173 33bfb Compacted 1@1 + 1@2 files => 1394 bytes
+2022/04/15-00:00:07.176 33bfb compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/04/15-00:00:07.177 33bfb Delete type=2 #5
+2022/04/15-00:00:07.177 33bfb Delete type=2 #8
+2022/04/15-00:00:07.177 33bfb Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x15\x00v\x002\x00_\x00e\x00v\x00e\x00n\x00t\x00_\x00b\x00o\x00i\x00l\x00e\x00r\x00_\x00p\x00l\x00a\x00t\x00e' @ 87 : 1 .. (end); will stop at (end)
