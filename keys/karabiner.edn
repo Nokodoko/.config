@@ -1,4 +1,4 @@
-  {:profiles {:n0ko {:default true
+{:profiles {:n0ko {:default true
          :alone   00   ; hold for .. ms to register single tap
          :held    00   ; TODO: not sure what it's for
          :delay   00    ; time after which the key press is delayed
@@ -7,6 +7,7 @@
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
              :open "open \"%s\""
              }
+ :modifiers {:lo :left_option}
  :simlayers {
              :numLayer        {:key :open_bracket                     }
              :enterLayer      {:key :return_or_enter                  }
