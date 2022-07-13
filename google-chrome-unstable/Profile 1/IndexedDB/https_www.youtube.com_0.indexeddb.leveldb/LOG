@@ -1,3 +1,12 @@
 2022/07/12-10:02:44.045 1dbe6 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
 2022/07/12-10:02:44.045 1dbe6 Recovering log #302
 2022/07/12-10:02:44.054 1dbe6 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000302.log 
+2022/07/12-18:07:12.405 23646 Level-0 table #307: started
+2022/07/12-18:07:12.415 23646 Level-0 table #307: 1213337 bytes OK
+2022/07/12-18:07:12.420 23646 Delete type=0 #302
+2022/07/12-18:08:52.622 230ca Compacting 1@1 + 1@2 files
+2022/07/12-18:08:52.632 230ca Generated table #308@1: 341 keys, 38920 bytes
+2022/07/12-18:08:52.632 230ca Compacted 1@1 + 1@2 files => 38920 bytes
+2022/07/12-18:08:52.636 230ca compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/07/12-18:08:52.636 230ca Delete type=2 #304
+2022/07/12-18:08:52.636 230ca Delete type=2 #307

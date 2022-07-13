@@ -1,3 +1,9 @@
 2022/07/12-10:02:43.612 3 Reusing MANIFEST /home/n0ko/.config/google-chrome-unstable/Profile 1/Local Storage/leveldb/MANIFEST-000001
 2022/07/12-10:02:43.613 3 Recovering log #415
 2022/07/12-10:02:43.613 3 Reusing old log /home/n0ko/.config/google-chrome-unstable/Profile 1/Local Storage/leveldb/000415.log 
+2022/07/12-18:06:10.301 1a5 Level-0 table #419: started
+2022/07/12-18:06:10.313 1a5 Level-0 table #419: 17966 bytes OK
+2022/07/12-18:06:10.319 1a5 Delete type=0 #415
+2022/07/12-20:09:44.292 249 Level-0 table #421: started
+2022/07/12-20:09:44.298 249 Level-0 table #421: 20989 bytes OK
+2022/07/12-20:09:44.304 249 Delete type=0 #418
