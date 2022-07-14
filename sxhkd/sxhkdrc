@@ -182,7 +182,7 @@ super+shift+B
    exec kitty -e nvim ~/.zshenv
 
 super+shift+g 
-   exec kitty -e /usr/local/bin/buds.sh
+   exec kitty -e /usr/local/bin/jabra.sh
 
 super+m 
    exec kitty -e neomutt
