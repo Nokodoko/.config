@@ -610,4 +610,4 @@
 ;;                      :adv2p              [{:vendor_id 10730 :product_id 259}]
 ;;                      :adv2               [{:vendor_id 10730}]}
  :simlayer-threshold 200}
- 
+  
