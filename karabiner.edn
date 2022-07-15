@@ -676,6 +676,3 @@
                                  :language        "zh-Hans"}
                       :cn       {:input_source_id "^com\\.apple\\.inputmethod\\.SCIM\\.ITABC$"}}
  :simlayer-threshold 210}
-
-
-
