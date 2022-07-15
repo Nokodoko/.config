@@ -33,7 +33,6 @@
                                      :condi   [:!comma-mode :!period-mode]}
              :yabai-scale-mode      {:key :c :condi :tab-mode}
              :yabai-warp-mode       {:key :r :condi :tab-mode}
-             :period-mode           {:key :period :afterup {:set ["period-comma-mode" 0]} :condi [:!emacs-s-mode :!tmux-windmove-mode :!k2-mode]}
              :tmux-windmove-mode    {:key :q :condi [:Terminals :!comma-mode :!period-mode]}
              :warp-windmove-mode    {:key :q :condi [:Warp :!comma-mode :!period-mode]}
              :tmux-windresize-mode  {:key :c :condi :tmux-windmove-mode}
@@ -46,9 +45,9 @@
              :shiftEnterLayer       {:key :return_or_enter :modi {:key left_shift}}
              :contexts-f-mode       {:key :f :condi :!Games}
              :slidepad-s-mode       {:key :s :condi [:!tab-mode :slidepad]}
-             :vscode-s-mode         {:key :s :condi [:VSCode :!tab-mode]}
              :browser-s-mode        {:key :s :condi [:Browsers :!tab-mode]}
              :mouse_keys_mode_v4    {:key :z :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
+             :s-mode {:key :s}
              :vi-mode               {:key :d :condi :!Games}
              :vi-visual-mode        {:key :v :condi [:!Games :!vim-mode-disabled-application]}
              :launch-mode           {:key :w :condi :!Games}
@@ -211,19 +210,6 @@
                [:!Tj :down_arrow]
                [:!Tk :up_arrow]
                [:!Tl :return_or_enter]]}
-             {:des   "vscode"
-              :rules [:VSCode
-                      [:##left_command :left_command nil {:alone [:!CSp ["vsc-m-x-on" 1]]}]
-                      :vsc-m-x-on
-                      [:!Tl [:return_or_enter ["in-alfred" 0]]]
-                      [:!Tj :down_arrow]
-                      [:!Tk :up_arrow]
-                      [:escape [:escape ["vsc-m-x-on" 0]]]
-                      [:##left_control :left_control nil {:alone [:escape ["vsc-m-x-on" 0]]}]
-                      [:return_or_enter [:return_or_enter ["vsc-m-x-on" 0]]]
-                      :vscode-s-mode
-                      [:j :!CSopen_bracket]
-                      [:k :!CSclose_bracket]]}
              {:des   "global C-h to backspace"
               :rules [[:!Th :delete_or_backspace nil {:params {:alone 200 :held 200}}]]}
              {:des   "contexts"
@@ -316,10 +302,6 @@
                       ;; [:j [:f16 :!Sa :l :a :c :r :i :t :t :y :return_or_enter]]
 
                       [:j [:togg "kitty"]]
-                      ;; [:k [:open "/Applications/Emacs.app"]]
-                      ;; [:k :same_wind_app :Emacs]
-                      [:k [:hsl "/Applications/Emacs.app"]]
-                      ;; [:k [:yfocus "Emacs"]]
                       [:u [:togg "Newsblur"]]
                       ;; [:k [:opena "kitty"]]
                       ;; [:k [:opena "WezTerm.app"]]
@@ -366,8 +348,6 @@
                       ;; [:8 [:open "/Applications/Karabiner-EventViewer.app"]]
                       [:8 [:togg "Karabiner-EventViewer"]]
                       ;; [:b [:open "/Applications/Bee.app"]]
-                      ;; [:c [:open "/Applications/Visual Studio Code.app"]]
-                      [:c [:togg "Visual Studio Code"]]
                       [:e [:w :e]]
                       [:hyphen [{:key :m :modi :ro}
                                 {:key :a :modi :ro}
@@ -455,7 +435,6 @@
                       ;; [:k [[:alf "chromeHistory" "com.thomasupton.chrome-history"] ["in-alfred" 1]]]
                       [:k [[:alf "ffa-history" "net.deanishe.alfred.firefox-assistant"] ["in-alfred" 1]]]
                       ;; [:m [:alf "tab" "net.deanishe.alfred.safari"]]
-                      [:m [:!Ca :!Cx "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient --eval '(emacs-everywhere)'"]]
                       [:y :!Cc nil {:delayed {:invoked [:!!grave_accent_and_tilde ["in-alfred" 1]]} :params {:delay 200}}]
                       [:o :!CTOS0]
                       [:0 [:alf "pasteBack" "yqrashawn.com.ewe"]]
