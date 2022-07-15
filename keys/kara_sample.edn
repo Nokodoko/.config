@@ -92,19 +92,20 @@
                      ]}
             {:des "enterLayer"
              :rules [:enterLayer
-                     [:spacebar :return_or_enter          ]
-                     [:g        :!Sgrave_accent_and_tilde ] 
-                     [:k        :up_arrow                 ]
-                     [:h        :left_arrow               ]
-                     [:j        :down_arrow               ]
-                     [:l        :right_arrow              ]
-                     [:i        :hyphen                   ] 
-                     [:r        :!Sclose_bracket          ]
-                     [:f        :close_bracket            ]
-                     [:d        :open_bracket             ]
-                     [:e        :!Sopen_bracket           ]
-                     [:c        :!S9                      ]
-                     [:v        :!S0                      ]
+                     [:spacebar  :return_or_enter          ]
+                     [:g         :!Sgrave_accent_and_tilde ] 
+                     [:k         :up_arrow                 ]
+                     [:h         :left_arrow               ]
+                     [:j         :down_arrow               ]
+                     [:l         :right_arrow              ]
+                     [:i         :hyphen                   ] 
+                     [:r         :!Sclose_bracket          ]
+                     [:f         :close_bracket            ]
+                     [:d         :open_bracket             ]
+                     [:e         :!Sopen_bracket           ]
+                     [:c         :!S9                      ]
+                     [:v         :!S0                      ]
+                     [:caps_lock :tab                      ]
                      ]}
             {:des "shiftEnterLayer"
              :rules [:shiftEnterLayer
@@ -629,4 +630,5 @@
 ;;                      :adv2np             [{:vendor_id 10730 :product_id 258}]
 ;;                      :adv2p              [{:vendor_id 10730 :product_id 259}]
 ;;                      :adv2               [{:vendor_id 10730}]}
- :simlayer-threshold 200}
+ :simlayer-threshold 201}
+ 
