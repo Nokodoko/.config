@@ -125,7 +125,7 @@
   tab  q    w    e    r    t    $    7    8    9    p    [    ]    \
   @tl  a    s    d    f    g    =    4    5    6    ;    '    ret
   lsft z    x    c    v    b    0    1    2    3    /    rsft
-  lmet lalt lctl           spc            @hyp rmet KeyLeft KeyDown KeyRight  
+  lmet lalt lctl           tab            @hyp rmet KeyLeft KeyDown KeyRight  
 )
 
   #|----------------------------enterLayer------------------------------------ |#
