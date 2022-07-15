@@ -8,24 +8,24 @@
              :regex_match_any [{:key :period}
                                {:key :8 :modi [:left_shift] :lazy true}]}
  :modifiers {:ro :left_option}
- :templates {:launch     "osascript -e 'tell application \"Alfred 5\" to run trigger \"launch%s\" in workflow \"yqrashawn.workflow.launcher\" with argument \"\"'"
-             :alf        "open /Applications/Alfred\\ 5.app && osascript -e 'tell application \"Alfred 5\" to run trigger \"%s\" in workflow \"%s\"'"
-             :sh         "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH %s"
-             :yabai      "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH yabai %s"
-             :km         "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
-             :kb-maestro "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
-             :open       "open \"%s\""
-             :opena      "open -a \"%s\""
-             :hs         "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH hs -A -n -q -t 0.1 -c '(\"%s\")'"
-             :hsl        "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH hs -A -n -q -t 0.1 -c 'hs.application.launchOrFocus(\"%s\")'"
-             :show       "osascript -e 'set appName to \"%s\"\nset startIt to false\ntell application \"System Events\"\n  if not (exists process appName) then\n    set startIt to true\n  else\n    set frontmost of process appName to true\n  end if\nend tell\nif startIt then\n  tell application appName to activate\nend if'\n"
-             :togg       "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH hs -A -n -q -t 0.1 -c '\nlocal appName = \"%s\";\nlocal x = hs.application.find(appName);\nif x and x:isFrontmost() then\n  x:hide();\nelse\n  hs.application.launchOrFocus(appName);\nend'"
-             :yfocus     "sh ~/.config/yabai/focus-window %s"
-             :toggle     "osascript -e 'set appName to \"%s\"\nset startIt to false\ntell application \"System Events\"\n  if not (exists process appName) then\n    set startIt to true\n  else if frontmost of process appName then\n    set visible of process appName to false\n  else\n    set frontmost of process appName to true\n  end if\nend tell\nif startIt then\n  tell application appName to activate\nend if'"
-             :type       "osascript -e 'tell application \"System Events\" to keystroke \"%s\" as text'"
-             :jump       "export PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH yabai -m window --focus $(yabai -m query --windows | jq 'map(select(.app == \"%s\")) | first | .id') || hs -A -n -q -t 0.1 -c 'hs.application.launchOrFocus(\"%s\")'"
-             ;; :focus      "yabai -m display --focus \"%s\" & yabai -m space --focus \"%s\""
-             }
+;; :templates {:launch     "osascript -e 'tell application \"Alfred 5\" to run trigger \"launch%s\" in workflow \"yqrashawn.workflow.launcher\" with argument \"\"'"
+;;             :alf        "open /Applications/Alfred\\ 5.app && osascript -e 'tell application \"Alfred 5\" to run trigger \"%s\" in workflow \"%s\"'"
+;;             :sh         "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH %s"
+;;             :yabai      "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH yabai %s"
+;;             :km         "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+;;             :kb-maestro "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+;;             :open       "open \"%s\""
+;;             :opena      "open -a \"%s\""
+;;             :hs         "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH hs -A -n -q -t 0.1 -c '(\"%s\")'"
+;;             :hsl        "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH hs -A -n -q -t 0.1 -c 'hs.application.launchOrFocus(\"%s\")'"
+;;             :show       "osascript -e 'set appName to \"%s\"\nset startIt to false\ntell application \"System Events\"\n  if not (exists process appName) then\n    set startIt to true\n  else\n    set frontmost of process appName to true\n  end if\nend tell\nif startIt then\n  tell application appName to activate\nend if'\n"
+;;             :togg       "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH hs -A -n -q -t 0.1 -c '\nlocal appName = \"%s\";\nlocal x = hs.application.find(appName);\nif x and x:isFrontmost() then\n  x:hide();\nelse\n  hs.application.launchOrFocus(appName);\nend'"
+;;             :yfocus     "sh ~/.config/yabai/focus-window %s"
+;;             :toggle     "osascript -e 'set appName to \"%s\"\nset startIt to false\ntell application \"System Events\"\n  if not (exists process appName) then\n    set startIt to true\n  else if frontmost of process appName then\n    set visible of process appName to false\n  else\n    set frontmost of process appName to true\n  end if\nend tell\nif startIt then\n  tell application appName to activate\nend if'"
+;;             :type       "osascript -e 'tell application \"System Events\" to keystroke \"%s\" as text'"
+;;             :jump       "export PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH yabai -m window --focus $(yabai -m query --windows | jq 'map(select(.app == \"%s\")) | first | .id') || hs -A -n -q -t 0.1 -c 'hs.application.launchOrFocus(\"%s\")'"
+;;             ;; :focus      "yabai -m display --focus \"%s\" & yabai -m space --focus \"%s\""
+;;             }
  :layers    {:tab-mode              {:key     :tab
                                      :afterup [{:set ["yabai-scale-mode" 0]}
                                                {:set ["yabai-warp-mode" 0]}
