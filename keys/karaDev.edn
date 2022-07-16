@@ -90,95 +90,121 @@
                  :cap
                  [:##i :up_arrow ["capspace" 0]]
                  [:##k :down_arrow ["capspace" 0]]
-                 [:##j :left_arrow]/
+                 [:##j :left_arrow] /
                  [:##l :right_arrow]
                  [:spacebar ["capspace" 1] nil {:alone :spacebar :afterup ["capspace" 0]}]
                  :capspace
                  [:##i :page_up]
                  [:##k :page_down]]}
-        {:des "s-ctrl"
-         :rules [:delay{:s}
-                 [:a :!Ca] ; Highlight word
-                 [:b :tab]
-                 [:c :!Stab]
-                 [:d :!Sreturn_or_enter]
-                 [:e :!COp] ; Selection -> HasteBin link
-                 [:f :!Cx] ; Cut
-                 [:open_bracket [:km "Lowercase selected text"]]
-                 [:close_bracket [:km "Uppercase selected text"]]
-                 [:a :!Cc] ; Copy
-                 [:d :delete_or_backspace]
-                 [:f :return_or_enter]
-                 [:g :!Ctab]
-                 [:##h :left_arrow]
-                 [:##j :down_arrow]
-                 [:##k :up_arrow]
-                 [:##l :right_arrow]
-                 [:semicolon :!CTO0] ; Search Alfred Snippets
-                 [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
-                 [:c :!Cdelete_or_backspace]
-                 [:v :left_shift]
-                 [:##b :!Cleft_arrow]
-                 [:n :!Cv] ; Paste
-                 [:##m :!Cright_arrow]
-                 [:period :!COS0]]} ; Selection -> Alfred Snippets TODO: 
-             #_[ok]{:des   "Keybase return"
-                :rules [;; [[{:pkey :button5} {:pkey :button2}] {:pkey :button1}]
-                        :Keybase
-                        [:return_or_enter :!Sreturn_or_enter]
-                        [:!Creturn_or_enter :return_or_enter]]}
-            {:des "nullified layer keys"
-             :rules   [:open_bracket   nil   ]
-                      [:right_option nil   ]
-                      [:return_or_enter nil]
-               }
-            {:des "numLayer"
-             :rules [:numLayer
-                     [:##y           :!S4]
-                     [:n             :0  ]
-                     [:m             :1  ]
-                     [:comma         :2  ]
-                     [:period        :3  ]
-                     [:j             :4  ]
-                     [:k             :5  ]
-                     [:l             :6  ]
-                     [:u             :7  ]
-                     [:i             :8  ]
-                     [:o             :9  ]
-                     [:h      :equal_sign]
-                     ]}
-            {:des "functionLayer"
-             :rules [:functionLayer
-                     [:m           :f1 ]
-                     [:comma       :f2 ]
-                     [:period      :f3 ]
-                     [:j           :f4 ]
-                     [:k           :f5 ]
-                     [:l           :f6 ]
-                     [:u           :f7 ]
-                     [:i           :f8 ]
-                     [:o           :f9 ]
-                     [:n           :f11]
-                     [:h           :f10]
-                     [:h      :!TOequal_sign]
-                     [:g      :grave_accent_and_tilde] 
-                     ]}
-            {:des "enterLayer"
-             :rules [:enterLayer
-                     [:spacebar :return_or_enter          ]
-                     [:g        :!Sgrave_accent_and_tilde ] 
-                     [:k        :up_arrow                 ]
-                     [:h        :left_arrow               ]
-                     [:j        :down_arrow               ]
-                     [:l        :right_arrow              ]
-                     [:i        :hyphen                   ] 
-                     [:r        :!Sclose_bracket          ]
-                     [:f        :close_bracket            ]
-                     [:d        :open_bracket             ]
-                     [:e        :!Sopen_bracket           ]
-                     [:c        :!S9                      ]
-                     [:v        :!S0                      ]
-                     ]}
+             {:des "s-ctrl"
+              :rules [:delay {:s}
+                      [:##a :!Ca] ; Highlight word
+                      [:##b :!Cb] ; Highlight word
+                      [:##c :!Cc] ; Highlight word
+                      [:##d :!Cd] ; Highlight word
+                      [:##e :!Ce] ; Highlight word
+                      [:##f :!Cf] ; Highlight word
+                      [:##g :!Cg] ; Highlight word
+                      [:##h :!Ch] ; Highlight word
+                      [:##i :!Ci] ; Highlight word
+                      [:##j :!Cj] ; Highlight word
+                      [:##k :!Ck] ; Highlight word
+                      [:##l :!Cl] ; Highlight word
+                      [:##m :!Cm] ; Highlight word
+                      [:##n :!Cn] ; Highlight word
+                      [:##o :!Co] ; Highlight word
+                      [:##p :!Cp] ; Highlight word
+                      [:##q :!Cq] ; Highlight word
+                      [:##r :!Cr] ; Highlight word
+                      [:##s :!Cs] ; Highlight word
+                      [:##t :!Ct] ; Highlight word
+                      [:##u :!Cu] ; Highlight word
+                      [:##v :!Cv] ; Highlight word
+                      [:##w :!Cw] ; Highlight word
+                      [:##x :!Cx] ; Highlight word
+                      [:##y :!Cy] ; Highlight word
+                      [:##z :!Cz]]}
+             {:des "a-alt"
+              :rules [:delay {:a}
+                      [:##a :!Aa] ; Highlight word
+                      [:##b :!Ab] ; Highlight word
+                      [:##c :!Ac] ; Highlight word
+                      [:##d :!Ad] ; Highlight word
+                      [:##e :!Ae] ; Highlight word
+                      [:##f :!Af] ; Highlight word
+                      [:##g :!Ag] ; Highlight word
+                      [:##h :!Ah] ; Highlight word
+                      [:##i :!Ai] ; Highlight word
+                      [:##j :!Aj] ; Highlight word
+                      [:##k :!Ak] ; Highlight word
+                      [:##l :!Al] ; Highlight word
+                      [:##m :!Am] ; Highlight word
+                      [:##n :!An] ; Highlight word
+                      [:##o :!Ao] ; Highlight word
+                      [:##p :!Ap] ; Highlight word
+                      [:##q :!Aq] ; Highlight word
+                      [:##r :!Ar] ; Highlight word
+                      [:##s :!As] ; Highlight word
+                      [:##t :!At] ; Highlight word
+                      [:##u :!Au] ; Highlight word
+                      [:##v :!Av] ; Highlight word
+                      [:##w :!Aw] ; Highlight word
+                      [:##x :!Ax] ; Highlight word
+                      [:##y :!Ay] ; Highlight word
+                      [:##z :!Az]]}
+             {:des   "Keybase return"
+              :rules [;; [[{:pkey :button5} {:pkey :button2}] {:pkey :button1}]
+                      :Keybase
+                      [:return_or_enter :!Sreturn_or_enter]
+                      [:!Creturn_or_enter :return_or_enter]]}
+             {:des "nullified layer keys"
+              :rules   [:open_bracket   nil]
+              [:right_option nil]
+              [:return_or_enter nil]}
+             {:des "numLayer"
+              :rules [:numLayer
+                      [:##y           :!S4]
+                      [:n             :0]
+                      [:m             :1]
+                      [:comma         :2]
+                      [:period        :3]
+                      [:j             :4]
+                      [:k             :5]
+                      [:l             :6]
+                      [:u             :7]
+                      [:i             :8]
+                      [:o             :9]
+                      [:h      :equal_sign]]}
+             {:des "functionLayer"
+              :rules [:functionLayer
+                      [:m           :f1]
+                      [:comma       :f2]
+                      [:period      :f3]
+                      [:j           :f4]
+                      [:k           :f5]
+                      [:l           :f6]
+                      [:u           :f7]
+                      [:i           :f8]
+                      [:o           :f9]
+                      [:n           :f11]
+                      [:h           :f10]
+                      [:h      :!TOequal_sign]
+                      [:g      :grave_accent_and_tilde]]}
+             {:des "enterLayer"
+              :rules [:enterLayer
+                      [:spacebar :return_or_enter]
+                      [:g        :!Sgrave_accent_and_tilde]
+                      [:k        :up_arrow]
+                      [:h        :left_arrow]
+                      [:j        :down_arrow]
+                      [:l        :right_arrow]
+                      [:i        :hyphen]
+                      [:r        :!Sclose_bracket]
+                      [:f        :close_bracket]
+                      [:d        :open_bracket]
+                      [:e        :!Sopen_bracket]
+                      [:c        :!S9]
+                      [:v        :!S0]]}
              {:des   "Discord return"
               :rules [:Discord
                       [:return_or_enter :!Sreturn_or_enter]
