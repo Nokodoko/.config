@@ -97,7 +97,7 @@
                  [:##i :page_up]
                  [:##k :page_down]]}
              {:des "s-ctrl"
-              :rules [:delay {:s}
+              :rules [:s
                       [:##a :!Ca] ; Highlight word
                       [:##b :!Cb] ; Highlight word
                       [:##c :!Cc] ; Highlight word
@@ -125,7 +125,7 @@
                       [:##y :!Cy] ; Highlight word
                       [:##z :!Cz]]}
              {:des "a-alt"
-              :rules [:delay {:a}
+              :rules [:a
                       [:##a :!Aa] ; Highlight word
                       [:##b :!Ab] ; Highlight word
                       [:##c :!Ac] ; Highlight word
@@ -163,18 +163,32 @@
               [:return_or_enter nil]}
              {:des "numLayer"
               :rules [:numLayer
-                      [:##y           :!S4]
-                      [:n             :0]
-                      [:m             :1]
-                      [:comma         :2]
-                      [:period        :3]
-                      [:j             :4]
-                      [:k             :5]
-                      [:l             :6]
-                      [:u             :7]
-                      [:i             :8]
-                      [:o             :9]
+                      [:##y            :!S4]
+                      [:n                :0]
+                      [:m                :1]
+                      [:comma            :2]
+                      [:period           :3]
+                      [:j                :4]
+                      [:k                :5]
+                      [:l                :6]
+                      [:u                :7]
+                      [:i                :8]
+                      [:o                :9]
                       [:h      :equal_sign]]}
+             {:des "shiftNum"
+              :rules [:shiftNum
+                      [:##y               :!S4]
+                      [:##n               :!S0]
+                      [:##m               :!S1]
+                      [:##comma           :!S2]
+                      [:##period          :!S3]
+                      [:##j               :!S4]
+                      [:##k               :!S5]
+                      [:##l               :!S6]
+                      [:##u               :!S7]
+                      [:##i               :!S8]
+                      [:##o               :!S9]
+                      [:##h      :!Sequal_sign]]}
              {:des "functionLayer"
               :rules [:functionLayer
                       [:m           :f1]
