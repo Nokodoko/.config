@@ -1,5 +1,34 @@
-;; ADD SHIFT{R} LAYER 
-;; ADD SHIFT{R} SYMBOLS LAYER {PARTIALLY ADDED NOW} 
+;; ADD HYPERLAYER LAYER  -- IMPORT FROM KMONAD
+
+;;  #|-------------------------hypLayer---------------------------------------- |#
+;;
+;;(deflayer hypLayer
+;;  grv  1    2    3    4    5    6    7    8    9    0    -    =    @cl
+;;  tab  q    w    e    r    t    y    u    i    o   @ptok [    ]    \
+;;  caps @aws @stok d  @cfnd g    h    j   @5    l    ;    '    ret
+;;  lsft z   @kill c    v    b    n   @man   ,    .    /    @hyp
+;;  lctl lmet lalt           @dun            ralt rctl  @drsm KeyDown KeyRight
+;;)
+
+
+;;  #|----------------------------spaceLayer-------------------------------------- |#
+;;
+;;(deflayer spaceLayer
+;;  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+;;  tab  q    w    e    r   @fl   y   M-F7  i    o    p    [    ]    \
+;;  caps a    s    d   @tl   g    h  @s4  @s5  @al    :    `    ret
+;;  lsft z    x   @ctm  v    b    n  @s1  @s2  @s3    /    rsft
+;;  lmet lalt lctl           ret            ralt rmet KeyLeft KeyDown KeyRight  
+;;)
+
+
+;;ADD SHIFT{R} SYMBOLS LAYER {PARTIALLY ADDED NOW} 
+;;ADD SPACE LAYER {PARTIALLY ADDED NOW} 
+;;ADD CTRL CORRECT
+;;ADD ALT CORRECT
+;;ADD TAB/DELETE CORRECT
+;;ADD SPOTLIGHT CORRECT
+;;ADD ESCAPE/CLOSE CORRECT
 {:profiles  {:n0ko {:default true :sim 50 :delay 100 :alone 100 :held 100}}
  :tos       {:same_wind_app   {:key :grave_accent_and_tilde :modi [:left_command] :lazy true}
              :prev_app        {:key :tab :modi [:left_command] :lazy true}
@@ -49,7 +78,7 @@
              :enterLayer            {:key :return_or_enter}
              :functionLayer         {:key :e}
              :numLayer              {:key :open_bracket}
-             :s-mode                {:key :s}
+             :ctrlLayer                {:key :s}
              ;; :q-mode {:key :q :condi [:!comma-mode :!period-mode]}
              :alfred-mode           {:key :z}
              :finder-alfred-mode    {:key :z :condi :Finder}
@@ -68,15 +97,13 @@
                  [:##i :page_up]
                  [:##k :page_down]]}
         {:des "s-ctrl"
-         :rules [:s-mode
-                 [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
-                 [:e :tab]
-                 [:r :!Stab]
-                 [:t :!Sreturn_or_enter]
-                 [:u :!COp] ; Selection -> HasteBin link
-                 [:i :!CTperiod] ; Contexts search active windows
-                 [:o :!Cx] ; Cut
-                 ;[:open_bracket :!Oleft_arrow]
+         :rules [:delay{:s}
+                 [:a :!Ca] ; Highlight word
+                 [:b :tab]
+                 [:c :!Stab]
+                 [:d :!Sreturn_or_enter]
+                 [:e :!COp] ; Selection -> HasteBin link
+                 [:f :!Cx] ; Cut
                  [:open_bracket [:km "Lowercase selected text"]]
                  [:close_bracket [:km "Uppercase selected text"]]
                  [:a :!Cc] ; Copy
