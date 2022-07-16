@@ -78,7 +78,8 @@
              :enterLayer            {:key :return_or_enter}
              :functionLayer         {:key :e}
              :numLayer              {:key :open_bracket}
-             :ctrlLayer                {:key :s}
+             :ctrlLayer             {:key :s}
+             :altLayer              {:key :a}
              ;; :q-mode {:key :q :condi [:!comma-mode :!period-mode]}
              :alfred-mode           {:key :z}
              :finder-alfred-mode    {:key :z :condi :Finder}
@@ -97,7 +98,7 @@
                  [:##i :page_up]
                  [:##k :page_down]]}
              {:des "s-ctrl"
-              :rules [:s
+              :rules [:ctrlLayer
                       [:##a :!Ca] ; Highlight word
                       [:##b :!Cb] ; Highlight word
                       [:##c :!Cc] ; Highlight word
@@ -124,8 +125,8 @@
                       [:##x :!Cx] ; Highlight word
                       [:##y :!Cy] ; Highlight word
                       [:##z :!Cz]]}
-             {:des "a-alt"
-              :rules [:a
+             {:des "alt with a-tap"
+              :rules [:altLayer
                       [:##a :!Aa] ; Highlight word
                       [:##b :!Ab] ; Highlight word
                       [:##c :!Ac] ; Highlight word
