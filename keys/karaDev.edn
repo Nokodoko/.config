@@ -120,7 +120,6 @@
                       [:p :!Tp] ; Highlight word
                       [:q :!Tq] ; Highlight word
                       [:r :!Tr] ; Highlight word
-                      [:s :!Ts] ; Highlight word
                       [:t :!Tt] ; Highlight word
                       [:u :!Tu] ; Highlight word
                       [:v :!Tv] ; Highlight word
@@ -130,7 +129,6 @@
                       [:z :!Tz]]}
              {:des "alt with a-tap"
               :rules [:optLayer
-                      [:a :!Oa] ; Highlight word
                       [:b :!Ob] ; Highlight word
                       [:c :!Oc] ; Highlight word
                       [:d :!Od] ; Highlight word
