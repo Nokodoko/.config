@@ -78,7 +78,7 @@
              :enterLayer            {:key :return_or_enter}
              :functionLayer         {:key :e}
              :numLayer              {:key :open_bracket}
-             :shiftNumLayer         {:key :open_bracket :modi {:key left_shift}}
+             ;;:shiftNumLayer         {:key :open_bracket :modi {:key left_shift}}
              ;;:ctrlLayer             {:key :s :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
              :ctrlLayer             {:key :s}
              ;;:altLayer              {:key :a :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
