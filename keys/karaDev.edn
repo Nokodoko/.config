@@ -78,12 +78,15 @@
              :enterLayer            {:key :return_or_enter}
              :functionLayer         {:key :e}
              :numLayer              {:key :open_bracket}
+             :shiftNumLayer         {:key :open_bracket :modi {:key left_shift}}
+             ;;:ctrlLayer             {:key :s :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
              :ctrlLayer             {:key :s}
+             ;;:altLayer              {:key :a :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
              :altLayer              {:key :a}
              ;; :q-mode {:key :q :condi [:!comma-mode :!period-mode]}
-             :alfred-mode           {:key :z}
-             :finder-alfred-mode    {:key :z :condi :Finder}
-             :browsers-alfred-mode  {:key :z :condi :Browsers}}
+             :alfred-mode           {:key :f}
+             :finder-alfred-mode    {:key :f :condi :Finder}
+             :browsers-alfred-mode  {:key :f :condi :Browsers}}
  :main      [#_{:des "#137"
                 :rules
                 [[:caps_lock ["cap" 1] ["cap" 0]]
@@ -176,8 +179,8 @@
                       [:i                :8]
                       [:o                :9]
                       [:h      :equal_sign]]}
-             {:des "shiftNum"
-              :rules [:shiftNum
+             {:des "shiftNumyer"
+              :rules [:shiftNumyer
                       [:##y               :!S4]
                       [:##n               :!S0]
                       [:##m               :!S1]
