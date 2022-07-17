@@ -82,7 +82,7 @@
              ;;:ctrlLayer             {:key :s :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
              :ctrlLayer             {:key :s}
              ;;:altLayer              {:key :a :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
-             :altLayer              {:key :a}
+             :optLayer              {:key :a}
              ;; :q-mode {:key :q :condi [:!comma-mode :!period-mode]}
              :alfred-mode           {:key :f}
              :finder-alfred-mode    {:key :f :condi :Finder}
@@ -129,33 +129,33 @@
                       [:y :!Ty] ; Highlight word
                       [:z :!Tz]]}
              {:des "alt with a-tap"
-              :rules [:altLayer
-                      [:a :!0a] ; Highlight word
-                      [:b :!0b] ; Highlight word
-                      [:c :!0c] ; Highlight word
-                      [:d :!0d] ; Highlight word
-                      [:e :!0e] ; Highlight word
-                      [:f :!0f] ; Highlight word
-                      [:g :!0g] ; Highlight word
-                      [:h :!0h] ; Highlight word
-                      [:i :!0i] ; Highlight word
-                      [:j :!0j] ; Highlight word
-                      [:k :!0k] ; Highlight word
-                      [:l :!0l] ; Highlight word
-                      [:m :!0m] ; Highlight word
-                      [:n :!0n] ; Highlight word
-                      [:o :!0o] ; Highlight word
-                      [:p :!0p] ; Highlight word
-                      [:q :!0q] ; Highlight word
-                      [:r :!0r] ; Highlight word
-                      [:s :!0s] ; Highlight word
-                      [:t :!0t] ; Highlight word
-                      [:u :!0u] ; Highlight word
-                      [:v :!0v] ; Highlight word
-                      [:w :!0w] ; Highlight word
-                      [:x :!0x] ; Highlight word
-                      [:y :!0y] ; Highlight word
-                      [:z :!0z]]}
+              :rules [:optLayer
+                      [:a :!Oa] ; Highlight word
+                      [:b :!Ob] ; Highlight word
+                      [:c :!Oc] ; Highlight word
+                      [:d :!Od] ; Highlight word
+                      [:e :!Oe] ; Highlight word
+                      [:f :!Of] ; Highlight word
+                      [:g :!Og] ; Highlight word
+                      [:h :!Oh] ; Highlight word
+                      [:i :!Oi] ; Highlight word
+                      [:j :!Oj] ; Highlight word
+                      [:k :!Ok] ; Highlight word
+                      [:l :!Ol] ; Highlight word
+                      [:m :!Om] ; Highlight word
+                      [:n :!On] ; Highlight word
+                      [:o :!Oo] ; Highlight word
+                      [:p :!Op] ; Highlight word
+                      [:q :!Oq] ; Highlight word
+                      [:r :!Or] ; Highlight word
+                      [:s :!Os] ; Highlight word
+                      [:t :!Ot] ; Highlight word
+                      [:u :!Ou] ; Highlight word
+                      [:v :!Ov] ; Highlight word
+                      [:w :!Ow] ; Highlight word
+                      [:x :!Ox] ; Highlight word
+                      [:y :!Oy] ; Highlight word
+                      [:z :!Oz]]}
              {:des   "Keybase return"
               :rules [;; [[{:pkey :button5} {:pkey :button2}] {:pkey :button1}]
                       :Keybase
