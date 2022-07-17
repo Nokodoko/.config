@@ -1,4 +1,4 @@
-;; ADD HYPERLAYER LAYER  -- IMPORT FROM KMONAD
+; ADD HYPERLAYER LAYER  -- IMPORT FROM KMONAD
 
 ;;  #|-------------------------hypLayer---------------------------------------- |#
 ;;
@@ -24,6 +24,8 @@
 
 ;;ADD SHIFT{R} SYMBOLS LAYER {PARTIALLY ADDED NOW} 
 ;;ADD SPACE LAYER {PARTIALLY ADDED NOW} 
+;;ADD CTRL CORRECT- Will also need to add numeric equivelants with ctrl
+;;ADD OPT CORRECT -- Will also need to add numeric equivelants with opt
 ;;ADD TAB/DELETE CORRECT
 ;;ADD SPOTLIGHT CORRECT
 ;;ADD ESCAPE/CLOSE CORRECT
@@ -36,7 +38,7 @@
                                {:key :slash}]
              :regex_match_any [{:key :period}
                                {:key :8 :modi [:left_shift] :lazy true}]}
- :modifiers {:ro :right_option}
+ :modifiers {:lo :left_option}
  :templates {:launch     "osascript -e 'tell application \"Alfred 5\" to run trigger \"launch%s\" in workflow \"yqrashawn.workflow.launcher\" with argument \"\"'"
              :alf        "open /Applications/Alfred\\ 5.app && osascript -e 'tell application \"Alfred 5\" to run trigger \"%s\" in workflow \"%s\"'"
              :sh         "PATH=/run/current-system/sw/bin:/opt/homebrew/bin:/usr/local/bin:$PATH %s"
@@ -79,6 +81,8 @@
              ;;:shiftNumLayer         {:key :open_bracket :modi [:key left_shift]}
              ;;:ctrlLayer             {:key :s :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
              :ctrlLayer             {:key :s}
+             :shiftCtrlLayer        {:key :s :modi [:left_shift] :lazy true}
+             ;;:shiftCtrlLayer        {:ctrlLayer :modi[:left_shift] :lazy true}
              ;;:altLayer              {:key :a :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
              :optLayer              {:key :a}
              ;; :q-mode {:key :q :condi [:!comma-mode :!period-mode]}
@@ -98,6 +102,8 @@
                  :capspace
                  [:##i :page_up]
                  [:##k :page_down]]}
+             {:des "right option to tab"
+              :rules [[:right_option :tab]]}
              {:des "s-ctrl"
               :rules [:ctrlLayer
                       [:a :!Ta] ; Highlight word
@@ -125,7 +131,35 @@
                       [:x :!Tx] ; Highlight word
                       [:y :!Ty] ; Highlight word
                       [:z :!Tz]]}
-             {:des "alt with a-tap"
+             {:des "shiftCtrlLayer"
+              :rules [:shiftCtrlLayer
+                      [:!!a :!Ta] ; Highlight word
+                      [:!!b :!Tb] ; Highlight word
+                      [:!!c :!Tc] ; Highlight word
+                      [:!!d :!Td] ; Highlight word
+                      [:!!e :!Te] ; Highlight word
+                      [:!!f :!Tf] ; Highlight word
+                      [:!!g :!Tg] ; Highlight word
+                      [:!!h :!Th] ; Highlight word
+                      [:!!i :!Ti] ; Highlight word
+                      [:!!j :!Tj] ; Highlight word
+                      [:!!k :!Tk] ; Highlight word
+                      [:!!l :!Tl] ; Highlight word
+                      [:!!m :!Tm] ; Highlight word
+                      [:!!n :!Tn] ; Highlight word
+                      [:!!o :!To] ; Highlight word
+                      [:!!p :!Tp] ; Highlight word
+                      [:!!q :!Tq] ; Highlight word
+                      [:!!r :!Tr] ; Highlight word
+                      [:!!t :!Tt] ; Highlight word
+                      [:!!u :!Tu] ; Highlight word
+                      [:!!v :!Tv] ; Highlight word
+                      [:!!w :!Tw] ; Highlight word
+                      [:!!x :!Tx] ; Highlight word
+                      [:!!y :!Ty] ; Highlight word
+                      [:!!z :!Tz]
+                      [:!!left_shift :shiftCtrlLayer]]}
+             {:des "opt with a-tap"
               :rules [:optLayer
                       [:b :!Ob] ; Highlight word
                       [:c :!Oc] ; Highlight word
@@ -441,25 +475,25 @@
                       ;; [:c [:open "/Applications/Visual Studio Code.app"]]
                       [:c [:togg "Visual Studio Code"]]
                       [:e [:w :e]]
-                      [:hyphen [{:key :m :modi :ro}
-                                {:key :a :modi :ro}
-                                {:key :i :modi :ro}
-                                {:key :n :modi :ro}
-                                {:key :r :modi :ro}
-                                {:key :e :modi :ro}
-                                {:key :b :modi :ro}
-                                {:key :l :modi :ro}]]
-                      [:d [{:key :c :modi :ro}
-                           {:key :h :modi :ro}
-                           {:key :r :modi :ro}
-                           {:key :o :modi :ro}
-                           {:key :m :modi :ro}
-                           {:key :i :modi :ro}
-                           {:key :u :modi :ro}
-                           {:key :m :modi :ro}
-                           {:key :n :modi :ro}
-                           {:key :d :modi :ro}
-                           {:key :b :modi :ro}
+                      [:hyphen [{:key :m :modi :lo}
+                                {:key :a :modi :lo}
+                                {:key :i :modi :lo}
+                                {:key :n :modi :lo}
+                                {:key :r :modi :lo}
+                                {:key :e :modi :lo}
+                                {:key :b :modi :lo}
+                                {:key :l :modi :lo}]]
+                      [:d [{:key :c :modi :lo}
+                           {:key :h :modi :lo}
+                           {:key :r :modi :lo}
+                           {:key :o :modi :lo}
+                           {:key :m :modi :lo}
+                           {:key :i :modi :lo}
+                           {:key :u :modi :lo}
+                           {:key :m :modi :lo}
+                           {:key :n :modi :lo}
+                           {:key :d :modi :lo}
+                           {:key :b :modi :lo}
                            :return_or_enter]]]}
              {:des   "caps_lock to escape"
               :rules [[:##caps_lock :escape]]}
