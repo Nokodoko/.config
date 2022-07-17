@@ -78,7 +78,7 @@
              :enterLayer            {:key :return_or_enter}
              :functionLayer         {:key :e}
              :numLayer              {:key :open_bracket}
-             ;;:shiftNumLayer         {:key :open_bracket :modi {:key left_shift}}
+             :shiftNumLayer         {:key :open_bracket :modi [:key left_shift]}
              ;;:ctrlLayer             {:key :s :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
              :ctrlLayer             {:key :s}
              ;;:altLayer              {:key :a :condi [:!Games] :afterup {:set ["mouse_keys_mode_v4_scroll" 0]}}
@@ -102,60 +102,60 @@
                  [:##k :page_down]]}
              {:des "s-ctrl"
               :rules [:ctrlLayer
-                      [:##a :!Ca] ; Highlight word
-                      [:##b :!Cb] ; Highlight word
-                      [:##c :!Cc] ; Highlight word
-                      [:##d :!Cd] ; Highlight word
-                      [:##e :!Ce] ; Highlight word
-                      [:##f :!Cf] ; Highlight word
-                      [:##g :!Cg] ; Highlight word
-                      [:##h :!Ch] ; Highlight word
-                      [:##i :!Ci] ; Highlight word
-                      [:##j :!Cj] ; Highlight word
-                      [:##k :!Ck] ; Highlight word
-                      [:##l :!Cl] ; Highlight word
-                      [:##m :!Cm] ; Highlight word
-                      [:##n :!Cn] ; Highlight word
-                      [:##o :!Co] ; Highlight word
-                      [:##p :!Cp] ; Highlight word
-                      [:##q :!Cq] ; Highlight word
-                      [:##r :!Cr] ; Highlight word
-                      [:##s :!Cs] ; Highlight word
-                      [:##t :!Ct] ; Highlight word
-                      [:##u :!Cu] ; Highlight word
-                      [:##v :!Cv] ; Highlight word
-                      [:##w :!Cw] ; Highlight word
-                      [:##x :!Cx] ; Highlight word
-                      [:##y :!Cy] ; Highlight word
-                      [:##z :!Cz]]}
+                      [:##a :!Ta] ; Highlight word
+                      [:##b :!Tb] ; Highlight word
+                      [:##c :!Tc] ; Highlight word
+                      [:##d :!Td] ; Highlight word
+                      [:##e :!Te] ; Highlight word
+                      [:##f :!Tf] ; Highlight word
+                      [:##g :!Tg] ; Highlight word
+                      [:##h :!Th] ; Highlight word
+                      [:##i :!Ti] ; Highlight word
+                      [:##j :!Tj] ; Highlight word
+                      [:##k :!Tk] ; Highlight word
+                      [:##l :!Tl] ; Highlight word
+                      [:##m :!Tm] ; Highlight word
+                      [:##n :!Tn] ; Highlight word
+                      [:##o :!To] ; Highlight word
+                      [:##p :!Tp] ; Highlight word
+                      [:##q :!Tq] ; Highlight word
+                      [:##r :!Tr] ; Highlight word
+                      [:##s :!Ts] ; Highlight word
+                      [:##t :!Tt] ; Highlight word
+                      [:##u :!Tu] ; Highlight word
+                      [:##v :!Tv] ; Highlight word
+                      [:##w :!Tw] ; Highlight word
+                      [:##x :!Tx] ; Highlight word
+                      [:##y :!Ty] ; Highlight word
+                      [:##z :!Tz]]}
              {:des "alt with a-tap"
               :rules [:altLayer
-                      [:##a :!Aa] ; Highlight word
-                      [:##b :!Ab] ; Highlight word
-                      [:##c :!Ac] ; Highlight word
-                      [:##d :!Ad] ; Highlight word
-                      [:##e :!Ae] ; Highlight word
-                      [:##f :!Af] ; Highlight word
-                      [:##g :!Ag] ; Highlight word
-                      [:##h :!Ah] ; Highlight word
-                      [:##i :!Ai] ; Highlight word
-                      [:##j :!Aj] ; Highlight word
-                      [:##k :!Ak] ; Highlight word
-                      [:##l :!Al] ; Highlight word
-                      [:##m :!Am] ; Highlight word
-                      [:##n :!An] ; Highlight word
-                      [:##o :!Ao] ; Highlight word
-                      [:##p :!Ap] ; Highlight word
-                      [:##q :!Aq] ; Highlight word
-                      [:##r :!Ar] ; Highlight word
-                      [:##s :!As] ; Highlight word
-                      [:##t :!At] ; Highlight word
-                      [:##u :!Au] ; Highlight word
-                      [:##v :!Av] ; Highlight word
-                      [:##w :!Aw] ; Highlight word
-                      [:##x :!Ax] ; Highlight word
-                      [:##y :!Ay] ; Highlight word
-                      [:##z :!Az]]}
+                      [:##a :!0a] ; Highlight word
+                      [:##b :!0b] ; Highlight word
+                      [:##c :!0c] ; Highlight word
+                      [:##d :!0d] ; Highlight word
+                      [:##e :!0e] ; Highlight word
+                      [:##f :!0f] ; Highlight word
+                      [:##g :!0g] ; Highlight word
+                      [:##h :!0h] ; Highlight word
+                      [:##i :!0i] ; Highlight word
+                      [:##j :!0j] ; Highlight word
+                      [:##k :!0k] ; Highlight word
+                      [:##l :!0l] ; Highlight word
+                      [:##m :!0m] ; Highlight word
+                      [:##n :!0n] ; Highlight word
+                      [:##o :!0o] ; Highlight word
+                      [:##p :!0p] ; Highlight word
+                      [:##q :!0q] ; Highlight word
+                      [:##r :!0r] ; Highlight word
+                      [:##s :!0s] ; Highlight word
+                      [:##t :!0t] ; Highlight word
+                      [:##u :!0u] ; Highlight word
+                      [:##v :!0v] ; Highlight word
+                      [:##w :!0w] ; Highlight word
+                      [:##x :!0x] ; Highlight word
+                      [:##y :!0y] ; Highlight word
+                      [:##z :!0z]]}
              {:des   "Keybase return"
               :rules [;; [[{:pkey :button5} {:pkey :button2}] {:pkey :button1}]
                       :Keybase
