@@ -131,6 +131,9 @@
                      [:y      :!TO4 :modi :left_shift]
                      [:g      :grave_accent_and_tilde] 
                      ]}
+             ;;{:des   "die"
+             ;; :rules [[:esc [:!Cq ["command-q" 0] [:noti :cmdq]] ["command-q" 1]]
+             ;;         [:!C#Pq [[:noti :cmdq "Press Again to QUIT"] ["command-q" 1]] nil {:delayed {:invoked [["command-q" 0] [:noti :cmdq]] :canceled [["command-q" 0] [:noti :cmdq]]}}]]}
              {:des   "Discord return"
               :rules [:Discord
                       [:return_or_enter :!Sreturn_or_enter]
@@ -610,3 +613,4 @@
 ;;                      :adv2p              [{:vendor_id 10730 :product_id 259}]
 ;;                      :adv2               [{:vendor_id 10730}]}
  :simlayer-threshold 200}
+  
