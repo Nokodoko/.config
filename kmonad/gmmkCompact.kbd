@@ -95,6 +95,8 @@
   z (tap-hold 200 z A-S)
   x (tap-hold 200 x @sp)
   sly (tap-hold 200 spc @sp)
+  dhp (tap-hold 200 i @hist)
+  dtx (tap-hold 200 o @ctx)
   )
 
   #|-------------------------sourceLayer---------------------------------------- |#
@@ -111,7 +113,7 @@
 
 (deflayer base
   @die @s1  @s2  @s3  @s4  @s5  @s6  @ctm @fl  @tl  @al   -   =  @dmg
-  @ttm q    w    @efn  r    t    y    u    i    o   @pass @nm @sp   @mo
+  @ttm q    w    @efn  r    t    y    u  @dhp @dtx  @pass @nm @sp   @mo
   @eat @mov @stl  d  @sch   g    h    j    k    l   ;  '    @ent
   lsft @z   x    c    v    b    n    m    ,    .    /    @hyp
   lmet @tmn lctl           @sly            @tlr  @fn  @spll @hist @ctx
